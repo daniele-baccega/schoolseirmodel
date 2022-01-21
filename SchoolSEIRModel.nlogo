@@ -80,6 +80,8 @@ globals [
   inhalation-rate-teachers inhalation-rate-teachers-in-classroom
   inhalation-rate-principals inhalation-rate-janitors
 
+  variant-factor
+
   num-active-agents
   mean-quanta-inhaled
   mean-quanta-inhaled-in-classroom
@@ -136,6 +138,8 @@ globals [
   print-day?
 
   susceptible-color exposed-color infected-color removed-color vaccinated-color
+
+  error?
 ]
 
 turtles-own [
@@ -274,6 +278,8 @@ to setup-general-variables
   set infected-color red
   set removed-color black
   set vaccinated-color magenta - 1
+
+  set error? false
 end
 
 to setup-counters-variables
@@ -380,6 +386,20 @@ to setup-contagion-variables
     ]
 
   set contamination-risk 0.024 * (1 - contamination-risk-decreased-with-mask * fraction-of-population-wearing-mask)
+
+  set variant-factor 1
+
+  if virus-variant = "Alfa"
+    [ set variant-factor 1.5 ]
+
+  if virus-variant = "Beta"
+    [ set variant-factor 1.5 ]
+
+  if virus-variant = "Delta"
+    [ set variant-factor 2 ]
+
+  if virus-variant = "Omicron"
+    [ set variant-factor 2.5 ]
 
   set one-patch-in-meters 0.7
 
@@ -1417,7 +1437,7 @@ to setup-infected
       if init-infected > num-students
         [
           user-message "There aren't enough student. Please, select another type of initial infected agents."
-          stop
+          set error? true
         ]
     ]
 
@@ -1428,7 +1448,7 @@ to setup-infected
       if init-infected > count initial-infected-breed
         [
           user-message "There aren't enough teachers. Please, select another type of initial infected agents."
-          stop
+          set error? true
         ]
     ]
 
@@ -1439,7 +1459,7 @@ to setup-infected
       if init-infected > 1
         [
           user-message "There aren't enough principals. Please, select another type of initial infected agents."
-          stop
+          set error? true
         ]
     ]
 
@@ -1449,13 +1469,14 @@ to setup-infected
         [ set initial-infected-breed janitors ]
         [
           user-message "There are no janitors. Please, select another type of initial infected agents."
+          set error? true
           stop
         ]
 
       if init-infected > num-school-janitors
         [
           user-message "There aren't enough janitors. Please, select another type of initial infected agents."
-          stop
+          set error? true
         ]
     ]
 
@@ -1472,7 +1493,8 @@ end
 to go
   end-of-day-computation
 
-  if stop-simulation?
+  if error? or
+     stop-simulation?
     [ stop ]
 
   if next-group-activate < num-groups
@@ -2433,19 +2455,19 @@ to accumulate-aerosol [room]
         [ set infectious-vaccinated-factor-janitors infectious-vaccinated-factor ]
     ]
 
-  let base-n-r-students (activity-type-students * ngen-base) / (10 ^ vl)
-  let base-n-r-students-in-gym (activity-type-students-in-gym * ngen-base) / (10 ^ vl)
-  let base-n-r-teachers (activity-type-teachers * ngen-base) / (10 ^ vl)
-  let base-n-r-teachers-in-classroom (activity-type-teachers-in-classroom * ngen-base) / (10 ^ vl)
-  let base-n-r-principals (activity-type-principals * ngen-base) / (10 ^ vl)
-  let base-n-r-janitors (activity-type-janitors * ngen-base) / (10 ^ vl)
+  let base-n-r-students ((activity-type-students * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-students-in-gym ((activity-type-students-in-gym * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-teachers ((activity-type-teachers * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-teachers-in-classroom ((activity-type-teachers-in-classroom * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-principals ((activity-type-principals * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-janitors ((activity-type-janitors * ngen-base) / (10 ^ vl)) * variant-factor
 
-  let base-n-r-students-vaccinated (activity-type-students * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)
-  let base-n-r-students-in-gym-vaccinated (activity-type-students-in-gym * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)
-  let base-n-r-teachers-vaccinated (activity-type-teachers * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)
-  let base-n-r-teachers-in-classroom-vaccinated (activity-type-teachers-in-classroom * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)
-  let base-n-r-principals-vaccinated (activity-type-principals * ngen-base * infectious-vaccinated-factor-principals) / (10 ^ vl)
-  let base-n-r-janitors-vaccinated (activity-type-janitors * ngen-base * infectious-vaccinated-factor-janitors) / (10 ^ vl)
+  let base-n-r-students-vaccinated ((activity-type-students * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * variant-factor
+  let base-n-r-students-in-gym-vaccinated ((activity-type-students-in-gym * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * variant-factor
+  let base-n-r-teachers-vaccinated ((activity-type-teachers * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * variant-factor
+  let base-n-r-teachers-in-classroom-vaccinated ((activity-type-teachers-in-classroom * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * variant-factor
+  let base-n-r-principals-vaccinated ((activity-type-principals * ngen-base * infectious-vaccinated-factor-principals) / (10 ^ vl)) * variant-factor
+  let base-n-r-janitors-vaccinated ((activity-type-janitors * ngen-base * infectious-vaccinated-factor-janitors) / (10 ^ vl)) * variant-factor
 
   let n-r-students (10 ^ vl) * base-n-r-students * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
   let n-r-students-in-gym (10 ^ vl) * base-n-r-students-in-gym * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
@@ -2631,7 +2653,6 @@ to accumulate-contact-with-infected
       [
         let contact-value matrix:get contact-time-with-infected-matrix-in-ticks who who-infected
 
-        ;Different cases: not vaccinated-not vaccinated, not vaccinated-vaccinated (or vaccinated-not vaccinated), vaccinated-vaccinated
         ifelse [vaccinated?] of myself or
                vaccinated?
           [ matrix:set contact-time-with-infected-matrix-in-ticks who who-infected ((contact-value + 1) * infectious-vaccinated-factor) ]
@@ -2643,7 +2664,7 @@ end
 to infect-with-contact
   ask turtles with [ hidden? and sum matrix:get-row contact-time-with-infected-matrix-in-ticks who != 0 and susceptible? ]
     [
-      let contact-time-in-min ((sum matrix:get-row contact-time-with-infected-matrix-in-ticks who) * tick-duration-in-seconds) / 60
+      let contact-time-in-min (((sum matrix:get-row contact-time-with-infected-matrix-in-ticks who) * tick-duration-in-seconds) / 60) * variant-factor
 
       let pi-agent contamination-risk * (contact-time-in-min / contact-space-volume)
 
@@ -4077,7 +4098,7 @@ init-infected
 init-infected
 0
 students-per-classroom * num-classrooms-per-floor * num-floors + num-classrooms-per-floor * num-floors * 2 + 1
-0.0
+1.0
 1
 1
 NIL
@@ -4107,7 +4128,7 @@ num-floors
 num-floors
 1
 3
-3.0
+1.0
 1
 1
 NIL
@@ -4517,7 +4538,7 @@ CHOOSER
 311
 init-infected-type
 init-infected-type
-"anyone" "students" "teachers" "principals" "staff"
+"anyone" "students" "teachers" "principals" "janitors"
 1
 
 CHOOSER
@@ -4788,7 +4809,7 @@ SWITCH
 906
 vaccinated-students?
 vaccinated-students?
-1
+0
 1
 -1000
 
@@ -4889,10 +4910,10 @@ Vaccination
 1
 
 CHOOSER
-363
-903
-567
-948
+362
+904
+566
+949
 virus-variant
 virus-variant
 "Original" "Alfa" "Beta" "Delta" "Omicron"
@@ -5002,6 +5023,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _first-day-of-week_: day of the week on which school's screening takes place; In the case of D2 policy, one half of the group is swabbed on this day.
 - _second-day-of-week_: parameter used in the case of the D2 policy; the other half of the group is swabbed on this day.
 - _screening-adhesion-%_: percentage of students' adhesion to the screening campaign.
+- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
 
 ----
 
@@ -5079,6 +5101,8 @@ The model needed some external input files inside a _Utils_ directory:
 [4] Nicolas Hoertel et al. _«A stochastic agent-based model of the SARS-CoV-2 epidemic in France»_. In: _Nature medicine 26.9 (2020)_, pp. 1417–1421.
 
 [5] PAPER JASS
+
+[6] J.L. Jimenez and Z. Peng, _COVID-19 Aerosol Transmission Estimator_. https://tinyurl.com/covid-estimator
 
 ## COPYRIGHT AND LICENSE
 

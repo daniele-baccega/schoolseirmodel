@@ -101,6 +101,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _first-day-of-week_: day of the week on which school's screening takes place; In the case of D2 policy, one half of the group is swabbed on this day.
 - _second-day-of-week_: parameter used in the case of the D2 policy; the other half of the group is swabbed on this day.
 - _screening-adhesion-%_: percentage of students' adhesion to the screening campaign.
+- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
 
 ----
 
@@ -178,6 +179,8 @@ The model needed some external input files inside a _Utils_ directory:
 [4] Nicolas Hoertel et al. _«A stochastic agent-based model of the SARS-CoV-2 epidemic in France»_. In: _Nature medicine 26.9 (2020)_, pp. 1417–1421.
 
 [5] PAPER JASS
+
+[6] J.L. Jimenez and Z. Peng, _COVID-19 Aerosol Transmission Estimator_. https://tinyurl.com/covid-estimator
 
 ## COPYRIGHT AND LICENSE
 
