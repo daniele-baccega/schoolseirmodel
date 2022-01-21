@@ -1,0 +1,2 @@
+# schoolseirmodel
+School SEIR Model
