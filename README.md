@@ -169,7 +169,7 @@ The model needed some external input files inside a _Utils_ directory:
 	- Possibility of reinfection
 
 ## REFERENCES
-[1] Daniele Baccega. _SchoolSEIRModel_. _2021_. URL: https://gitlab.com/danielebaccega/schoolseirmodel.
+[1] Daniele Baccega. _SchoolSEIRModel_. _2021_. URL: https://github.com/daniele-baccega/schoolseirmodel.
 
 [2] Wilensky, U. _(1999)_. _NetLogo._ http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
