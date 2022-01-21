@@ -1,0 +1,281 @@
+,day,agents,type,type_of_screening_pretty
+0,1.0,1.0,Infetti,Senza screening
+1,2.0,1.1211,Infetti,Senza screening
+2,3.0,1.4034,Infetti,Senza screening
+3,4.0,1.8639,Infetti,Senza screening
+4,5.0,2.4274,Infetti,Senza screening
+5,6.0,3.0601,Infetti,Senza screening
+6,7.0,3.3383,Infetti,Senza screening
+7,8.0,3.4094,Infetti,Senza screening
+8,9.0,3.8348,Infetti,Senza screening
+9,10.0,4.3764,Infetti,Senza screening
+10,11.0,5.0851,Infetti,Senza screening
+11,12.0,5.8779,Infetti,Senza screening
+12,13.0,6.6747,Infetti,Senza screening
+13,14.0,6.958,Infetti,Senza screening
+14,15.0,6.8759,Infetti,Senza screening
+15,16.0,7.1552,Infetti,Senza screening
+16,17.0,7.6557,Infetti,Senza screening
+17,18.0,8.2633,Infetti,Senza screening
+18,19.0,8.953,Infetti,Senza screening
+19,20.0,9.7788,Infetti,Senza screening
+20,21.0,9.954,Infetti,Senza screening
+21,22.0,9.6837,Infetti,Senza screening
+22,23.0,9.8178,Infetti,Senza screening
+23,24.0,10.3343,Infetti,Senza screening
+24,25.0,10.9379,Infetti,Senza screening
+25,26.0,11.6987,Infetti,Senza screening
+26,27.0,12.4364,Infetti,Senza screening
+27,28.0,12.5996,Infetti,Senza screening
+28,29.0,12.1211,Infetti,Senza screening
+29,30.0,12.3874,Infetti,Senza screening
+30,31.0,12.8919,Infetti,Senza screening
+31,32.0,13.6987,Infetti,Senza screening
+32,33.0,14.4865,Infetti,Senza screening
+33,34.0,15.3153,Infetti,Senza screening
+34,35.0,15.4214,Infetti,Senza screening
+35,1.0,0.0,Infetti in quarantena,Senza screening
+36,2.0,0.0,Infetti in quarantena,Senza screening
+37,3.0,0.0,Infetti in quarantena,Senza screening
+38,4.0,0.0,Infetti in quarantena,Senza screening
+39,5.0,0.0,Infetti in quarantena,Senza screening
+40,6.0,0.0,Infetti in quarantena,Senza screening
+41,7.0,0.0,Infetti in quarantena,Senza screening
+42,8.0,0.0,Infetti in quarantena,Senza screening
+43,9.0,0.0,Infetti in quarantena,Senza screening
+44,10.0,0.0,Infetti in quarantena,Senza screening
+45,11.0,0.0,Infetti in quarantena,Senza screening
+46,12.0,0.0,Infetti in quarantena,Senza screening
+47,13.0,0.0,Infetti in quarantena,Senza screening
+48,14.0,0.0,Infetti in quarantena,Senza screening
+49,15.0,0.0,Infetti in quarantena,Senza screening
+50,16.0,0.0,Infetti in quarantena,Senza screening
+51,17.0,0.0,Infetti in quarantena,Senza screening
+52,18.0,0.0,Infetti in quarantena,Senza screening
+53,19.0,0.0,Infetti in quarantena,Senza screening
+54,20.0,0.0,Infetti in quarantena,Senza screening
+55,21.0,0.0,Infetti in quarantena,Senza screening
+56,22.0,0.0,Infetti in quarantena,Senza screening
+57,23.0,0.0,Infetti in quarantena,Senza screening
+58,24.0,0.0,Infetti in quarantena,Senza screening
+59,25.0,0.0,Infetti in quarantena,Senza screening
+60,26.0,0.0,Infetti in quarantena,Senza screening
+61,27.0,0.0,Infetti in quarantena,Senza screening
+62,28.0,0.0,Infetti in quarantena,Senza screening
+63,29.0,0.0,Infetti in quarantena,Senza screening
+64,30.0,0.0,Infetti in quarantena,Senza screening
+65,31.0,0.0,Infetti in quarantena,Senza screening
+66,32.0,0.0,Infetti in quarantena,Senza screening
+67,33.0,0.0,Infetti in quarantena,Senza screening
+68,34.0,0.0,Infetti in quarantena,Senza screening
+69,35.0,0.0,Infetti in quarantena,Senza screening
+70,1.0,1.0,Infetti,Screening 25%
+71,2.0,0.988,Infetti,Screening 25%
+72,3.0,1.2452,Infetti,Screening 25%
+73,4.0,1.5816,Infetti,Screening 25%
+74,5.0,2.0651,Infetti,Screening 25%
+75,6.0,2.6416,Infetti,Screening 25%
+76,7.0,2.8569,Infetti,Screening 25%
+77,8.0,2.8899,Infetti,Screening 25%
+78,9.0,2.3924,Infetti,Screening 25%
+79,10.0,2.8088,Infetti,Screening 25%
+80,11.0,3.3514,Infetti,Screening 25%
+81,12.0,3.8849,Infetti,Screening 25%
+82,13.0,4.5215,Infetti,Screening 25%
+83,14.0,4.7197,Infetti,Screening 25%
+84,15.0,4.6376,Infetti,Screening 25%
+85,16.0,3.3824,Infetti,Screening 25%
+86,17.0,3.8058,Infetti,Screening 25%
+87,18.0,4.2062,Infetti,Screening 25%
+88,19.0,4.6466,Infetti,Screening 25%
+89,20.0,5.2653,Infetti,Screening 25%
+90,21.0,5.4184,Infetti,Screening 25%
+91,22.0,5.2492,Infetti,Screening 25%
+92,23.0,3.7908,Infetti,Screening 25%
+93,24.0,4.049,Infetti,Screening 25%
+94,25.0,4.5135,Infetti,Screening 25%
+95,26.0,4.991,Infetti,Screening 25%
+96,27.0,5.5295,Infetti,Screening 25%
+97,28.0,5.5566,Infetti,Screening 25%
+98,29.0,5.4084,Infetti,Screening 25%
+99,30.0,3.6807,Infetti,Screening 25%
+100,31.0,4.022,Infetti,Screening 25%
+101,32.0,4.4024,Infetti,Screening 25%
+102,33.0,4.8759,Infetti,Screening 25%
+103,34.0,5.3524,Infetti,Screening 25%
+104,35.0,5.4194,Infetti,Screening 25%
+105,1.0,0.0,Infetti in quarantena,Screening 25%
+106,2.0,0.0981,Infetti in quarantena,Screening 25%
+107,3.0,0.0911,Infetti in quarantena,Screening 25%
+108,4.0,0.0881,Infetti in quarantena,Screening 25%
+109,5.0,0.0881,Infetti in quarantena,Screening 25%
+110,6.0,0.0871,Infetti in quarantena,Screening 25%
+111,7.0,0.0801,Infetti in quarantena,Screening 25%
+112,8.0,0.0671,Infetti in quarantena,Screening 25%
+113,9.0,0.9349,Infetti in quarantena,Screening 25%
+114,10.0,0.9139,Infetti in quarantena,Screening 25%
+115,11.0,0.8579,Infetti in quarantena,Screening 25%
+116,12.0,0.8048,Infetti in quarantena,Screening 25%
+117,13.0,0.7297,Infetti in quarantena,Screening 25%
+118,14.0,0.6527,Infetti in quarantena,Screening 25%
+119,15.0,0.5926,Infetti in quarantena,Screening 25%
+120,16.0,2.0631,Infetti in quarantena,Screening 25%
+121,17.0,1.957,Infetti in quarantena,Screening 25%
+122,18.0,1.8328,Infetti in quarantena,Screening 25%
+123,19.0,1.6376,Infetti in quarantena,Screening 25%
+124,20.0,1.4935,Infetti in quarantena,Screening 25%
+125,21.0,1.3423,Infetti in quarantena,Screening 25%
+126,22.0,1.1992,Infetti in quarantena,Screening 25%
+127,23.0,2.4955,Infetti in quarantena,Screening 25%
+128,24.0,2.3323,Infetti in quarantena,Screening 25%
+129,25.0,2.1401,Infetti in quarantena,Screening 25%
+130,26.0,1.9419,Infetti in quarantena,Screening 25%
+131,27.0,1.7417,Infetti in quarantena,Screening 25%
+132,28.0,1.5365,Infetti in quarantena,Screening 25%
+133,29.0,1.3493,Infetti in quarantena,Screening 25%
+134,30.0,2.7758,Infetti in quarantena,Screening 25%
+135,31.0,2.6306,Infetti in quarantena,Screening 25%
+136,32.0,2.4144,Infetti in quarantena,Screening 25%
+137,33.0,2.1922,Infetti in quarantena,Screening 25%
+138,34.0,1.9229,Infetti in quarantena,Screening 25%
+139,35.0,1.6917,Infetti in quarantena,Screening 25%
+140,1.0,1.0,Infetti,Screening 50%
+141,2.0,0.9139,Infetti,Screening 50%
+142,3.0,1.1391,Infetti,Screening 50%
+143,4.0,1.5055,Infetti,Screening 50%
+144,5.0,1.961,Infetti,Screening 50%
+145,6.0,2.4545,Infetti,Screening 50%
+146,7.0,2.6677,Infetti,Screening 50%
+147,8.0,2.7568,Infetti,Screening 50%
+148,9.0,1.6667,Infetti,Screening 50%
+149,10.0,2.034,Infetti,Screening 50%
+150,11.0,2.4815,Infetti,Screening 50%
+151,12.0,3.011,Infetti,Screening 50%
+152,13.0,3.5195,Infetti,Screening 50%
+153,14.0,3.6847,Infetti,Screening 50%
+154,15.0,3.6737,Infetti,Screening 50%
+155,16.0,1.7047,Infetti,Screening 50%
+156,17.0,1.992,Infetti,Screening 50%
+157,18.0,2.3664,Infetti,Screening 50%
+158,19.0,2.7247,Infetti,Screening 50%
+159,20.0,3.1271,Infetti,Screening 50%
+160,21.0,3.2503,Infetti,Screening 50%
+161,22.0,3.2102,Infetti,Screening 50%
+162,23.0,1.6256,Infetti,Screening 50%
+163,24.0,1.8428,Infetti,Screening 50%
+164,25.0,2.1161,Infetti,Screening 50%
+165,26.0,2.4194,Infetti,Screening 50%
+166,27.0,2.7027,Infetti,Screening 50%
+167,28.0,2.8428,Infetti,Screening 50%
+168,29.0,2.7898,Infetti,Screening 50%
+169,30.0,1.4945,Infetti,Screening 50%
+170,31.0,1.6837,Infetti,Screening 50%
+171,32.0,1.9149,Infetti,Screening 50%
+172,33.0,2.1582,Infetti,Screening 50%
+173,34.0,2.4164,Infetti,Screening 50%
+174,35.0,2.4865,Infetti,Screening 50%
+175,1.0,0.0,Infetti in quarantena,Screening 50%
+176,2.0,0.1732,Infetti in quarantena,Screening 50%
+177,3.0,0.1612,Infetti in quarantena,Screening 50%
+178,4.0,0.1532,Infetti in quarantena,Screening 50%
+179,5.0,0.1502,Infetti in quarantena,Screening 50%
+180,6.0,0.1431,Infetti in quarantena,Screening 50%
+181,7.0,0.1321,Infetti in quarantena,Screening 50%
+182,8.0,0.1271,Infetti in quarantena,Screening 50%
+183,9.0,1.5285,Infetti in quarantena,Screening 50%
+184,10.0,1.4975,Infetti in quarantena,Screening 50%
+185,11.0,1.4124,Infetti in quarantena,Screening 50%
+186,12.0,1.3113,Infetti in quarantena,Screening 50%
+187,13.0,1.2082,Infetti in quarantena,Screening 50%
+188,14.0,1.0961,Infetti in quarantena,Screening 50%
+189,15.0,0.977,Infetti in quarantena,Screening 50%
+190,16.0,3.022,Infetti in quarantena,Screening 50%
+191,17.0,2.7928,Infetti in quarantena,Screening 50%
+192,18.0,2.5475,Infetti in quarantena,Screening 50%
+193,19.0,2.2953,Infetti in quarantena,Screening 50%
+194,20.0,2.0711,Infetti in quarantena,Screening 50%
+195,21.0,1.8589,Infetti in quarantena,Screening 50%
+196,22.0,1.5996,Infetti in quarantena,Screening 50%
+197,23.0,2.8288,Infetti in quarantena,Screening 50%
+198,24.0,2.6286,Infetti in quarantena,Screening 50%
+199,25.0,2.4054,Infetti in quarantena,Screening 50%
+200,26.0,2.1832,Infetti in quarantena,Screening 50%
+201,27.0,1.9309,Infetti in quarantena,Screening 50%
+202,28.0,1.7237,Infetti in quarantena,Screening 50%
+203,29.0,1.5155,Infetti in quarantena,Screening 50%
+204,30.0,2.3884,Infetti in quarantena,Screening 50%
+205,31.0,2.1882,Infetti in quarantena,Screening 50%
+206,32.0,2.0,Infetti in quarantena,Screening 50%
+207,33.0,1.8168,Infetti in quarantena,Screening 50%
+208,34.0,1.6266,Infetti in quarantena,Screening 50%
+209,35.0,1.4454,Infetti in quarantena,Screening 50%
+210,1.0,1.0,Infetti,Screening 100%
+211,2.0,0.7427,Infetti,Screening 100%
+212,3.0,0.9269,Infetti,Screening 100%
+213,4.0,1.2122,Infetti,Screening 100%
+214,5.0,1.6086,Infetti,Screening 100%
+215,6.0,2.0651,Infetti,Screening 100%
+216,7.0,2.2442,Infetti,Screening 100%
+217,8.0,2.3083,Infetti,Screening 100%
+218,9.0,0.8228,Infetti,Screening 100%
+219,10.0,1.04,Infetti,Screening 100%
+220,11.0,1.3063,Infetti,Screening 100%
+221,12.0,1.5926,Infetti,Screening 100%
+222,13.0,1.8789,Infetti,Screening 100%
+223,14.0,2.021,Infetti,Screening 100%
+224,15.0,2.012,Infetti,Screening 100%
+225,16.0,0.5886,Infetti,Screening 100%
+226,17.0,0.7117,Infetti,Screening 100%
+227,18.0,0.8589,Infetti,Screening 100%
+228,19.0,1.028,Infetti,Screening 100%
+229,20.0,1.2262,Infetti,Screening 100%
+230,21.0,1.3093,Infetti,Screening 100%
+231,22.0,1.3163,Infetti,Screening 100%
+232,23.0,0.3584,Infetti,Screening 100%
+233,24.0,0.4595,Infetti,Screening 100%
+234,25.0,0.5485,Infetti,Screening 100%
+235,26.0,0.6517,Infetti,Screening 100%
+236,27.0,0.7688,Infetti,Screening 100%
+237,28.0,0.8268,Infetti,Screening 100%
+238,29.0,0.8529,Infetti,Screening 100%
+239,30.0,0.2202,Infetti,Screening 100%
+240,31.0,0.2623,Infetti,Screening 100%
+241,32.0,0.3073,Infetti,Screening 100%
+242,33.0,0.3934,Infetti,Screening 100%
+243,34.0,0.4585,Infetti,Screening 100%
+244,35.0,0.4885,Infetti,Screening 100%
+245,1.0,0.0,Infetti in quarantena,Screening 100%
+246,2.0,0.3504,Infetti in quarantena,Screening 100%
+247,3.0,0.3423,Infetti in quarantena,Screening 100%
+248,4.0,0.3183,Infetti in quarantena,Screening 100%
+249,5.0,0.2943,Infetti in quarantena,Screening 100%
+250,6.0,0.2703,Infetti in quarantena,Screening 100%
+251,7.0,0.2372,Infetti in quarantena,Screening 100%
+252,8.0,0.2182,Infetti in quarantena,Screening 100%
+253,9.0,2.0,Infetti in quarantena,Screening 100%
+254,10.0,1.977,Infetti in quarantena,Screening 100%
+255,11.0,1.9109,Infetti in quarantena,Screening 100%
+256,12.0,1.7788,Infetti in quarantena,Screening 100%
+257,13.0,1.6446,Infetti in quarantena,Screening 100%
+258,14.0,1.4915,Infetti in quarantena,Screening 100%
+259,15.0,1.3313,Infetti in quarantena,Screening 100%
+260,16.0,2.7508,Infetti in quarantena,Screening 100%
+261,17.0,2.5956,Infetti in quarantena,Screening 100%
+262,18.0,2.3944,Infetti in quarantena,Screening 100%
+263,19.0,2.1662,Infetti in quarantena,Screening 100%
+264,20.0,1.9299,Infetti in quarantena,Screening 100%
+265,21.0,1.7327,Infetti in quarantena,Screening 100%
+266,22.0,1.5425,Infetti in quarantena,Screening 100%
+267,23.0,1.978,Infetti in quarantena,Screening 100%
+268,24.0,1.8619,Infetti in quarantena,Screening 100%
+269,25.0,1.7207,Infetti in quarantena,Screening 100%
+270,26.0,1.5265,Infetti in quarantena,Screening 100%
+271,27.0,1.3684,Infetti in quarantena,Screening 100%
+272,28.0,1.2202,Infetti in quarantena,Screening 100%
+273,29.0,1.1071,Infetti in quarantena,Screening 100%
+274,30.0,1.2703,Infetti in quarantena,Screening 100%
+275,31.0,1.2142,Infetti in quarantena,Screening 100%
+276,32.0,1.1131,Infetti in quarantena,Screening 100%
+277,33.0,1.012,Infetti in quarantena,Screening 100%
+278,34.0,0.9149,Infetti in quarantena,Screening 100%
+279,35.0,0.8238,Infetti in quarantena,Screening 100%

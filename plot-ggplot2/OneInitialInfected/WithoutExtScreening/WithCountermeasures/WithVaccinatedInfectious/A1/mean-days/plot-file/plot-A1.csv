@@ -1,0 +1,1153 @@
+,day,agents,type,type_of_screening_pretty,group
+0,0.0,240.0,Susceptible,Without screening,Susceptible
+1,1.0,238.1822,Susceptible,Without screening,Susceptible
+2,2.0,237.3814,Susceptible,Without screening,Susceptible
+3,3.0,236.3814,Susceptible,Without screening,Susceptible
+4,4.0,235.0851,Susceptible,Without screening,Susceptible
+5,5.0,233.7067,Susceptible,Without screening,Susceptible
+6,6.0,233.7067,Susceptible,Without screening,Susceptible
+7,7.0,233.7067,Susceptible,Without screening,Susceptible
+8,8.0,231.963,Susceptible,Without screening,Susceptible
+9,9.0,230.1672,Susceptible,Without screening,Susceptible
+10,10.0,228.3183,Susceptible,Without screening,Susceptible
+11,11.0,226.4494,Susceptible,Without screening,Susceptible
+12,12.0,224.5275,Susceptible,Without screening,Susceptible
+13,13.0,224.5275,Susceptible,Without screening,Susceptible
+14,14.0,224.5275,Susceptible,Without screening,Susceptible
+15,15.0,222.0651,Susceptible,Without screening,Susceptible
+16,16.0,219.991,Susceptible,Without screening,Susceptible
+17,17.0,217.6727,Susceptible,Without screening,Susceptible
+18,18.0,215.2813,Susceptible,Without screening,Susceptible
+19,19.0,212.6847,Susceptible,Without screening,Susceptible
+20,20.0,212.6847,Susceptible,Without screening,Susceptible
+21,21.0,212.6847,Susceptible,Without screening,Susceptible
+22,22.0,209.7518,Susceptible,Without screening,Susceptible
+23,23.0,206.9049,Susceptible,Without screening,Susceptible
+24,24.0,203.8559,Susceptible,Without screening,Susceptible
+25,25.0,200.7868,Susceptible,Without screening,Susceptible
+26,26.0,197.6887,Susceptible,Without screening,Susceptible
+27,27.0,197.6887,Susceptible,Without screening,Susceptible
+28,28.0,197.6887,Susceptible,Without screening,Susceptible
+29,29.0,193.969,Susceptible,Without screening,Susceptible
+30,30.0,190.3193,Susceptible,Without screening,Susceptible
+31,31.0,186.8999,Susceptible,Without screening,Susceptible
+32,32.0,183.2482,Susceptible,Without screening,Susceptible
+33,33.0,179.4144,Susceptible,Without screening,Susceptible
+34,34.0,179.4144,Susceptible,Without screening,Susceptible
+35,35.0,179.4144,Susceptible,Without screening,Susceptible
+36,0.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+37,1.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+38,2.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+39,3.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+40,4.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+41,5.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+42,6.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+43,7.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+44,8.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+45,9.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+46,10.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+47,11.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+48,12.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+49,13.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+50,14.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+51,15.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+52,16.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+53,17.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+54,18.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+55,19.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+56,20.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+57,21.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+58,22.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+59,23.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+60,24.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+61,25.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+62,26.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+63,27.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+64,28.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+65,29.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+66,30.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+67,31.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+68,32.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+69,33.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+70,34.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+71,35.0,0.0,Susceptible in quarantine,Without screening,Susceptible
+72,0.0,0.0,Exposed,Without screening,Exposed
+73,1.0,0.8178,Exposed,Without screening,Exposed
+74,2.0,1.3944,Exposed,Without screening,Exposed
+75,3.0,1.991,Exposed,Without screening,Exposed
+76,4.0,2.7588,Exposed,Without screening,Exposed
+77,5.0,3.3343,Exposed,Without screening,Exposed
+78,6.0,2.4354,Exposed,Without screening,Exposed
+79,7.0,1.7608,Exposed,Without screening,Exposed
+80,8.0,3.022,Exposed,Without screening,Exposed
+81,9.0,3.9419,Exposed,Without screening,Exposed
+82,10.0,4.6376,Exposed,Without screening,Exposed
+83,11.0,5.2603,Exposed,Without screening,Exposed
+84,12.0,5.6817,Exposed,Without screening,Exposed
+85,13.0,4.0,Exposed,Without screening,Exposed
+86,14.0,2.8689,Exposed,Without screening,Exposed
+87,15.0,4.5255,Exposed,Without screening,Exposed
+88,16.0,5.3103,Exposed,Without screening,Exposed
+89,17.0,6.0891,Exposed,Without screening,Exposed
+90,18.0,6.7548,Exposed,Without screening,Exposed
+91,19.0,7.4675,Exposed,Without screening,Exposed
+92,20.0,5.2873,Exposed,Without screening,Exposed
+93,21.0,3.7858,Exposed,Without screening,Exposed
+94,22.0,5.6607,Exposed,Without screening,Exposed
+95,23.0,6.8889,Exposed,Without screening,Exposed
+96,24.0,7.994,Exposed,Without screening,Exposed
+97,25.0,8.8398,Exposed,Without screening,Exposed
+98,26.0,9.4124,Exposed,Without screening,Exposed
+99,27.0,6.8168,Exposed,Without screening,Exposed
+100,28.0,4.8939,Exposed,Without screening,Exposed
+101,29.0,7.2122,Exposed,Without screening,Exposed
+102,30.0,8.7588,Exposed,Without screening,Exposed
+103,31.0,9.6987,Exposed,Without screening,Exposed
+104,32.0,10.6466,Exposed,Without screening,Exposed
+105,33.0,11.5375,Exposed,Without screening,Exposed
+106,34.0,8.2222,Exposed,Without screening,Exposed
+107,35.0,5.9489,Exposed,Without screening,Exposed
+108,0.0,0.0,Exposed in quarantine,Without screening,Exposed
+109,1.0,0.0,Exposed in quarantine,Without screening,Exposed
+110,2.0,0.0,Exposed in quarantine,Without screening,Exposed
+111,3.0,0.0,Exposed in quarantine,Without screening,Exposed
+112,4.0,0.0,Exposed in quarantine,Without screening,Exposed
+113,5.0,0.0,Exposed in quarantine,Without screening,Exposed
+114,6.0,0.0,Exposed in quarantine,Without screening,Exposed
+115,7.0,0.0,Exposed in quarantine,Without screening,Exposed
+116,8.0,0.0,Exposed in quarantine,Without screening,Exposed
+117,9.0,0.0,Exposed in quarantine,Without screening,Exposed
+118,10.0,0.0,Exposed in quarantine,Without screening,Exposed
+119,11.0,0.0,Exposed in quarantine,Without screening,Exposed
+120,12.0,0.0,Exposed in quarantine,Without screening,Exposed
+121,13.0,0.0,Exposed in quarantine,Without screening,Exposed
+122,14.0,0.0,Exposed in quarantine,Without screening,Exposed
+123,15.0,0.0,Exposed in quarantine,Without screening,Exposed
+124,16.0,0.0,Exposed in quarantine,Without screening,Exposed
+125,17.0,0.0,Exposed in quarantine,Without screening,Exposed
+126,18.0,0.0,Exposed in quarantine,Without screening,Exposed
+127,19.0,0.0,Exposed in quarantine,Without screening,Exposed
+128,20.0,0.0,Exposed in quarantine,Without screening,Exposed
+129,21.0,0.0,Exposed in quarantine,Without screening,Exposed
+130,22.0,0.0,Exposed in quarantine,Without screening,Exposed
+131,23.0,0.0,Exposed in quarantine,Without screening,Exposed
+132,24.0,0.0,Exposed in quarantine,Without screening,Exposed
+133,25.0,0.0,Exposed in quarantine,Without screening,Exposed
+134,26.0,0.0,Exposed in quarantine,Without screening,Exposed
+135,27.0,0.0,Exposed in quarantine,Without screening,Exposed
+136,28.0,0.0,Exposed in quarantine,Without screening,Exposed
+137,29.0,0.0,Exposed in quarantine,Without screening,Exposed
+138,30.0,0.0,Exposed in quarantine,Without screening,Exposed
+139,31.0,0.0,Exposed in quarantine,Without screening,Exposed
+140,32.0,0.0,Exposed in quarantine,Without screening,Exposed
+141,33.0,0.0,Exposed in quarantine,Without screening,Exposed
+142,34.0,0.0,Exposed in quarantine,Without screening,Exposed
+143,35.0,0.0,Exposed in quarantine,Without screening,Exposed
+144,0.0,0.0,Infected,Without screening,Infected
+145,1.0,1.0,Infected,Without screening,Infected
+146,2.0,1.0951,Infected,Without screening,Infected
+147,3.0,1.3564,Infected,Without screening,Infected
+148,4.0,1.7037,Infected,Without screening,Infected
+149,5.0,2.2573,Infected,Without screening,Infected
+150,6.0,2.8408,Infected,Without screening,Infected
+151,7.0,3.1572,Infected,Without screening,Infected
+152,8.0,3.2142,Infected,Without screening,Infected
+153,9.0,3.6697,Infected,Without screening,Infected
+154,10.0,4.3363,Infected,Without screening,Infected
+155,11.0,4.995,Infected,Without screening,Infected
+156,12.0,5.7948,Infected,Without screening,Infected
+157,13.0,6.6977,Infected,Without screening,Infected
+158,14.0,6.9199,Infected,Without screening,Infected
+159,15.0,6.8068,Infected,Without screening,Infected
+160,16.0,7.1431,Infected,Without screening,Infected
+161,17.0,7.7768,Infected,Without screening,Infected
+162,18.0,8.4745,Infected,Without screening,Infected
+163,19.0,9.2352,Infected,Without screening,Infected
+164,20.0,10.2012,Infected,Without screening,Infected
+165,21.0,10.3794,Infected,Without screening,Infected
+166,22.0,10.046,Infected,Without screening,Infected
+167,23.0,10.3313,Infected,Without screening,Infected
+168,24.0,10.9029,Infected,Without screening,Infected
+169,25.0,11.7017,Infected,Without screening,Infected
+170,26.0,12.7017,Infected,Without screening,Infected
+171,27.0,13.5586,Infected,Without screening,Infected
+172,28.0,13.6386,Infected,Without screening,Infected
+173,29.0,13.2362,Infected,Without screening,Infected
+174,30.0,13.5856,Infected,Without screening,Infected
+175,31.0,14.2523,Infected,Without screening,Infected
+176,32.0,15.007,Infected,Without screening,Infected
+177,33.0,15.959,Infected,Without screening,Infected
+178,34.0,17.2302,Infected,Without screening,Infected
+179,35.0,17.2052,Infected,Without screening,Infected
+180,0.0,0.0,Infected in quarantine,Without screening,Infected
+181,1.0,0.0,Infected in quarantine,Without screening,Infected
+182,2.0,0.0,Infected in quarantine,Without screening,Infected
+183,3.0,0.0,Infected in quarantine,Without screening,Infected
+184,4.0,0.0,Infected in quarantine,Without screening,Infected
+185,5.0,0.0,Infected in quarantine,Without screening,Infected
+186,6.0,0.0,Infected in quarantine,Without screening,Infected
+187,7.0,0.0,Infected in quarantine,Without screening,Infected
+188,8.0,0.0,Infected in quarantine,Without screening,Infected
+189,9.0,0.0,Infected in quarantine,Without screening,Infected
+190,10.0,0.0,Infected in quarantine,Without screening,Infected
+191,11.0,0.0,Infected in quarantine,Without screening,Infected
+192,12.0,0.0,Infected in quarantine,Without screening,Infected
+193,13.0,0.0,Infected in quarantine,Without screening,Infected
+194,14.0,0.0,Infected in quarantine,Without screening,Infected
+195,15.0,0.0,Infected in quarantine,Without screening,Infected
+196,16.0,0.0,Infected in quarantine,Without screening,Infected
+197,17.0,0.0,Infected in quarantine,Without screening,Infected
+198,18.0,0.0,Infected in quarantine,Without screening,Infected
+199,19.0,0.0,Infected in quarantine,Without screening,Infected
+200,20.0,0.0,Infected in quarantine,Without screening,Infected
+201,21.0,0.0,Infected in quarantine,Without screening,Infected
+202,22.0,0.0,Infected in quarantine,Without screening,Infected
+203,23.0,0.0,Infected in quarantine,Without screening,Infected
+204,24.0,0.0,Infected in quarantine,Without screening,Infected
+205,25.0,0.0,Infected in quarantine,Without screening,Infected
+206,26.0,0.0,Infected in quarantine,Without screening,Infected
+207,27.0,0.0,Infected in quarantine,Without screening,Infected
+208,28.0,0.0,Infected in quarantine,Without screening,Infected
+209,29.0,0.0,Infected in quarantine,Without screening,Infected
+210,30.0,0.0,Infected in quarantine,Without screening,Infected
+211,31.0,0.0,Infected in quarantine,Without screening,Infected
+212,32.0,0.0,Infected in quarantine,Without screening,Infected
+213,33.0,0.0,Infected in quarantine,Without screening,Infected
+214,34.0,0.0,Infected in quarantine,Without screening,Infected
+215,35.0,0.0,Infected in quarantine,Without screening,Infected
+216,0.0,0.0,Removed,Without screening,Removed
+217,1.0,0.0,Removed,Without screening,Removed
+218,2.0,0.1291,Removed,Without screening,Removed
+219,3.0,0.2713,Removed,Without screening,Removed
+220,4.0,0.4525,Removed,Without screening,Removed
+221,5.0,0.7017,Removed,Without screening,Removed
+222,6.0,1.017,Removed,Without screening,Removed
+223,7.0,1.3754,Removed,Without screening,Removed
+224,8.0,1.8008,Removed,Without screening,Removed
+225,9.0,2.2212,Removed,Without screening,Removed
+226,10.0,2.7077,Removed,Without screening,Removed
+227,11.0,3.2953,Removed,Without screening,Removed
+228,12.0,3.996,Removed,Without screening,Removed
+229,13.0,4.7748,Removed,Without screening,Removed
+230,14.0,5.6837,Removed,Without screening,Removed
+231,15.0,6.6026,Removed,Without screening,Removed
+232,16.0,7.5556,Removed,Without screening,Removed
+233,17.0,8.4615,Removed,Without screening,Removed
+234,18.0,9.4895,Removed,Without screening,Removed
+235,19.0,10.6126,Removed,Without screening,Removed
+236,20.0,11.8268,Removed,Without screening,Removed
+237,21.0,13.1502,Removed,Without screening,Removed
+238,22.0,14.5415,Removed,Without screening,Removed
+239,23.0,15.8749,Removed,Without screening,Removed
+240,24.0,17.2472,Removed,Without screening,Removed
+241,25.0,18.6717,Removed,Without screening,Removed
+242,26.0,20.1972,Removed,Without screening,Removed
+243,27.0,21.9359,Removed,Without screening,Removed
+244,28.0,23.7788,Removed,Without screening,Removed
+245,29.0,25.5826,Removed,Without screening,Removed
+246,30.0,27.3363,Removed,Without screening,Removed
+247,31.0,29.1491,Removed,Without screening,Removed
+248,32.0,31.0981,Removed,Without screening,Removed
+249,33.0,33.0891,Removed,Without screening,Removed
+250,34.0,35.1331,Removed,Without screening,Removed
+251,35.0,37.4314,Removed,Without screening,Removed
+252,0.0,0.0,Removed in quarantine,Without screening,Removed
+253,1.0,0.0,Removed in quarantine,Without screening,Removed
+254,2.0,0.0,Removed in quarantine,Without screening,Removed
+255,3.0,0.0,Removed in quarantine,Without screening,Removed
+256,4.0,0.0,Removed in quarantine,Without screening,Removed
+257,5.0,0.0,Removed in quarantine,Without screening,Removed
+258,6.0,0.0,Removed in quarantine,Without screening,Removed
+259,7.0,0.0,Removed in quarantine,Without screening,Removed
+260,8.0,0.0,Removed in quarantine,Without screening,Removed
+261,9.0,0.0,Removed in quarantine,Without screening,Removed
+262,10.0,0.0,Removed in quarantine,Without screening,Removed
+263,11.0,0.0,Removed in quarantine,Without screening,Removed
+264,12.0,0.0,Removed in quarantine,Without screening,Removed
+265,13.0,0.0,Removed in quarantine,Without screening,Removed
+266,14.0,0.0,Removed in quarantine,Without screening,Removed
+267,15.0,0.0,Removed in quarantine,Without screening,Removed
+268,16.0,0.0,Removed in quarantine,Without screening,Removed
+269,17.0,0.0,Removed in quarantine,Without screening,Removed
+270,18.0,0.0,Removed in quarantine,Without screening,Removed
+271,19.0,0.0,Removed in quarantine,Without screening,Removed
+272,20.0,0.0,Removed in quarantine,Without screening,Removed
+273,21.0,0.0,Removed in quarantine,Without screening,Removed
+274,22.0,0.0,Removed in quarantine,Without screening,Removed
+275,23.0,0.0,Removed in quarantine,Without screening,Removed
+276,24.0,0.0,Removed in quarantine,Without screening,Removed
+277,25.0,0.0,Removed in quarantine,Without screening,Removed
+278,26.0,0.0,Removed in quarantine,Without screening,Removed
+279,27.0,0.0,Removed in quarantine,Without screening,Removed
+280,28.0,0.0,Removed in quarantine,Without screening,Removed
+281,29.0,0.0,Removed in quarantine,Without screening,Removed
+282,30.0,0.0,Removed in quarantine,Without screening,Removed
+283,31.0,0.0,Removed in quarantine,Without screening,Removed
+284,32.0,0.0,Removed in quarantine,Without screening,Removed
+285,33.0,0.0,Removed in quarantine,Without screening,Removed
+286,34.0,0.0,Removed in quarantine,Without screening,Removed
+287,35.0,0.0,Removed in quarantine,Without screening,Removed
+288,0.0,240.0,Susceptible,Screening 25%,Susceptible
+289,1.0,237.2859,Susceptible,Screening 25%,Susceptible
+290,2.0,235.614,Susceptible,Screening 25%,Susceptible
+291,3.0,233.7708,Susceptible,Screening 25%,Susceptible
+292,4.0,231.7287,Susceptible,Screening 25%,Susceptible
+293,5.0,229.5287,Susceptible,Screening 25%,Susceptible
+294,6.0,229.5287,Susceptible,Screening 25%,Susceptible
+295,7.0,229.5287,Susceptible,Screening 25%,Susceptible
+296,8.0,227.5531,Susceptible,Screening 25%,Susceptible
+297,9.0,225.6913,Susceptible,Screening 25%,Susceptible
+298,10.0,223.9784,Susceptible,Screening 25%,Susceptible
+299,11.0,222.4332,Susceptible,Screening 25%,Susceptible
+300,12.0,221.0232,Susceptible,Screening 25%,Susceptible
+301,13.0,221.0232,Susceptible,Screening 25%,Susceptible
+302,14.0,221.0232,Susceptible,Screening 25%,Susceptible
+303,15.0,220.6767,Susceptible,Screening 25%,Susceptible
+304,16.0,220.5037,Susceptible,Screening 25%,Susceptible
+305,17.0,220.4396,Susceptible,Screening 25%,Susceptible
+306,18.0,220.5401,Susceptible,Screening 25%,Susceptible
+307,19.0,220.8999,Susceptible,Screening 25%,Susceptible
+308,20.0,220.8999,Susceptible,Screening 25%,Susceptible
+309,21.0,220.8999,Susceptible,Screening 25%,Susceptible
+310,22.0,221.1576,Susceptible,Screening 25%,Susceptible
+311,23.0,221.3011,Susceptible,Screening 25%,Susceptible
+312,24.0,221.4182,Susceptible,Screening 25%,Susceptible
+313,25.0,221.456,Susceptible,Screening 25%,Susceptible
+314,26.0,221.562,Susceptible,Screening 25%,Susceptible
+315,27.0,221.562,Susceptible,Screening 25%,Susceptible
+316,28.0,221.562,Susceptible,Screening 25%,Susceptible
+317,29.0,221.5309,Susceptible,Screening 25%,Susceptible
+318,30.0,221.5431,Susceptible,Screening 25%,Susceptible
+319,31.0,221.5852,Susceptible,Screening 25%,Susceptible
+320,32.0,221.7021,Susceptible,Screening 25%,Susceptible
+321,33.0,221.7357,Susceptible,Screening 25%,Susceptible
+322,34.0,221.7357,Susceptible,Screening 25%,Susceptible
+323,35.0,221.7357,Susceptible,Screening 25%,Susceptible
+324,0.0,0.0,Susceptible in quarantine,Screening 25%,Susceptible
+325,1.0,0.951,Susceptible in quarantine,Screening 25%,Susceptible
+326,2.0,1.8897,Susceptible in quarantine,Screening 25%,Susceptible
+327,3.0,2.9343,Susceptible in quarantine,Screening 25%,Susceptible
+328,4.0,4.1219,Susceptible in quarantine,Screening 25%,Susceptible
+329,5.0,5.5113,Susceptible in quarantine,Screening 25%,Susceptible
+330,6.0,5.5113,Susceptible in quarantine,Screening 25%,Susceptible
+331,7.0,5.5113,Susceptible in quarantine,Screening 25%,Susceptible
+332,8.0,6.6232,Susceptible in quarantine,Screening 25%,Susceptible
+333,9.0,7.6692,Susceptible in quarantine,Screening 25%,Susceptible
+334,10.0,8.6696,Susceptible in quarantine,Screening 25%,Susceptible
+335,11.0,9.599,Susceptible in quarantine,Screening 25%,Susceptible
+336,12.0,10.4582,Susceptible in quarantine,Screening 25%,Susceptible
+337,13.0,10.4582,Susceptible in quarantine,Screening 25%,Susceptible
+338,14.0,10.4582,Susceptible in quarantine,Screening 25%,Susceptible
+339,15.0,10.172,Susceptible in quarantine,Screening 25%,Susceptible
+340,16.0,9.8462,Susceptible in quarantine,Screening 25%,Susceptible
+341,17.0,9.4248,Susceptible in quarantine,Screening 25%,Susceptible
+342,18.0,8.8915,Susceptible in quarantine,Screening 25%,Susceptible
+343,19.0,8.1069,Susceptible in quarantine,Screening 25%,Susceptible
+344,20.0,8.1069,Susceptible in quarantine,Screening 25%,Susceptible
+345,21.0,8.1069,Susceptible in quarantine,Screening 25%,Susceptible
+346,22.0,7.388,Susceptible in quarantine,Screening 25%,Susceptible
+347,23.0,6.856,Susceptible in quarantine,Screening 25%,Susceptible
+348,24.0,6.3714,Susceptible in quarantine,Screening 25%,Susceptible
+349,25.0,5.9848,Susceptible in quarantine,Screening 25%,Susceptible
+350,26.0,5.5924,Susceptible in quarantine,Screening 25%,Susceptible
+351,27.0,5.5924,Susceptible in quarantine,Screening 25%,Susceptible
+352,28.0,5.5924,Susceptible in quarantine,Screening 25%,Susceptible
+353,29.0,5.2769,Susceptible in quarantine,Screening 25%,Susceptible
+354,30.0,4.9882,Susceptible in quarantine,Screening 25%,Susceptible
+355,31.0,4.6921,Susceptible in quarantine,Screening 25%,Susceptible
+356,32.0,4.3281,Susceptible in quarantine,Screening 25%,Susceptible
+357,33.0,4.0647,Susceptible in quarantine,Screening 25%,Susceptible
+358,34.0,4.0647,Susceptible in quarantine,Screening 25%,Susceptible
+359,35.0,4.0647,Susceptible in quarantine,Screening 25%,Susceptible
+360,0.0,0.0,Exposed,Screening 25%,Exposed
+361,1.0,0.7632,Exposed,Screening 25%,Exposed
+362,2.0,1.2358,Exposed,Screening 25%,Exposed
+363,3.0,1.6164,Exposed,Screening 25%,Exposed
+364,4.0,1.9231,Exposed,Screening 25%,Exposed
+365,5.0,2.0202,Exposed,Screening 25%,Exposed
+366,6.0,1.4935,Exposed,Screening 25%,Exposed
+367,7.0,1.0562,Exposed,Screening 25%,Exposed
+368,8.0,1.5457,Exposed,Screening 25%,Exposed
+369,9.0,1.7676,Exposed,Screening 25%,Exposed
+370,10.0,1.7904,Exposed,Screening 25%,Exposed
+371,11.0,1.6707,Exposed,Screening 25%,Exposed
+372,12.0,1.5181,Exposed,Screening 25%,Exposed
+373,13.0,1.1115,Exposed,Screening 25%,Exposed
+374,14.0,0.7896,Exposed,Screening 25%,Exposed
+375,15.0,1.1075,Exposed,Screening 25%,Exposed
+376,16.0,1.1864,Exposed,Screening 25%,Exposed
+377,17.0,1.1938,Exposed,Screening 25%,Exposed
+378,18.0,1.1509,Exposed,Screening 25%,Exposed
+379,19.0,1.0951,Exposed,Screening 25%,Exposed
+380,20.0,0.7834,Exposed,Screening 25%,Exposed
+381,21.0,0.5531,Exposed,Screening 25%,Exposed
+382,22.0,0.8004,Exposed,Screening 25%,Exposed
+383,23.0,0.8839,Exposed,Screening 25%,Exposed
+384,24.0,0.9031,Exposed,Screening 25%,Exposed
+385,25.0,0.8761,Exposed,Screening 25%,Exposed
+386,26.0,0.784,Exposed,Screening 25%,Exposed
+387,27.0,0.5662,Exposed,Screening 25%,Exposed
+388,28.0,0.4048,Exposed,Screening 25%,Exposed
+389,29.0,0.5918,Exposed,Screening 25%,Exposed
+390,30.0,0.6346,Exposed,Screening 25%,Exposed
+391,31.0,0.6462,Exposed,Screening 25%,Exposed
+392,32.0,0.6394,Exposed,Screening 25%,Exposed
+393,33.0,0.602,Exposed,Screening 25%,Exposed
+394,34.0,0.4386,Exposed,Screening 25%,Exposed
+395,35.0,0.3251,Exposed,Screening 25%,Exposed
+396,0.0,0.0,Exposed in quarantine,Screening 25%,Exposed
+397,1.0,0.0,Exposed in quarantine,Screening 25%,Exposed
+398,2.0,0.0314,Exposed in quarantine,Screening 25%,Exposed
+399,3.0,0.0837,Exposed in quarantine,Screening 25%,Exposed
+400,4.0,0.1772,Exposed in quarantine,Screening 25%,Exposed
+401,5.0,0.3047,Exposed in quarantine,Screening 25%,Exposed
+402,6.0,0.2102,Exposed in quarantine,Screening 25%,Exposed
+403,7.0,0.1489,Exposed in quarantine,Screening 25%,Exposed
+404,8.0,0.1944,Exposed in quarantine,Screening 25%,Exposed
+405,9.0,0.2963,Exposed in quarantine,Screening 25%,Exposed
+406,10.0,0.414,Exposed in quarantine,Screening 25%,Exposed
+407,11.0,0.5267,Exposed in quarantine,Screening 25%,Exposed
+408,12.0,0.6008,Exposed in quarantine,Screening 25%,Exposed
+409,13.0,0.4402,Exposed in quarantine,Screening 25%,Exposed
+410,14.0,0.3221,Exposed in quarantine,Screening 25%,Exposed
+411,15.0,0.3209,Exposed in quarantine,Screening 25%,Exposed
+412,16.0,0.3492,Exposed in quarantine,Screening 25%,Exposed
+413,17.0,0.3816,Exposed in quarantine,Screening 25%,Exposed
+414,18.0,0.412,Exposed in quarantine,Screening 25%,Exposed
+415,19.0,0.4298,Exposed in quarantine,Screening 25%,Exposed
+416,20.0,0.3113,Exposed in quarantine,Screening 25%,Exposed
+417,21.0,0.2114,Exposed in quarantine,Screening 25%,Exposed
+418,22.0,0.195,Exposed in quarantine,Screening 25%,Exposed
+419,23.0,0.218,Exposed in quarantine,Screening 25%,Exposed
+420,24.0,0.244,Exposed in quarantine,Screening 25%,Exposed
+421,25.0,0.2881,Exposed in quarantine,Screening 25%,Exposed
+422,26.0,0.3262,Exposed in quarantine,Screening 25%,Exposed
+423,27.0,0.2322,Exposed in quarantine,Screening 25%,Exposed
+424,28.0,0.1682,Exposed in quarantine,Screening 25%,Exposed
+425,29.0,0.1634,Exposed in quarantine,Screening 25%,Exposed
+426,30.0,0.1736,Exposed in quarantine,Screening 25%,Exposed
+427,31.0,0.1932,Exposed in quarantine,Screening 25%,Exposed
+428,32.0,0.21,Exposed in quarantine,Screening 25%,Exposed
+429,33.0,0.2292,Exposed in quarantine,Screening 25%,Exposed
+430,34.0,0.1543,Exposed in quarantine,Screening 25%,Exposed
+431,35.0,0.1111,Exposed in quarantine,Screening 25%,Exposed
+432,0.0,0.0,Infected,Screening 25%,Infected
+433,1.0,0.9499,Infected,Screening 25%,Infected
+434,2.0,0.9728,Infected,Screening 25%,Infected
+435,3.0,1.0945,Infected,Screening 25%,Infected
+436,4.0,1.2052,Infected,Screening 25%,Infected
+437,5.0,1.2893,Infected,Screening 25%,Infected
+438,6.0,1.6611,Infected,Screening 25%,Infected
+439,7.0,1.8811,Infected,Screening 25%,Infected
+440,8.0,1.596,Infected,Screening 25%,Infected
+441,9.0,1.4637,Infected,Screening 25%,Infected
+442,10.0,1.3662,Infected,Screening 25%,Infected
+443,11.0,1.3031,Infected,Screening 25%,Infected
+444,12.0,1.1904,Infected,Screening 25%,Infected
+445,13.0,1.4216,Infected,Screening 25%,Infected
+446,14.0,1.547,Infected,Screening 25%,Infected
+447,15.0,1.2751,Infected,Screening 25%,Infected
+448,16.0,1.1308,Infected,Screening 25%,Infected
+449,17.0,1.0372,Infected,Screening 25%,Infected
+450,18.0,0.9255,Infected,Screening 25%,Infected
+451,19.0,0.8655,Infected,Screening 25%,Infected
+452,20.0,1.0691,Infected,Screening 25%,Infected
+453,21.0,1.16,Infected,Screening 25%,Infected
+454,22.0,0.9642,Infected,Screening 25%,Infected
+455,23.0,0.86,Infected,Screening 25%,Infected
+456,24.0,0.7884,Infected,Screening 25%,Infected
+457,25.0,0.7061,Infected,Screening 25%,Infected
+458,26.0,0.6344,Infected,Screening 25%,Infected
+459,27.0,0.765,Infected,Screening 25%,Infected
+460,28.0,0.8258,Infected,Screening 25%,Infected
+461,29.0,0.6869,Infected,Screening 25%,Infected
+462,30.0,0.597,Infected,Screening 25%,Infected
+463,31.0,0.5501,Infected,Screening 25%,Infected
+464,32.0,0.5379,Infected,Screening 25%,Infected
+465,33.0,0.4853,Infected,Screening 25%,Infected
+466,34.0,0.584,Infected,Screening 25%,Infected
+467,35.0,0.6228,Infected,Screening 25%,Infected
+468,0.0,0.0,Infected in quarantine,Screening 25%,Infected
+469,1.0,0.0501,Infected in quarantine,Screening 25%,Infected
+470,2.0,0.1131,Infected in quarantine,Screening 25%,Infected
+471,3.0,0.2182,Infected in quarantine,Screening 25%,Infected
+472,4.0,0.3856,Infected in quarantine,Screening 25%,Infected
+473,5.0,0.645,Infected in quarantine,Screening 25%,Infected
+474,6.0,0.6546,Infected in quarantine,Screening 25%,Infected
+475,7.0,0.6326,Infected in quarantine,Screening 25%,Infected
+476,8.0,0.9093,Infected in quarantine,Screening 25%,Infected
+477,9.0,1.1699,Infected in quarantine,Screening 25%,Infected
+478,10.0,1.4783,Infected in quarantine,Screening 25%,Infected
+479,11.0,1.78,Infected in quarantine,Screening 25%,Infected
+480,12.0,2.1185,Infected in quarantine,Screening 25%,Infected
+481,13.0,1.9906,Infected in quarantine,Screening 25%,Infected
+482,14.0,1.8583,Infected in quarantine,Screening 25%,Infected
+483,15.0,2.01,Infected in quarantine,Screening 25%,Infected
+484,16.0,2.0935,Infected in quarantine,Screening 25%,Infected
+485,17.0,2.1616,Infected in quarantine,Screening 25%,Infected
+486,18.0,2.2413,Infected in quarantine,Screening 25%,Infected
+487,19.0,2.2815,Infected in quarantine,Screening 25%,Infected
+488,20.0,2.1183,Infected in quarantine,Screening 25%,Infected
+489,21.0,1.9141,Infected in quarantine,Screening 25%,Infected
+490,22.0,1.8607,Infected in quarantine,Screening 25%,Infected
+491,23.0,1.7742,Infected in quarantine,Screening 25%,Infected
+492,24.0,1.7203,Infected in quarantine,Screening 25%,Infected
+493,25.0,1.6729,Infected in quarantine,Screening 25%,Infected
+494,26.0,1.6374,Infected in quarantine,Screening 25%,Infected
+495,27.0,1.5113,Infected in quarantine,Screening 25%,Infected
+496,28.0,1.3864,Infected in quarantine,Screening 25%,Infected
+497,29.0,1.3321,Infected in quarantine,Screening 25%,Infected
+498,30.0,1.3079,Infected in quarantine,Screening 25%,Infected
+499,31.0,1.2619,Infected in quarantine,Screening 25%,Infected
+500,32.0,1.2052,Infected in quarantine,Screening 25%,Infected
+501,33.0,1.1964,Infected in quarantine,Screening 25%,Infected
+502,34.0,1.1073,Infected in quarantine,Screening 25%,Infected
+503,35.0,1.0162,Infected in quarantine,Screening 25%,Infected
+504,0.0,0.0,Removed,Screening 25%,Removed
+505,1.0,0.0,Removed,Screening 25%,Removed
+506,2.0,0.1353,Removed,Screening 25%,Removed
+507,3.0,0.251,Removed,Screening 25%,Removed
+508,4.0,0.3782,Removed,Screening 25%,Removed
+509,5.0,0.5151,Removed,Screening 25%,Removed
+510,6.0,0.6701,Removed,Screening 25%,Removed
+511,7.0,0.8873,Removed,Screening 25%,Removed
+512,8.0,1.0128,Removed,Screening 25%,Removed
+513,9.0,1.0755,Removed,Screening 25%,Removed
+514,10.0,1.0813,Removed,Screening 25%,Removed
+515,11.0,1.0555,Removed,Screening 25%,Removed
+516,12.0,1.001,Removed,Screening 25%,Removed
+517,13.0,1.1764,Removed,Screening 25%,Removed
+518,14.0,1.373,Removed,Screening 25%,Removed
+519,15.0,1.3652,Removed,Screening 25%,Removed
+520,16.0,1.3954,Removed,Screening 25%,Removed
+521,17.0,1.4895,Removed,Screening 25%,Removed
+522,18.0,1.6997,Removed,Screening 25%,Removed
+523,19.0,2.0925,Removed,Screening 25%,Removed
+524,20.0,2.2006,Removed,Screening 25%,Removed
+525,21.0,2.3399,Removed,Screening 25%,Removed
+526,22.0,2.8637,Removed,Screening 25%,Removed
+527,23.0,3.4614,Removed,Screening 25%,Removed
+528,24.0,4.1375,Removed,Screening 25%,Removed
+529,25.0,4.8817,Removed,Screening 25%,Removed
+530,26.0,5.6883,Removed,Screening 25%,Removed
+531,27.0,5.7756,Removed,Screening 25%,Removed
+532,28.0,5.8761,Removed,Screening 25%,Removed
+533,29.0,6.4917,Removed,Screening 25%,Removed
+534,30.0,7.0711,Removed,Screening 25%,Removed
+535,31.0,7.6729,Removed,Screening 25%,Removed
+536,32.0,8.3157,Removed,Screening 25%,Removed
+537,33.0,8.9087,Removed,Screening 25%,Removed
+538,34.0,8.9734,Removed,Screening 25%,Removed
+539,35.0,9.0481,Removed,Screening 25%,Removed
+540,0.0,0.0,Removed in quarantine,Screening 25%,Removed
+541,1.0,0.0,Removed in quarantine,Screening 25%,Removed
+542,2.0,0.0078,Removed in quarantine,Screening 25%,Removed
+543,3.0,0.031,Removed in quarantine,Screening 25%,Removed
+544,4.0,0.0801,Removed in quarantine,Screening 25%,Removed
+545,5.0,0.1856,Removed in quarantine,Screening 25%,Removed
+546,6.0,0.2705,Removed in quarantine,Screening 25%,Removed
+547,7.0,0.3537,Removed in quarantine,Screening 25%,Removed
+548,8.0,0.5654,Removed in quarantine,Screening 25%,Removed
+549,9.0,0.8665,Removed in quarantine,Screening 25%,Removed
+550,10.0,1.2218,Removed in quarantine,Screening 25%,Removed
+551,11.0,1.6318,Removed in quarantine,Screening 25%,Removed
+552,12.0,2.0897,Removed in quarantine,Screening 25%,Removed
+553,13.0,2.3782,Removed in quarantine,Screening 25%,Removed
+554,14.0,2.6286,Removed in quarantine,Screening 25%,Removed
+555,15.0,3.0727,Removed in quarantine,Screening 25%,Removed
+556,16.0,3.4949,Removed in quarantine,Screening 25%,Removed
+557,17.0,3.8719,Removed in quarantine,Screening 25%,Removed
+558,18.0,4.1389,Removed in quarantine,Screening 25%,Removed
+559,19.0,4.2288,Removed in quarantine,Screening 25%,Removed
+560,20.0,4.5105,Removed in quarantine,Screening 25%,Removed
+561,21.0,4.8146,Removed in quarantine,Screening 25%,Removed
+562,22.0,4.7706,Removed in quarantine,Screening 25%,Removed
+563,23.0,4.6452,Removed in quarantine,Screening 25%,Removed
+564,24.0,4.417,Removed in quarantine,Screening 25%,Removed
+565,25.0,4.1343,Removed in quarantine,Screening 25%,Removed
+566,26.0,3.7754,Removed in quarantine,Screening 25%,Removed
+567,27.0,3.9954,Removed in quarantine,Screening 25%,Removed
+568,28.0,4.1844,Removed in quarantine,Screening 25%,Removed
+569,29.0,3.9263,Removed in quarantine,Screening 25%,Removed
+570,30.0,3.6845,Removed in quarantine,Screening 25%,Removed
+571,31.0,3.3984,Removed in quarantine,Screening 25%,Removed
+572,32.0,3.0615,Removed in quarantine,Screening 25%,Removed
+573,33.0,2.778,Removed in quarantine,Screening 25%,Removed
+574,34.0,2.942,Removed in quarantine,Screening 25%,Removed
+575,35.0,3.0763,Removed in quarantine,Screening 25%,Removed
+576,0.0,240.0,Susceptible,Screening 50%,Susceptible
+577,1.0,236.4665,Susceptible,Screening 50%,Susceptible
+578,2.0,233.9335,Susceptible,Screening 50%,Susceptible
+579,3.0,231.4206,Susceptible,Screening 50%,Susceptible
+580,4.0,228.8715,Susceptible,Screening 50%,Susceptible
+581,5.0,226.3776,Susceptible,Screening 50%,Susceptible
+582,6.0,226.3776,Susceptible,Screening 50%,Susceptible
+583,7.0,226.3776,Susceptible,Screening 50%,Susceptible
+584,8.0,224.799,Susceptible,Screening 50%,Susceptible
+585,9.0,223.4559,Susceptible,Screening 50%,Susceptible
+586,10.0,222.2508,Susceptible,Screening 50%,Susceptible
+587,11.0,221.1369,Susceptible,Screening 50%,Susceptible
+588,12.0,220.1452,Susceptible,Screening 50%,Susceptible
+589,13.0,220.1452,Susceptible,Screening 50%,Susceptible
+590,14.0,220.1452,Susceptible,Screening 50%,Susceptible
+591,15.0,221.3744,Susceptible,Screening 50%,Susceptible
+592,16.0,222.5912,Susceptible,Screening 50%,Susceptible
+593,17.0,223.8667,Susceptible,Screening 50%,Susceptible
+594,18.0,225.2402,Susceptible,Screening 50%,Susceptible
+595,19.0,226.6525,Susceptible,Screening 50%,Susceptible
+596,20.0,226.6525,Susceptible,Screening 50%,Susceptible
+597,21.0,226.6525,Susceptible,Screening 50%,Susceptible
+598,22.0,227.3774,Susceptible,Screening 50%,Susceptible
+599,23.0,227.9738,Susceptible,Screening 50%,Susceptible
+600,24.0,228.4731,Susceptible,Screening 50%,Susceptible
+601,25.0,229.0162,Susceptible,Screening 50%,Susceptible
+602,26.0,229.547,Susceptible,Screening 50%,Susceptible
+603,27.0,229.547,Susceptible,Screening 50%,Susceptible
+604,28.0,229.547,Susceptible,Screening 50%,Susceptible
+605,29.0,229.8024,Susceptible,Screening 50%,Susceptible
+606,30.0,230.1017,Susceptible,Screening 50%,Susceptible
+607,31.0,230.3832,Susceptible,Screening 50%,Susceptible
+608,32.0,230.6903,Susceptible,Screening 50%,Susceptible
+609,33.0,231.0433,Susceptible,Screening 50%,Susceptible
+610,34.0,231.0433,Susceptible,Screening 50%,Susceptible
+611,35.0,231.0433,Susceptible,Screening 50%,Susceptible
+612,0.0,0.0,Susceptible in quarantine,Screening 50%,Susceptible
+613,1.0,1.8639,Susceptible in quarantine,Screening 50%,Susceptible
+614,2.0,3.7079,Susceptible in quarantine,Screening 50%,Susceptible
+615,3.0,5.5892,Susceptible in quarantine,Screening 50%,Susceptible
+616,4.0,7.5303,Susceptible in quarantine,Screening 50%,Susceptible
+617,5.0,9.5563,Susceptible in quarantine,Screening 50%,Susceptible
+618,6.0,9.5563,Susceptible in quarantine,Screening 50%,Susceptible
+619,7.0,9.5563,Susceptible in quarantine,Screening 50%,Susceptible
+620,8.0,10.6352,Susceptible in quarantine,Screening 50%,Susceptible
+621,9.0,11.5595,Susceptible in quarantine,Screening 50%,Susceptible
+622,10.0,12.4512,Susceptible in quarantine,Screening 50%,Susceptible
+623,11.0,13.3143,Susceptible in quarantine,Screening 50%,Susceptible
+624,12.0,14.1133,Susceptible in quarantine,Screening 50%,Susceptible
+625,13.0,14.1133,Susceptible in quarantine,Screening 50%,Susceptible
+626,14.0,14.1133,Susceptible in quarantine,Screening 50%,Susceptible
+627,15.0,12.6504,Susceptible in quarantine,Screening 50%,Susceptible
+628,16.0,11.2573,Susceptible in quarantine,Screening 50%,Susceptible
+629,17.0,9.8184,Susceptible in quarantine,Screening 50%,Susceptible
+630,18.0,8.3055,Susceptible in quarantine,Screening 50%,Susceptible
+631,19.0,6.7852,Susceptible in quarantine,Screening 50%,Susceptible
+632,20.0,6.7852,Susceptible in quarantine,Screening 50%,Susceptible
+633,21.0,6.7852,Susceptible in quarantine,Screening 50%,Susceptible
+634,22.0,5.9337,Susceptible in quarantine,Screening 50%,Susceptible
+635,23.0,5.228,Susceptible in quarantine,Screening 50%,Susceptible
+636,24.0,4.6444,Susceptible in quarantine,Screening 50%,Susceptible
+637,25.0,4.0342,Susceptible in quarantine,Screening 50%,Susceptible
+638,26.0,3.4609,Susceptible in quarantine,Screening 50%,Susceptible
+639,27.0,3.4609,Susceptible in quarantine,Screening 50%,Susceptible
+640,28.0,3.4609,Susceptible in quarantine,Screening 50%,Susceptible
+641,29.0,3.1474,Susceptible in quarantine,Screening 50%,Susceptible
+642,30.0,2.8026,Susceptible in quarantine,Screening 50%,Susceptible
+643,31.0,2.4783,Susceptible in quarantine,Screening 50%,Susceptible
+644,32.0,2.1313,Susceptible in quarantine,Screening 50%,Susceptible
+645,33.0,1.7497,Susceptible in quarantine,Screening 50%,Susceptible
+646,34.0,1.7497,Susceptible in quarantine,Screening 50%,Susceptible
+647,35.0,1.7497,Susceptible in quarantine,Screening 50%,Susceptible
+648,0.0,0.0,Exposed,Screening 50%,Exposed
+649,1.0,0.6696,Exposed,Screening 50%,Exposed
+650,2.0,1.1227,Exposed,Screening 50%,Exposed
+651,3.0,1.3287,Exposed,Screening 50%,Exposed
+652,4.0,1.4004,Exposed,Screening 50%,Exposed
+653,5.0,1.2194,Exposed,Screening 50%,Exposed
+654,6.0,0.8853,Exposed,Screening 50%,Exposed
+655,7.0,0.6466,Exposed,Screening 50%,Exposed
+656,8.0,0.8647,Exposed,Screening 50%,Exposed
+657,9.0,0.9057,Exposed,Screening 50%,Exposed
+658,10.0,0.806,Exposed,Screening 50%,Exposed
+659,11.0,0.6647,Exposed,Screening 50%,Exposed
+660,12.0,0.5145,Exposed,Screening 50%,Exposed
+661,13.0,0.3706,Exposed,Screening 50%,Exposed
+662,14.0,0.2591,Exposed,Screening 50%,Exposed
+663,15.0,0.3792,Exposed,Screening 50%,Exposed
+664,16.0,0.395,Exposed,Screening 50%,Exposed
+665,17.0,0.3764,Exposed,Screening 50%,Exposed
+666,18.0,0.3526,Exposed,Screening 50%,Exposed
+667,19.0,0.2859,Exposed,Screening 50%,Exposed
+668,20.0,0.2086,Exposed,Screening 50%,Exposed
+669,21.0,0.1492,Exposed,Screening 50%,Exposed
+670,22.0,0.2116,Exposed,Screening 50%,Exposed
+671,23.0,0.2352,Exposed,Screening 50%,Exposed
+672,24.0,0.207,Exposed,Screening 50%,Exposed
+673,25.0,0.1742,Exposed,Screening 50%,Exposed
+674,26.0,0.1263,Exposed,Screening 50%,Exposed
+675,27.0,0.0893,Exposed,Screening 50%,Exposed
+676,28.0,0.0649,Exposed,Screening 50%,Exposed
+677,29.0,0.0975,Exposed,Screening 50%,Exposed
+678,30.0,0.1017,Exposed,Screening 50%,Exposed
+679,31.0,0.0993,Exposed,Screening 50%,Exposed
+680,32.0,0.1007,Exposed,Screening 50%,Exposed
+681,33.0,0.0785,Exposed,Screening 50%,Exposed
+682,34.0,0.0538,Exposed,Screening 50%,Exposed
+683,35.0,0.04,Exposed,Screening 50%,Exposed
+684,0.0,0.0,Exposed in quarantine,Screening 50%,Exposed
+685,1.0,0.0,Exposed in quarantine,Screening 50%,Exposed
+686,2.0,0.0438,Exposed in quarantine,Screening 50%,Exposed
+687,3.0,0.1273,Exposed in quarantine,Screening 50%,Exposed
+688,4.0,0.2707,Exposed in quarantine,Screening 50%,Exposed
+689,5.0,0.4709,Exposed in quarantine,Screening 50%,Exposed
+690,6.0,0.3311,Exposed in quarantine,Screening 50%,Exposed
+691,7.0,0.235,Exposed in quarantine,Screening 50%,Exposed
+692,8.0,0.2597,Exposed in quarantine,Screening 50%,Exposed
+693,9.0,0.3241,Exposed in quarantine,Screening 50%,Exposed
+694,10.0,0.3888,Exposed in quarantine,Screening 50%,Exposed
+695,11.0,0.4306,Exposed in quarantine,Screening 50%,Exposed
+696,12.0,0.4584,Exposed in quarantine,Screening 50%,Exposed
+697,13.0,0.3243,Exposed in quarantine,Screening 50%,Exposed
+698,14.0,0.235,Exposed in quarantine,Screening 50%,Exposed
+699,15.0,0.1986,Exposed in quarantine,Screening 50%,Exposed
+700,16.0,0.1932,Exposed in quarantine,Screening 50%,Exposed
+701,17.0,0.1932,Exposed in quarantine,Screening 50%,Exposed
+702,18.0,0.2002,Exposed in quarantine,Screening 50%,Exposed
+703,19.0,0.2144,Exposed in quarantine,Screening 50%,Exposed
+704,20.0,0.1495,Exposed in quarantine,Screening 50%,Exposed
+705,21.0,0.1045,Exposed in quarantine,Screening 50%,Exposed
+706,22.0,0.0911,Exposed in quarantine,Screening 50%,Exposed
+707,23.0,0.0903,Exposed in quarantine,Screening 50%,Exposed
+708,24.0,0.1063,Exposed in quarantine,Screening 50%,Exposed
+709,25.0,0.1143,Exposed in quarantine,Screening 50%,Exposed
+710,26.0,0.1175,Exposed in quarantine,Screening 50%,Exposed
+711,27.0,0.0835,Exposed in quarantine,Screening 50%,Exposed
+712,28.0,0.0573,Exposed in quarantine,Screening 50%,Exposed
+713,29.0,0.0478,Exposed in quarantine,Screening 50%,Exposed
+714,30.0,0.0506,Exposed in quarantine,Screening 50%,Exposed
+715,31.0,0.0516,Exposed in quarantine,Screening 50%,Exposed
+716,32.0,0.0478,Exposed in quarantine,Screening 50%,Exposed
+717,33.0,0.0567,Exposed in quarantine,Screening 50%,Exposed
+718,34.0,0.0412,Exposed in quarantine,Screening 50%,Exposed
+719,35.0,0.0294,Exposed in quarantine,Screening 50%,Exposed
+720,0.0,0.0,Infected,Screening 50%,Infected
+721,1.0,0.9019,Infected,Screening 50%,Infected
+722,2.0,0.8425,Infected,Screening 50%,Infected
+723,3.0,0.8631,Infected,Screening 50%,Infected
+724,4.0,0.8434,Infected,Screening 50%,Infected
+725,5.0,0.7367,Infected,Screening 50%,Infected
+726,6.0,0.9828,Infected,Screening 50%,Infected
+727,7.0,1.0819,Infected,Screening 50%,Infected
+728,8.0,0.8324,Infected,Screening 50%,Infected
+729,9.0,0.6915,Infected,Screening 50%,Infected
+730,10.0,0.5946,Infected,Screening 50%,Infected
+731,11.0,0.4783,Infected,Screening 50%,Infected
+732,12.0,0.3478,Infected,Screening 50%,Infected
+733,13.0,0.4515,Infected,Screening 50%,Infected
+734,14.0,0.5137,Infected,Screening 50%,Infected
+735,15.0,0.404,Infected,Screening 50%,Infected
+736,16.0,0.3291,Infected,Screening 50%,Infected
+737,17.0,0.2783,Infected,Screening 50%,Infected
+738,18.0,0.231,Infected,Screening 50%,Infected
+739,19.0,0.1706,Infected,Screening 50%,Infected
+740,20.0,0.231,Infected,Screening 50%,Infected
+741,21.0,0.2645,Infected,Screening 50%,Infected
+742,22.0,0.2208,Infected,Screening 50%,Infected
+743,23.0,0.194,Infected,Screening 50%,Infected
+744,24.0,0.1514,Infected,Screening 50%,Infected
+745,25.0,0.1213,Infected,Screening 50%,Infected
+746,26.0,0.0801,Infected,Screening 50%,Infected
+747,27.0,0.1063,Infected,Screening 50%,Infected
+748,28.0,0.1165,Infected,Screening 50%,Infected
+749,29.0,0.0927,Infected,Screening 50%,Infected
+750,30.0,0.0799,Infected,Screening 50%,Infected
+751,31.0,0.0682,Infected,Screening 50%,Infected
+752,32.0,0.0635,Infected,Screening 50%,Infected
+753,33.0,0.0472,Infected,Screening 50%,Infected
+754,34.0,0.0675,Infected,Screening 50%,Infected
+755,35.0,0.0719,Infected,Screening 50%,Infected
+756,0.0,0.0,Infected in quarantine,Screening 50%,Infected
+757,1.0,0.0981,Infected in quarantine,Screening 50%,Infected
+758,2.0,0.2154,Infected in quarantine,Screening 50%,Infected
+759,3.0,0.395,Infected in quarantine,Screening 50%,Infected
+760,4.0,0.646,Infected in quarantine,Screening 50%,Infected
+761,5.0,0.9942,Infected in quarantine,Screening 50%,Infected
+762,6.0,1.0018,Infected in quarantine,Screening 50%,Infected
+763,7.0,0.9638,Infected in quarantine,Screening 50%,Infected
+764,8.0,1.1916,Infected in quarantine,Screening 50%,Infected
+765,9.0,1.3888,Infected in quarantine,Screening 50%,Infected
+766,10.0,1.5644,Infected in quarantine,Screening 50%,Infected
+767,11.0,1.7497,Infected in quarantine,Screening 50%,Infected
+768,12.0,1.8987,Infected in quarantine,Screening 50%,Infected
+769,13.0,1.7802,Infected in quarantine,Screening 50%,Infected
+770,14.0,1.6262,Infected in quarantine,Screening 50%,Infected
+771,15.0,1.5818,Infected in quarantine,Screening 50%,Infected
+772,16.0,1.5219,Infected in quarantine,Screening 50%,Infected
+773,17.0,1.4399,Infected in quarantine,Screening 50%,Infected
+774,18.0,1.3438,Infected in quarantine,Screening 50%,Infected
+775,19.0,1.2454,Infected in quarantine,Screening 50%,Infected
+776,20.0,1.1455,Infected in quarantine,Screening 50%,Infected
+777,21.0,1.0496,Infected in quarantine,Screening 50%,Infected
+778,22.0,0.9299,Infected in quarantine,Screening 50%,Infected
+779,23.0,0.8234,Infected in quarantine,Screening 50%,Infected
+780,24.0,0.7505,Infected in quarantine,Screening 50%,Infected
+781,25.0,0.6803,Infected in quarantine,Screening 50%,Infected
+782,26.0,0.631,Infected in quarantine,Screening 50%,Infected
+783,27.0,0.583,Infected in quarantine,Screening 50%,Infected
+784,28.0,0.5395,Infected in quarantine,Screening 50%,Infected
+785,29.0,0.4727,Infected in quarantine,Screening 50%,Infected
+786,30.0,0.4158,Infected in quarantine,Screening 50%,Infected
+787,31.0,0.3648,Infected in quarantine,Screening 50%,Infected
+788,32.0,0.3195,Infected in quarantine,Screening 50%,Infected
+789,33.0,0.2927,Infected in quarantine,Screening 50%,Infected
+790,34.0,0.2723,Infected in quarantine,Screening 50%,Infected
+791,35.0,0.2434,Infected in quarantine,Screening 50%,Infected
+792,0.0,0.0,Removed,Screening 50%,Removed
+793,1.0,0.0,Removed,Screening 50%,Removed
+794,2.0,0.1173,Removed,Screening 50%,Removed
+795,3.0,0.2174,Removed,Screening 50%,Removed
+796,4.0,0.2921,Removed,Screening 50%,Removed
+797,5.0,0.3389,Removed,Screening 50%,Removed
+798,6.0,0.427,Removed,Screening 50%,Removed
+799,7.0,0.5666,Removed,Screening 50%,Removed
+800,8.0,0.579,Removed,Screening 50%,Removed
+801,9.0,0.5565,Removed,Screening 50%,Removed
+802,10.0,0.5167,Removed,Screening 50%,Removed
+803,11.0,0.4548,Removed,Screening 50%,Removed
+804,12.0,0.39,Removed,Screening 50%,Removed
+805,13.0,0.4302,Removed,Screening 50%,Removed
+806,14.0,0.4795,Removed,Screening 50%,Removed
+807,15.0,0.5652,Removed,Screening 50%,Removed
+808,16.0,0.7047,Removed,Screening 50%,Removed
+809,17.0,0.9682,Removed,Screening 50%,Removed
+810,18.0,1.4194,Removed,Screening 50%,Removed
+811,19.0,2.0923,Removed,Screening 50%,Removed
+812,20.0,2.1091,Removed,Screening 50%,Removed
+813,21.0,2.1351,Removed,Screening 50%,Removed
+814,22.0,2.6526,Removed,Screening 50%,Removed
+815,23.0,3.1806,Removed,Screening 50%,Removed
+816,24.0,3.7011,Removed,Screening 50%,Removed
+817,25.0,4.2418,Removed,Screening 50%,Removed
+818,26.0,4.7571,Removed,Screening 50%,Removed
+819,27.0,4.768,Removed,Screening 50%,Removed
+820,28.0,4.7822,Removed,Screening 50%,Removed
+821,29.0,5.0184,Removed,Screening 50%,Removed
+822,30.0,5.2803,Removed,Screening 50%,Removed
+823,31.0,5.5453,Removed,Screening 50%,Removed
+824,32.0,5.7782,Removed,Screening 50%,Removed
+825,33.0,6.0322,Removed,Screening 50%,Removed
+826,34.0,6.0366,Removed,Screening 50%,Removed
+827,35.0,6.046,Removed,Screening 50%,Removed
+828,0.0,0.0,Removed in quarantine,Screening 50%,Removed
+829,1.0,0.0,Removed in quarantine,Screening 50%,Removed
+830,2.0,0.0168,Removed in quarantine,Screening 50%,Removed
+831,3.0,0.0587,Removed in quarantine,Screening 50%,Removed
+832,4.0,0.1456,Removed in quarantine,Screening 50%,Removed
+833,5.0,0.3059,Removed in quarantine,Screening 50%,Removed
+834,6.0,0.438,Removed in quarantine,Screening 50%,Removed
+835,7.0,0.5722,Removed in quarantine,Screening 50%,Removed
+836,8.0,0.8384,Removed in quarantine,Screening 50%,Removed
+837,9.0,1.1179,Removed in quarantine,Screening 50%,Removed
+838,10.0,1.4274,Removed in quarantine,Screening 50%,Removed
+839,11.0,1.7706,Removed in quarantine,Screening 50%,Removed
+840,12.0,2.1321,Removed in quarantine,Screening 50%,Removed
+841,13.0,2.3848,Removed in quarantine,Screening 50%,Removed
+842,14.0,2.628,Removed in quarantine,Screening 50%,Removed
+843,15.0,2.8464,Removed in quarantine,Screening 50%,Removed
+844,16.0,3.0076,Removed in quarantine,Screening 50%,Removed
+845,17.0,3.0591,Removed in quarantine,Screening 50%,Removed
+846,18.0,2.9073,Removed in quarantine,Screening 50%,Removed
+847,19.0,2.5537,Removed in quarantine,Screening 50%,Removed
+848,20.0,2.7185,Removed in quarantine,Screening 50%,Removed
+849,21.0,2.8595,Removed in quarantine,Screening 50%,Removed
+850,22.0,2.5828,Removed in quarantine,Screening 50%,Removed
+851,23.0,2.2747,Removed in quarantine,Screening 50%,Removed
+852,24.0,1.9662,Removed in quarantine,Screening 50%,Removed
+853,25.0,1.6176,Removed in quarantine,Screening 50%,Removed
+854,26.0,1.2801,Removed in quarantine,Screening 50%,Removed
+855,27.0,1.3622,Removed in quarantine,Screening 50%,Removed
+856,28.0,1.4318,Removed in quarantine,Screening 50%,Removed
+857,29.0,1.3211,Removed in quarantine,Screening 50%,Removed
+858,30.0,1.1674,Removed in quarantine,Screening 50%,Removed
+859,31.0,1.0092,Removed in quarantine,Screening 50%,Removed
+860,32.0,0.8687,Removed in quarantine,Screening 50%,Removed
+861,33.0,0.6997,Removed in quarantine,Screening 50%,Removed
+862,34.0,0.7355,Removed in quarantine,Screening 50%,Removed
+863,35.0,0.7762,Removed in quarantine,Screening 50%,Removed
+864,0.0,240.0,Susceptible,Screening 100%,Susceptible
+865,1.0,234.5746,Susceptible,Screening 100%,Susceptible
+866,2.0,230.7417,Susceptible,Screening 100%,Susceptible
+867,3.0,227.3323,Susceptible,Screening 100%,Susceptible
+868,4.0,224.2689,Susceptible,Screening 100%,Susceptible
+869,5.0,221.4142,Susceptible,Screening 100%,Susceptible
+870,6.0,221.4142,Susceptible,Screening 100%,Susceptible
+871,7.0,221.4142,Susceptible,Screening 100%,Susceptible
+872,8.0,221.3159,Susceptible,Screening 100%,Susceptible
+873,9.0,220.9986,Susceptible,Screening 100%,Susceptible
+874,10.0,220.5299,Susceptible,Screening 100%,Susceptible
+875,11.0,219.9553,Susceptible,Screening 100%,Susceptible
+876,12.0,219.3281,Susceptible,Screening 100%,Susceptible
+877,13.0,219.3281,Susceptible,Screening 100%,Susceptible
+878,14.0,219.3281,Susceptible,Screening 100%,Susceptible
+879,15.0,223.1007,Susceptible,Screening 100%,Susceptible
+880,16.0,226.3506,Susceptible,Screening 100%,Susceptible
+881,17.0,229.2184,Susceptible,Screening 100%,Susceptible
+882,18.0,231.8623,Susceptible,Screening 100%,Susceptible
+883,19.0,234.4789,Susceptible,Screening 100%,Susceptible
+884,20.0,234.4789,Susceptible,Screening 100%,Susceptible
+885,21.0,234.4789,Susceptible,Screening 100%,Susceptible
+886,22.0,234.4719,Susceptible,Screening 100%,Susceptible
+887,23.0,234.6535,Susceptible,Screening 100%,Susceptible
+888,24.0,235.0168,Susceptible,Screening 100%,Susceptible
+889,25.0,235.4889,Susceptible,Screening 100%,Susceptible
+890,26.0,236.0402,Susceptible,Screening 100%,Susceptible
+891,27.0,236.0402,Susceptible,Screening 100%,Susceptible
+892,28.0,236.0402,Susceptible,Screening 100%,Susceptible
+893,29.0,236.0344,Susceptible,Screening 100%,Susceptible
+894,30.0,236.0823,Susceptible,Screening 100%,Susceptible
+895,31.0,236.1728,Susceptible,Screening 100%,Susceptible
+896,32.0,236.3031,Susceptible,Screening 100%,Susceptible
+897,33.0,236.4695,Susceptible,Screening 100%,Susceptible
+898,34.0,236.4695,Susceptible,Screening 100%,Susceptible
+899,35.0,236.4695,Susceptible,Screening 100%,Susceptible
+900,0.0,0.0,Susceptible in quarantine,Screening 100%,Susceptible
+901,1.0,3.8,Susceptible in quarantine,Screening 100%,Susceptible
+902,2.0,7.1347,Susceptible in quarantine,Screening 100%,Susceptible
+903,3.0,10.148,Susceptible in quarantine,Screening 100%,Susceptible
+904,4.0,12.9776,Susceptible in quarantine,Screening 100%,Susceptible
+905,5.0,15.7966,Susceptible in quarantine,Screening 100%,Susceptible
+906,6.0,15.7966,Susceptible in quarantine,Screening 100%,Susceptible
+907,7.0,15.7966,Susceptible in quarantine,Screening 100%,Susceptible
+908,8.0,15.7966,Susceptible in quarantine,Screening 100%,Susceptible
+909,9.0,16.0174,Susceptible in quarantine,Screening 100%,Susceptible
+910,10.0,16.4164,Susceptible in quarantine,Screening 100%,Susceptible
+911,11.0,16.944,Susceptible in quarantine,Screening 100%,Susceptible
+912,12.0,17.556,Susceptible in quarantine,Screening 100%,Susceptible
+913,13.0,17.556,Susceptible in quarantine,Screening 100%,Susceptible
+914,14.0,17.556,Susceptible in quarantine,Screening 100%,Susceptible
+915,15.0,13.756,Susceptible in quarantine,Screening 100%,Susceptible
+916,16.0,10.4777,Susceptible in quarantine,Screening 100%,Susceptible
+917,17.0,7.5874,Susceptible in quarantine,Screening 100%,Susceptible
+918,18.0,4.9285,Susceptible in quarantine,Screening 100%,Susceptible
+919,19.0,2.3061,Susceptible in quarantine,Screening 100%,Susceptible
+920,20.0,2.3061,Susceptible in quarantine,Screening 100%,Susceptible
+921,21.0,2.3061,Susceptible in quarantine,Screening 100%,Susceptible
+922,22.0,2.3061,Susceptible in quarantine,Screening 100%,Susceptible
+923,23.0,2.1163,Susceptible in quarantine,Screening 100%,Susceptible
+924,24.0,1.7445,Susceptible in quarantine,Screening 100%,Susceptible
+925,25.0,1.2691,Susceptible in quarantine,Screening 100%,Susceptible
+926,26.0,0.7161,Susceptible in quarantine,Screening 100%,Susceptible
+927,27.0,0.7161,Susceptible in quarantine,Screening 100%,Susceptible
+928,28.0,0.7161,Susceptible in quarantine,Screening 100%,Susceptible
+929,29.0,0.7161,Susceptible in quarantine,Screening 100%,Susceptible
+930,30.0,0.6621,Susceptible in quarantine,Screening 100%,Susceptible
+931,31.0,0.5678,Susceptible in quarantine,Screening 100%,Susceptible
+932,32.0,0.4338,Susceptible in quarantine,Screening 100%,Susceptible
+933,33.0,0.2653,Susceptible in quarantine,Screening 100%,Susceptible
+934,34.0,0.2653,Susceptible in quarantine,Screening 100%,Susceptible
+935,35.0,0.2653,Susceptible in quarantine,Screening 100%,Susceptible
+936,0.0,0.0,Exposed,Screening 100%,Exposed
+937,1.0,0.6254,Exposed,Screening 100%,Exposed
+938,2.0,0.8583,Exposed,Screening 100%,Exposed
+939,3.0,0.8505,Exposed,Screening 100%,Exposed
+940,4.0,0.6194,Exposed,Screening 100%,Exposed
+941,5.0,0.169,Exposed,Screening 100%,Exposed
+942,6.0,0.1129,Exposed,Screening 100%,Exposed
+943,7.0,0.0751,Exposed,Screening 100%,Exposed
+944,8.0,0.1559,Exposed,Screening 100%,Exposed
+945,9.0,0.1906,Exposed,Screening 100%,Exposed
+946,10.0,0.1782,Exposed,Screening 100%,Exposed
+947,11.0,0.1239,Exposed,Screening 100%,Exposed
+948,12.0,0.0481,Exposed,Screening 100%,Exposed
+949,13.0,0.0358,Exposed,Screening 100%,Exposed
+950,14.0,0.0272,Exposed,Screening 100%,Exposed
+951,15.0,0.0477,Exposed,Screening 100%,Exposed
+952,16.0,0.0581,Exposed,Screening 100%,Exposed
+953,17.0,0.0566,Exposed,Screening 100%,Exposed
+954,18.0,0.0384,Exposed,Screening 100%,Exposed
+955,19.0,0.0172,Exposed,Screening 100%,Exposed
+956,20.0,0.0112,Exposed,Screening 100%,Exposed
+957,21.0,0.0084,Exposed,Screening 100%,Exposed
+958,22.0,0.0124,Exposed,Screening 100%,Exposed
+959,23.0,0.017,Exposed,Screening 100%,Exposed
+960,24.0,0.0174,Exposed,Screening 100%,Exposed
+961,25.0,0.0128,Exposed,Screening 100%,Exposed
+962,26.0,0.0068,Exposed,Screening 100%,Exposed
+963,27.0,0.0052,Exposed,Screening 100%,Exposed
+964,28.0,0.003,Exposed,Screening 100%,Exposed
+965,29.0,0.0082,Exposed,Screening 100%,Exposed
+966,30.0,0.0128,Exposed,Screening 100%,Exposed
+967,31.0,0.0128,Exposed,Screening 100%,Exposed
+968,32.0,0.0096,Exposed,Screening 100%,Exposed
+969,33.0,0.0048,Exposed,Screening 100%,Exposed
+970,34.0,0.0028,Exposed,Screening 100%,Exposed
+971,35.0,0.0024,Exposed,Screening 100%,Exposed
+972,0.0,0.0,Exposed in quarantine,Screening 100%,Exposed
+973,1.0,0.0,Exposed in quarantine,Screening 100%,Exposed
+974,2.0,0.0947,Exposed in quarantine,Screening 100%,Exposed
+975,3.0,0.2288,Exposed in quarantine,Screening 100%,Exposed
+976,4.0,0.4042,Exposed in quarantine,Screening 100%,Exposed
+977,5.0,0.6102,Exposed in quarantine,Screening 100%,Exposed
+978,6.0,0.4398,Exposed in quarantine,Screening 100%,Exposed
+979,7.0,0.3179,Exposed in quarantine,Screening 100%,Exposed
+980,8.0,0.2298,Exposed in quarantine,Screening 100%,Exposed
+981,9.0,0.1782,Exposed in quarantine,Screening 100%,Exposed
+982,10.0,0.1582,Exposed in quarantine,Screening 100%,Exposed
+983,11.0,0.1718,Exposed in quarantine,Screening 100%,Exposed
+984,12.0,0.166,Exposed in quarantine,Screening 100%,Exposed
+985,13.0,0.1083,Exposed in quarantine,Screening 100%,Exposed
+986,14.0,0.0741,Exposed in quarantine,Screening 100%,Exposed
+987,15.0,0.0514,Exposed in quarantine,Screening 100%,Exposed
+988,16.0,0.0412,Exposed in quarantine,Screening 100%,Exposed
+989,17.0,0.0336,Exposed in quarantine,Screening 100%,Exposed
+990,18.0,0.038,Exposed in quarantine,Screening 100%,Exposed
+991,19.0,0.0448,Exposed in quarantine,Screening 100%,Exposed
+992,20.0,0.03,Exposed in quarantine,Screening 100%,Exposed
+993,21.0,0.0214,Exposed in quarantine,Screening 100%,Exposed
+994,22.0,0.0134,Exposed in quarantine,Screening 100%,Exposed
+995,23.0,0.011,Exposed in quarantine,Screening 100%,Exposed
+996,24.0,0.0084,Exposed in quarantine,Screening 100%,Exposed
+997,25.0,0.0092,Exposed in quarantine,Screening 100%,Exposed
+998,26.0,0.0102,Exposed in quarantine,Screening 100%,Exposed
+999,27.0,0.0068,Exposed in quarantine,Screening 100%,Exposed
+1000,28.0,0.0052,Exposed in quarantine,Screening 100%,Exposed
+1001,29.0,0.003,Exposed in quarantine,Screening 100%,Exposed
+1002,30.0,0.0024,Exposed in quarantine,Screening 100%,Exposed
+1003,31.0,0.0026,Exposed in quarantine,Screening 100%,Exposed
+1004,32.0,0.0054,Exposed in quarantine,Screening 100%,Exposed
+1005,33.0,0.008,Exposed in quarantine,Screening 100%,Exposed
+1006,34.0,0.0052,Exposed in quarantine,Screening 100%,Exposed
+1007,35.0,0.004,Exposed in quarantine,Screening 100%,Exposed
+1008,0.0,0.0,Infected,Screening 100%,Infected
+1009,1.0,0.8,Infected,Screening 100%,Infected
+1010,2.0,0.6517,Infected,Screening 100%,Infected
+1011,3.0,0.5379,Infected,Screening 100%,Infected
+1012,4.0,0.3522,Infected,Screening 100%,Infected
+1013,5.0,0.0475,Infected,Screening 100%,Infected
+1014,6.0,0.0993,Infected,Screening 100%,Infected
+1015,7.0,0.1255,Infected,Screening 100%,Infected
+1016,8.0,0.1217,Infected,Screening 100%,Infected
+1017,9.0,0.1253,Infected,Screening 100%,Infected
+1018,10.0,0.1095,Infected,Screening 100%,Infected
+1019,11.0,0.0711,Infected,Screening 100%,Infected
+1020,12.0,0.0138,Infected,Screening 100%,Infected
+1021,13.0,0.024,Infected,Screening 100%,Infected
+1022,14.0,0.0302,Infected,Screening 100%,Infected
+1023,15.0,0.0344,Infected,Screening 100%,Infected
+1024,16.0,0.0365,Infected,Screening 100%,Infected
+1025,17.0,0.034,Infected,Screening 100%,Infected
+1026,18.0,0.0224,Infected,Screening 100%,Infected
+1027,19.0,0.0028,Infected,Screening 100%,Infected
+1028,20.0,0.0086,Infected,Screening 100%,Infected
+1029,21.0,0.0096,Infected,Screening 100%,Infected
+1030,22.0,0.01,Infected,Screening 100%,Infected
+1031,23.0,0.009,Infected,Screening 100%,Infected
+1032,24.0,0.0098,Infected,Screening 100%,Infected
+1033,25.0,0.0054,Infected,Screening 100%,Infected
+1034,26.0,0.0016,Infected,Screening 100%,Infected
+1035,27.0,0.0028,Infected,Screening 100%,Infected
+1036,28.0,0.0048,Infected,Screening 100%,Infected
+1037,29.0,0.0054,Infected,Screening 100%,Infected
+1038,30.0,0.0056,Infected,Screening 100%,Infected
+1039,31.0,0.0054,Infected,Screening 100%,Infected
+1040,32.0,0.004,Infected,Screening 100%,Infected
+1041,33.0,0.001,Infected,Screening 100%,Infected
+1042,34.0,0.0028,Infected,Screening 100%,Infected
+1043,35.0,0.0026,Infected,Screening 100%,Infected
+1044,0.0,0.0,Infected in quarantine,Screening 100%,Infected
+1045,1.0,0.2,Infected in quarantine,Screening 100%,Infected
+1046,2.0,0.3918,Infected in quarantine,Screening 100%,Infected
+1047,3.0,0.6344,Infected in quarantine,Screening 100%,Infected
+1048,4.0,0.9339,Infected in quarantine,Screening 100%,Infected
+1049,5.0,1.36,Infected in quarantine,Screening 100%,Infected
+1050,6.0,1.3596,Infected in quarantine,Screening 100%,Infected
+1051,7.0,1.2901,Infected in quarantine,Screening 100%,Infected
+1052,8.0,1.1936,Infected in quarantine,Screening 100%,Infected
+1053,9.0,1.1381,Infected in quarantine,Screening 100%,Infected
+1054,10.0,1.0557,Infected in quarantine,Screening 100%,Infected
+1055,11.0,1.0092,Infected in quarantine,Screening 100%,Infected
+1056,12.0,1.0314,Infected in quarantine,Screening 100%,Infected
+1057,13.0,0.9365,Infected in quarantine,Screening 100%,Infected
+1058,14.0,0.8546,Infected in quarantine,Screening 100%,Infected
+1059,15.0,0.7377,Infected in quarantine,Screening 100%,Infected
+1060,16.0,0.6176,Infected in quarantine,Screening 100%,Infected
+1061,17.0,0.4997,Infected in quarantine,Screening 100%,Infected
+1062,18.0,0.3688,Infected in quarantine,Screening 100%,Infected
+1063,19.0,0.228,Infected in quarantine,Screening 100%,Infected
+1064,20.0,0.2166,Infected in quarantine,Screening 100%,Infected
+1065,21.0,0.2002,Infected in quarantine,Screening 100%,Infected
+1066,22.0,0.1802,Infected in quarantine,Screening 100%,Infected
+1067,23.0,0.1534,Infected in quarantine,Screening 100%,Infected
+1068,24.0,0.1265,Infected in quarantine,Screening 100%,Infected
+1069,25.0,0.0971,Infected in quarantine,Screening 100%,Infected
+1070,26.0,0.0687,Infected in quarantine,Screening 100%,Infected
+1071,27.0,0.0629,Infected in quarantine,Screening 100%,Infected
+1072,28.0,0.0571,Infected in quarantine,Screening 100%,Infected
+1073,29.0,0.0498,Infected in quarantine,Screening 100%,Infected
+1074,30.0,0.0434,Infected in quarantine,Screening 100%,Infected
+1075,31.0,0.0366,Infected in quarantine,Screening 100%,Infected
+1076,32.0,0.03,Infected in quarantine,Screening 100%,Infected
+1077,33.0,0.0236,Infected in quarantine,Screening 100%,Infected
+1078,34.0,0.0232,Infected in quarantine,Screening 100%,Infected
+1079,35.0,0.0186,Infected in quarantine,Screening 100%,Infected
+1080,0.0,0.0,Removed,Screening 100%,Removed
+1081,1.0,0.0,Removed,Screening 100%,Removed
+1082,2.0,0.0967,Removed,Screening 100%,Removed
+1083,3.0,0.1642,Removed,Screening 100%,Removed
+1084,4.0,0.193,Removed,Screening 100%,Removed
+1085,5.0,0.1471,Removed,Screening 100%,Removed
+1086,6.0,0.1513,Removed,Screening 100%,Removed
+1087,7.0,0.1629,Removed,Screening 100%,Removed
+1088,8.0,0.1842,Removed,Screening 100%,Removed
+1089,9.0,0.187,Removed,Screening 100%,Removed
+1090,10.0,0.1794,Removed,Screening 100%,Removed
+1091,11.0,0.154,Removed,Screening 100%,Removed
+1092,12.0,0.1295,Removed,Screening 100%,Removed
+1093,13.0,0.1315,Removed,Screening 100%,Removed
+1094,14.0,0.1339,Removed,Screening 100%,Removed
+1095,15.0,0.3367,Removed,Screening 100%,Removed
+1096,16.0,0.6541,Removed,Screening 100%,Removed
+1097,17.0,1.1013,Removed,Screening 100%,Removed
+1098,18.0,1.7145,Removed,Screening 100%,Removed
+1099,19.0,2.5422,Removed,Screening 100%,Removed
+1100,20.0,2.5424,Removed,Screening 100%,Removed
+1101,21.0,2.5442,Removed,Screening 100%,Removed
+1102,22.0,2.5468,Removed,Screening 100%,Removed
+1103,23.0,2.6018,Removed,Screening 100%,Removed
+1104,24.0,2.7057,Removed,Screening 100%,Removed
+1105,25.0,2.8673,Removed,Screening 100%,Removed
+1106,26.0,3.0344,Removed,Screening 100%,Removed
+1107,27.0,3.0348,Removed,Screening 100%,Removed
+1108,28.0,3.035,Removed,Screening 100%,Removed
+1109,29.0,3.035,Removed,Screening 100%,Removed
+1110,30.0,3.0504,Removed,Screening 100%,Removed
+1111,31.0,3.0763,Removed,Screening 100%,Removed
+1112,32.0,3.1267,Removed,Screening 100%,Removed
+1113,33.0,3.1804,Removed,Screening 100%,Removed
+1114,34.0,3.1806,Removed,Screening 100%,Removed
+1115,35.0,3.1812,Removed,Screening 100%,Removed
+1116,0.0,0.0,Removed in quarantine,Screening 100%,Removed
+1117,1.0,0.0,Removed in quarantine,Screening 100%,Removed
+1118,2.0,0.0304,Removed in quarantine,Screening 100%,Removed
+1119,3.0,0.1039,Removed in quarantine,Screening 100%,Removed
+1120,4.0,0.2509,Removed in quarantine,Screening 100%,Removed
+1121,5.0,0.4555,Removed in quarantine,Screening 100%,Removed
+1122,6.0,0.6262,Removed in quarantine,Screening 100%,Removed
+1123,7.0,0.8176,Removed in quarantine,Screening 100%,Removed
+1124,8.0,1.0022,Removed in quarantine,Screening 100%,Removed
+1125,9.0,1.1648,Removed in quarantine,Screening 100%,Removed
+1126,10.0,1.3728,Removed in quarantine,Screening 100%,Removed
+1127,11.0,1.5708,Removed in quarantine,Screening 100%,Removed
+1128,12.0,1.7271,Removed in quarantine,Screening 100%,Removed
+1129,13.0,1.8797,Removed in quarantine,Screening 100%,Removed
+1130,14.0,1.9958,Removed in quarantine,Screening 100%,Removed
+1131,15.0,1.9354,Removed in quarantine,Screening 100%,Removed
+1132,16.0,1.7644,Removed in quarantine,Screening 100%,Removed
+1133,17.0,1.4689,Removed in quarantine,Screening 100%,Removed
+1134,18.0,1.027,Removed in quarantine,Screening 100%,Removed
+1135,19.0,0.38,Removed in quarantine,Screening 100%,Removed
+1136,20.0,0.4062,Removed in quarantine,Screening 100%,Removed
+1137,21.0,0.4312,Removed in quarantine,Screening 100%,Removed
+1138,22.0,0.4593,Removed in quarantine,Screening 100%,Removed
+1139,23.0,0.438,Removed in quarantine,Screening 100%,Removed
+1140,24.0,0.3708,Removed in quarantine,Screening 100%,Removed
+1141,25.0,0.2503,Removed in quarantine,Screening 100%,Removed
+1142,26.0,0.1219,Removed in quarantine,Screening 100%,Removed
+1143,27.0,0.1311,Removed in quarantine,Screening 100%,Removed
+1144,28.0,0.1385,Removed in quarantine,Screening 100%,Removed
+1145,29.0,0.148,Removed in quarantine,Screening 100%,Removed
+1146,30.0,0.141,Removed in quarantine,Screening 100%,Removed
+1147,31.0,0.1257,Removed in quarantine,Screening 100%,Removed
+1148,32.0,0.0873,Removed in quarantine,Screening 100%,Removed
+1149,33.0,0.0475,Removed in quarantine,Screening 100%,Removed
+1150,34.0,0.0507,Removed in quarantine,Screening 100%,Removed
+1151,35.0,0.0565,Removed in quarantine,Screening 100%,Removed

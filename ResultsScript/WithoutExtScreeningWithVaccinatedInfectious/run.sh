@@ -1,0 +1,16 @@
+#!/bin/bash
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious A1 Monday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious A1 Tuesday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious A1 Wednesday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious A1 Thursday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious A1 Friday WithoutScreening Screening25 Screening50 Screening100
+
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D1 Monday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D1 Tuesday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D1 Wednesday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D1 Thursday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D1 Friday WithoutScreening Screening25 Screening50 Screening100
+
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D2 MondayWednesday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D2 TuesdayThursday WithoutScreening Screening25 Screening50 Screening100
+./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious D2 WednesdayFriday WithoutScreening Screening25 Screening50 Screening100

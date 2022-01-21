@@ -1,0 +1,4 @@
+./start.sh ConfigurationFileName NumberOfThreads
+
+Example:
+./start.sh ExampleOfConfigurationFile/Example1.conf 24

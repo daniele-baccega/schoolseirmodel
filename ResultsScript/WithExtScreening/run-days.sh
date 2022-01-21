@@ -1,0 +1,8 @@
+#!/bin/bash
+./run-ggplot2-days.sh OneInitialInfected/WithExtScreening/WithCountermeasures/WithoutVaccinatedInfectious A1 WithoutScreening Screening25 Screening50 Screening100
+
+./run-ggplot2-days.sh OneInitialInfected/WithExtScreening/WithCountermeasures/WithoutVaccinatedInfectious D1 WithoutScreening Screening25 Screening50 Screening100
+
+./run-ggplot2-days.sh OneInitialInfected/WithExtScreening/WithCountermeasures/WithoutVaccinatedInfectious D2 WithoutScreening Screening25 Screening50 Screening100
+
+python3 run-ggplot2-positive-comparison.py OneInitialInfected/WithExtScreening/WithCountermeasures/WithoutVaccinatedInfectious

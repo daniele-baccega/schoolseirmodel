@@ -1,0 +1,401 @@
+,day,students,dad_type,dl_type,type,type_pretty
+0,1.0,1.0,,Not distance learning,Old policy,Old policy
+1,2.0,1.9998333333333334,,Not distance learning,Old policy,Old policy
+2,3.0,2.9949950000000003,,Not distance learning,Old policy,Old policy
+3,4.0,3.9898229166666668,,Not distance learning,Old policy,Old policy
+4,5.0,4.984150416666666,,Not distance learning,Old policy,Old policy
+5,6.0,5.977644166666666,,Not distance learning,Old policy,Old policy
+6,7.0,6.970470416666666,,Not distance learning,Old policy,Old policy
+7,8.0,7.9618787499999994,,Not distance learning,Old policy,Old policy
+8,9.0,8.9524525,,Not distance learning,Old policy,Old policy
+9,10.0,9.901067916666667,,Not distance learning,Old policy,Old policy
+10,11.0,10.847847916666666,,Not distance learning,Old policy,Old policy
+11,12.0,11.793209999999998,,Not distance learning,Old policy,Old policy
+12,13.0,12.735735833333333,,Not distance learning,Old policy,Old policy
+13,14.0,13.676426666666666,,Not distance learning,Old policy,Old policy
+14,15.0,14.614030833333334,,Not distance learning,Old policy,Old policy
+15,16.0,15.547797916666667,,Not distance learning,Old policy,Old policy
+16,17.0,16.414497916666665,,Not distance learning,Old policy,Old policy
+17,18.0,17.279862916666666,,Not distance learning,Old policy,Old policy
+18,19.0,18.142725416666668,,Not distance learning,Old policy,Old policy
+19,20.0,19.003502916666665,,Not distance learning,Old policy,Old policy
+20,21.0,19.860860416666664,,Not distance learning,Old policy,Old policy
+21,22.0,20.71446375,,Not distance learning,Old policy,Old policy
+22,23.0,21.56473041666667,,Not distance learning,Old policy,Old policy
+23,24.0,22.37262125,,Not distance learning,Old policy,Old policy
+24,25.0,23.179928333333336,,Not distance learning,Old policy,Old policy
+25,26.0,23.985817500000003,,Not distance learning,Old policy,Old policy
+26,27.0,24.790705833333337,,Not distance learning,Old policy,Old policy
+27,28.0,25.59342541666667,,Not distance learning,Old policy,Old policy
+28,29.0,26.395227083333335,,Not distance learning,Old policy,Old policy
+29,30.0,27.196195,,Not distance learning,Old policy,Old policy
+30,31.0,27.984733333333335,,Not distance learning,Old policy,Old policy
+31,32.0,28.773272083333335,,Not distance learning,Old policy,Old policy
+32,33.0,29.561226666666666,,Not distance learning,Old policy,Old policy
+33,34.0,30.3488475,,Not distance learning,Old policy,Old policy
+34,35.0,31.136635000000005,,Not distance learning,Old policy,Old policy
+35,36.0,31.926591666666674,,Not distance learning,Old policy,Old policy
+36,37.0,32.717215833333334,,Not distance learning,Old policy,Old policy
+37,38.0,33.51376208333333,,Not distance learning,Old policy,Old policy
+38,39.0,34.310892083333336,,Not distance learning,Old policy,Old policy
+39,40.0,35.10802291666667,,Not distance learning,Old policy,Old policy
+40,41.0,35.90615416666667,,Not distance learning,Old policy,Old policy
+41,42.0,36.70470291666667,,Not distance learning,Old policy,Old policy
+42,43.0,37.503418333333336,,Not distance learning,Old policy,Old policy
+43,44.0,38.30380208333334,,Not distance learning,Old policy,Old policy
+44,45.0,39.11644833333333,,Not distance learning,Old policy,Old policy
+45,46.0,39.92892708333333,,Not distance learning,Old policy,Old policy
+46,47.0,40.74157333333333,,Not distance learning,Old policy,Old policy
+47,48.0,41.555053333333326,,Not distance learning,Old policy,Old policy
+48,49.0,42.369367916666654,,Not distance learning,Old policy,Old policy
+49,50.0,43.183682916666655,,Not distance learning,Old policy,Old policy
+50,51.0,43.99833083333332,,Not distance learning,Old policy,Old policy
+51,52.0,44.823489166666654,,Not distance learning,Old policy,Old policy
+52,53.0,45.647980416666655,,Not distance learning,Old policy,Old policy
+53,54.0,46.47372291666666,,Not distance learning,Old policy,Old policy
+54,55.0,47.299632499999994,,Not distance learning,Old policy,Old policy
+55,56.0,48.12529125,,Not distance learning,Old policy,Old policy
+56,57.0,48.952368333333325,,Not distance learning,Old policy,Old policy
+57,58.0,49.77944541666666,,Not distance learning,Old policy,Old policy
+58,59.0,50.61277833333333,,Not distance learning,Old policy,Old policy
+59,60.0,51.446528333333326,,Not distance learning,Old policy,Old policy
+60,61.0,52.28211374999999,,Not distance learning,Old policy,Old policy
+61,62.0,53.117365833333324,,Not distance learning,Old policy,Old policy
+62,63.0,53.952784999999984,,Not distance learning,Old policy,Old policy
+63,64.0,54.78828749999999,,Not distance learning,Old policy,Old policy
+64,65.0,55.62353958333332,,Not distance learning,Old policy,Old policy
+65,66.0,56.466883333333314,,Not distance learning,Old policy,Old policy
+66,67.0,57.310727499999985,,Not distance learning,Old policy,Old policy
+67,68.0,58.15423749999999,,Not distance learning,Old policy,Old policy
+68,69.0,58.99791458333332,,Not distance learning,Old policy,Old policy
+69,70.0,59.842675833333324,,Not distance learning,Old policy,Old policy
+70,71.0,60.68752083333332,,Not distance learning,Old policy,Old policy
+71,72.0,61.53228249999999,,Not distance learning,Old policy,Old policy
+72,73.0,62.38338333333332,,Not distance learning,Old policy,Old policy
+73,74.0,63.23456791666665,,Not distance learning,Old policy,Old policy
+74,75.0,64.08500166666666,,Not distance learning,Old policy,Old policy
+75,76.0,64.93668708333333,,Not distance learning,Old policy,Old policy
+76,77.0,65.78912291666666,,Not distance learning,Old policy,Old policy
+77,78.0,66.64172541666666,,Not distance learning,Old policy,Old policy
+78,79.0,67.49582958333332,,Not distance learning,Old policy,Old policy
+79,80.0,68.35602291666666,,Not distance learning,Old policy,Old policy
+80,81.0,69.2169675,,Not distance learning,Old policy,Old policy
+81,82.0,70.07849583333333,,Not distance learning,Old policy,Old policy
+82,83.0,70.93994041666666,,Not distance learning,Old policy,Old policy
+83,84.0,71.80196916666667,,Not distance learning,Old policy,Old policy
+84,85.0,72.66408125000001,,Not distance learning,Old policy,Old policy
+85,86.0,73.52661041666668,,Not distance learning,Old policy,Old policy
+86,87.0,74.39706458333335,,Not distance learning,Old policy,Old policy
+87,88.0,75.26768541666668,,Not distance learning,Old policy,Old policy
+88,89.0,76.13939083333335,,Not distance learning,Old policy,Old policy
+89,90.0,77.01092875,,Not distance learning,Old policy,Old policy
+90,91.0,77.88271708333335,,Not distance learning,Old policy,Old policy
+91,92.0,78.75492291666667,,Not distance learning,Old policy,Old policy
+92,93.0,79.62662791666668,,Not distance learning,Old policy,Old policy
+93,94.0,80.50267083333334,,Not distance learning,Old policy,Old policy
+94,95.0,81.37804583333335,,Not distance learning,Old policy,Old policy
+95,96.0,82.25308708333336,,Not distance learning,Old policy,Old policy
+96,97.0,83.12904625000003,,Not distance learning,Old policy,Old policy
+97,98.0,84.00400500000002,,Not distance learning,Old policy,Old policy
+98,99.0,84.87929666666669,,Not distance learning,Old policy,Old policy
+99,100.0,85.75483916666668,,Not distance learning,Old policy,Old policy
+100,1.0,0.0,,Distance learning,Old policy,Old policy
+101,2.0,0.00016666666666666666,,Distance learning,Old policy,Old policy
+102,3.0,0.005004999999999998,,Distance learning,Old policy,Old policy
+103,4.0,0.010176666666666664,,Distance learning,Old policy,Old policy
+104,5.0,0.01584916666666666,,Distance learning,Old policy,Old policy
+105,6.0,0.022355416666666662,,Distance learning,Old policy,Old policy
+106,7.0,0.029528749999999993,,Distance learning,Old policy,Old policy
+107,8.0,0.03812041666666666,,Distance learning,Old policy,Old policy
+108,9.0,0.04754624999999999,,Distance learning,Old policy,Old policy
+109,10.0,0.09893124999999998,,Distance learning,Old policy,Old policy
+110,11.0,0.15215083333333332,,Distance learning,Old policy,Old policy
+111,12.0,0.20678875,,Distance learning,Old policy,Old policy
+112,13.0,0.2642625,,Distance learning,Old policy,Old policy
+113,14.0,0.3235725,,Distance learning,Old policy,Old policy
+114,15.0,0.3859683333333333,,Distance learning,Old policy,Old policy
+115,16.0,0.4522016666666666,,Distance learning,Old policy,Old policy
+116,17.0,0.5855025,,Distance learning,Old policy,Old policy
+117,18.0,0.7201366666666666,,Distance learning,Old policy,Old policy
+118,19.0,0.8572733333333333,,Distance learning,Old policy,Old policy
+119,20.0,0.9964954166666666,,Distance learning,Old policy,Old policy
+120,21.0,1.13913875,,Distance learning,Old policy,Old policy
+121,22.0,1.2855345833333334,,Distance learning,Old policy,Old policy
+122,23.0,1.4352687499999999,,Distance learning,Old policy,Old policy
+123,24.0,1.6273770833333332,,Distance learning,Old policy,Old policy
+124,25.0,1.8200695833333331,,Distance learning,Old policy,Old policy
+125,26.0,2.0141804166666666,,Distance learning,Old policy,Old policy
+126,27.0,2.2092916666666667,,Distance learning,Old policy,Old policy
+127,28.0,2.4065720833333333,,Distance learning,Old policy,Old policy
+128,29.0,2.6047704166666668,,Distance learning,Old policy,Old policy
+129,30.0,2.8038020833333333,,Distance learning,Old policy,Old policy
+130,31.0,3.015263333333334,,Distance learning,Old policy,Old policy
+131,32.0,3.226724583333334,,Distance learning,Old policy,Old policy
+132,33.0,3.438769583333334,,Distance learning,Old policy,Old policy
+133,34.0,3.6511487500000004,,Distance learning,Old policy,Old policy
+134,35.0,3.8633608333333336,,Distance learning,Old policy,Old policy
+135,36.0,4.073404583333334,,Distance learning,Old policy,Old policy
+136,37.0,4.28278125,,Distance learning,Old policy,Old policy
+137,38.0,4.486235416666667,,Distance learning,Old policy,Old policy
+138,39.0,4.689105,,Distance learning,Old policy,Old policy
+139,40.0,4.8919749999999995,,Distance learning,Old policy,Old policy
+140,41.0,5.093843333333333,,Distance learning,Old policy,Old policy
+141,42.0,5.295294999999999,,Distance learning,Old policy,Old policy
+142,43.0,5.496579166666666,,Distance learning,Old policy,Old policy
+143,44.0,5.6961958333333325,,Distance learning,Old policy,Old policy
+144,45.0,5.883550416666666,,Distance learning,Old policy,Old policy
+145,46.0,6.071071666666667,,Distance learning,Old policy,Old policy
+146,47.0,6.258426249999999,,Distance learning,Old policy,Old policy
+147,48.0,6.444946249999999,,Distance learning,Old policy,Old policy
+148,49.0,6.630630833333332,,Distance learning,Old policy,Old policy
+149,50.0,6.816316249999999,,Distance learning,Old policy,Old policy
+150,51.0,7.001668333333332,,Distance learning,Old policy,Old policy
+151,52.0,7.176509166666666,,Distance learning,Old policy,Old policy
+152,53.0,7.3520175,,Distance learning,Old policy,Old policy
+153,54.0,7.526274583333333,,Distance learning,Old policy,Old policy
+154,55.0,7.700364583333333,,Distance learning,Old policy,Old policy
+155,56.0,7.874705833333333,,Distance learning,Old policy,Old policy
+156,57.0,8.047627916666665,,Distance learning,Old policy,Old policy
+157,58.0,8.220550416666665,,Distance learning,Old policy,Old policy
+158,59.0,8.387217083333333,,Distance learning,Old policy,Old policy
+159,60.0,8.553465833333332,,Distance learning,Old policy,Old policy
+160,61.0,8.717880000000001,,Distance learning,Old policy,Old policy
+161,62.0,8.882627916666667,,Distance learning,Old policy,Old policy
+162,63.0,9.047209166666667,,Distance learning,Old policy,Old policy
+163,64.0,9.211707083333332,,Distance learning,Old policy,Old policy
+164,65.0,9.376455416666666,,Distance learning,Old policy,Old policy
+165,66.0,9.533112083333332,,Distance learning,Old policy,Old policy
+166,67.0,9.689268333333333,,Distance learning,Old policy,Old policy
+167,68.0,9.8457575,,Distance learning,Old policy,Old policy
+168,69.0,10.002080416666667,,Distance learning,Old policy,Old policy
+169,70.0,10.157318333333333,,Distance learning,Old policy,Old policy
+170,71.0,10.312473333333333,,Distance learning,Old policy,Old policy
+171,72.0,10.467712083333334,,Distance learning,Old policy,Old policy
+172,73.0,10.616610833333334,,Distance learning,Old policy,Old policy
+173,74.0,10.765426666666666,,Distance learning,Old policy,Old policy
+174,75.0,10.914992916666668,,Distance learning,Old policy,Old policy
+175,76.0,11.063307916666668,,Distance learning,Old policy,Old policy
+176,77.0,11.2108725,,Distance learning,Old policy,Old policy
+177,78.0,11.358270000000001,,Distance learning,Old policy,Old policy
+178,79.0,11.504166666666666,,Distance learning,Old policy,Old policy
+179,80.0,11.643972499999999,,Distance learning,Old policy,Old policy
+180,81.0,11.783027916666667,,Distance learning,Old policy,Old policy
+181,82.0,11.921500416666667,,Distance learning,Old policy,Old policy
+182,83.0,12.06005625,,Distance learning,Old policy,Old policy
+183,84.0,12.1980275,,Distance learning,Old policy,Old policy
+184,85.0,12.335915416666667,,Distance learning,Old policy,Old policy
+185,86.0,12.47338625,,Distance learning,Old policy,Old policy
+186,87.0,12.602932083333334,,Distance learning,Old policy,Old policy
+187,88.0,12.732310416666667,,Distance learning,Old policy,Old policy
+188,89.0,12.860605416666667,,Distance learning,Old policy,Old policy
+189,90.0,12.989067083333335,,Distance learning,Old policy,Old policy
+190,91.0,13.117277916666668,,Distance learning,Old policy,Old policy
+191,92.0,13.245072500000001,,Distance learning,Old policy,Old policy
+192,93.0,13.373367083333335,,Distance learning,Old policy,Old policy
+193,94.0,13.497325,,Distance learning,Old policy,Old policy
+194,95.0,13.621949583333334,,Distance learning,Old policy,Old policy
+195,96.0,13.746907083333333,,Distance learning,Old policy,Old policy
+196,97.0,13.870947083333334,,Distance learning,Old policy,Old policy
+197,98.0,13.995988750000002,,Distance learning,Old policy,Old policy
+198,99.0,14.120696250000002,,Distance learning,Old policy,Old policy
+199,100.0,14.245153333333336,,Distance learning,Old policy,Old policy
+200,1.0,1.0,,Not distance learning,New policy,New policy
+201,2.0,1.9999920833333333,,Not distance learning,New policy,New policy
+202,3.0,2.99949125,,Not distance learning,New policy,New policy
+203,4.0,3.9988904166666672,,Not distance learning,New policy,New policy
+204,5.0,4.998244166666667,,Not distance learning,New policy,New policy
+205,6.0,5.997539583333333,,Not distance learning,New policy,New policy
+206,7.0,6.996475833333333,,Not distance learning,New policy,New policy
+207,8.0,7.994482083333334,,Not distance learning,New policy,New policy
+208,9.0,8.992105,,Not distance learning,New policy,New policy
+209,10.0,9.972860833333334,,Not distance learning,New policy,New policy
+210,11.0,10.9523275,,Not distance learning,New policy,New policy
+211,12.0,11.930668333333335,,Not distance learning,New policy,New policy
+212,13.0,12.90712,,Not distance learning,New policy,New policy
+213,14.0,13.881990416666667,,Not distance learning,New policy,New policy
+214,15.0,14.844331666666667,,Not distance learning,New policy,New policy
+215,16.0,15.804345833333334,,Not distance learning,New policy,New policy
+216,17.0,16.72290625,,Not distance learning,New policy,New policy
+217,18.0,17.640065,,Not distance learning,New policy,New policy
+218,19.0,18.555267916666665,,Not distance learning,New policy,New policy
+219,20.0,19.467951666666668,,Not distance learning,New policy,New policy
+220,21.0,20.378049166666663,,Not distance learning,New policy,New policy
+221,22.0,21.270821249999997,,Not distance learning,New policy,New policy
+222,23.0,22.16155375,,Not distance learning,New policy,New policy
+223,24.0,23.00626125,,Not distance learning,New policy,New policy
+224,25.0,23.849979583333333,,Not distance learning,New policy,New policy
+225,26.0,24.69129125,,Not distance learning,New policy,New policy
+226,27.0,25.53081458333333,,Not distance learning,New policy,New policy
+227,28.0,26.368043333333333,,Not distance learning,New policy,New policy
+228,29.0,27.201235416666666,,Not distance learning,New policy,New policy
+229,30.0,28.032887499999998,,Not distance learning,New policy,New policy
+230,31.0,28.844782916666663,,Not distance learning,New policy,New policy
+231,32.0,29.657015833333332,,Not distance learning,New policy,New policy
+232,33.0,30.467914166666667,,Not distance learning,New policy,New policy
+233,34.0,31.278349583333334,,Not distance learning,New policy,New policy
+234,35.0,32.088105,,Not distance learning,New policy,New policy
+235,36.0,32.899775,,Not distance learning,New policy,New policy
+236,37.0,33.710231666666665,,Not distance learning,New policy,New policy
+237,38.0,34.52255208333334,,Not distance learning,New policy,New policy
+238,39.0,35.335377083333334,,Not distance learning,New policy,New policy
+239,40.0,36.14955375,,Not distance learning,New policy,New policy
+240,41.0,36.96449791666667,,Not distance learning,New policy,New policy
+241,42.0,37.780430416666675,,Not distance learning,New policy,New policy
+242,43.0,38.59929958333334,,Not distance learning,New policy,New policy
+243,44.0,39.41964875,,Not distance learning,New policy,New policy
+244,45.0,40.244611666666664,,Not distance learning,New policy,New policy
+245,46.0,41.06914875,,Not distance learning,New policy,New policy
+246,47.0,41.89562958333333,,Not distance learning,New policy,New policy
+247,48.0,42.72284416666666,,Not distance learning,New policy,New policy
+248,49.0,43.550421666666665,,Not distance learning,New policy,New policy
+249,50.0,44.38128583333333,,Not distance learning,New policy,New policy
+250,51.0,45.21270083333333,,Not distance learning,New policy,New policy
+251,52.0,46.056945416666665,,Not distance learning,New policy,New policy
+252,53.0,46.90222000000001,,Not distance learning,New policy,New policy
+253,54.0,47.74784041666667,,Not distance learning,New policy,New policy
+254,55.0,48.59401583333333,,Not distance learning,New policy,New policy
+255,56.0,49.44029125,,Not distance learning,New policy,New policy
+256,57.0,50.2900075,,Not distance learning,New policy,New policy
+257,58.0,51.140224583333335,,Not distance learning,New policy,New policy
+258,59.0,52.00148583333334,,Not distance learning,New policy,New policy
+259,60.0,52.86286791666667,,Not distance learning,New policy,New policy
+260,61.0,53.72366625,,Not distance learning,New policy,New policy
+261,62.0,54.58420166666667,,Not distance learning,New policy,New policy
+262,63.0,55.44550458333334,,Not distance learning,New policy,New policy
+263,64.0,56.31041125000001,,Not distance learning,New policy,New policy
+264,65.0,57.17601000000001,,Not distance learning,New policy,New policy
+265,66.0,58.04726083333335,,Not distance learning,New policy,New policy
+266,67.0,58.91794833333335,,Not distance learning,New policy,New policy
+267,68.0,59.78872291666668,,Not distance learning,New policy,New policy
+268,69.0,60.65914291666668,,Not distance learning,New policy,New policy
+269,70.0,61.52977625000001,,Not distance learning,New policy,New policy
+270,71.0,62.402473750000006,,Not distance learning,New policy,New policy
+271,72.0,63.274525000000004,,Not distance learning,New policy,New policy
+272,73.0,64.15412541666667,,Not distance learning,New policy,New policy
+273,74.0,65.0339175,,Not distance learning,New policy,New policy
+274,75.0,65.91364333333334,,Not distance learning,New policy,New policy
+275,76.0,66.793615,,Not distance learning,New policy,New policy
+276,77.0,67.67420416666667,,Not distance learning,New policy,New policy
+277,78.0,68.55746625,,Not distance learning,New policy,New policy
+278,79.0,69.4407575,,Not distance learning,New policy,New policy
+279,80.0,70.32733166666667,,Not distance learning,New policy,New policy
+280,81.0,71.21398083333334,,Not distance learning,New policy,New policy
+281,82.0,72.10111791666667,,Not distance learning,New policy,New policy
+282,83.0,72.98914333333333,,Not distance learning,New policy,New policy
+283,84.0,73.87736041666668,,Not distance learning,New policy,New policy
+284,85.0,74.76834291666667,,Not distance learning,New policy,New policy
+285,86.0,75.66016458333334,,Not distance learning,New policy,New policy
+286,87.0,76.55882583333333,,Not distance learning,New policy,New policy
+287,88.0,77.45785833333335,,Not distance learning,New policy,New policy
+288,89.0,78.35756625,,Not distance learning,New policy,New policy
+289,90.0,79.25751625000001,,Not distance learning,New policy,New policy
+290,91.0,80.15781250000002,,Not distance learning,New policy,New policy
+291,92.0,81.06211291666668,,Not distance learning,New policy,New policy
+292,93.0,81.96671750000002,,Not distance learning,New policy,New policy
+293,94.0,82.87876708333334,,Not distance learning,New policy,New policy
+294,95.0,83.79079166666669,,Not distance learning,New policy,New policy
+295,96.0,84.70294583333336,,Not distance learning,New policy,New policy
+296,97.0,85.6146329166667,,Not distance learning,New policy,New policy
+297,98.0,86.52750375000002,,Not distance learning,New policy,New policy
+298,99.0,87.44215583333336,,Not distance learning,New policy,New policy
+299,100.0,88.35710875000002,,Not distance learning,New policy,New policy
+300,1.0,0.0,,Distance learning,New policy,New policy
+301,2.0,8.333333333333334e-06,,Distance learning,New policy,New policy
+302,3.0,0.0005087500000000001,,Distance learning,New policy,New policy
+303,4.0,0.0011091666666666667,,Distance learning,New policy,New policy
+304,5.0,0.0017554166666666666,,Distance learning,New policy,New policy
+305,6.0,0.00246,,Distance learning,New policy,New policy
+306,7.0,0.003523333333333334,,Distance learning,New policy,New policy
+307,8.0,0.005516666666666668,,Distance learning,New policy,New policy
+308,9.0,0.007893750000000001,,Distance learning,New policy,New policy
+309,10.0,0.027137916666666664,,Distance learning,New policy,New policy
+310,11.0,0.047671250000000005,,Distance learning,New policy,New policy
+311,12.0,0.06933000000000002,,Distance learning,New policy,New policy
+312,13.0,0.09287833333333335,,Distance learning,New policy,New policy
+313,14.0,0.11800750000000002,,Distance learning,New policy,New policy
+314,15.0,0.15566625000000003,,Distance learning,New policy,New policy
+315,16.0,0.1956520833333334,,Distance learning,New policy,New policy
+316,17.0,0.2770920833333334,,Distance learning,New policy,New policy
+317,18.0,0.3599329166666667,,Distance learning,New policy,New policy
+318,19.0,0.4447312500000001,,Distance learning,New policy,New policy
+319,20.0,0.5320479166666667,,Distance learning,New policy,New policy
+320,21.0,0.6219504166666668,,Distance learning,New policy,New policy
+321,22.0,0.7291783333333335,,Distance learning,New policy,New policy
+322,23.0,0.8384462500000002,,Distance learning,New policy,New policy
+323,24.0,0.9937387500000002,,Distance learning,New policy,New policy
+324,25.0,1.1500191666666668,,Distance learning,New policy,New policy
+325,26.0,1.3087066666666667,,Distance learning,New policy,New policy
+326,27.0,1.4691833333333335,,Distance learning,New policy,New policy
+327,28.0,1.6319541666666668,,Distance learning,New policy,New policy
+328,29.0,1.7987633333333335,,Distance learning,New policy,New policy
+329,30.0,1.9671104166666669,,Distance learning,New policy,New policy
+330,31.0,2.1552154166666666,,Distance learning,New policy,New policy
+331,32.0,2.3429829166666667,,Distance learning,New policy,New policy
+332,33.0,2.532084583333334,,Distance learning,New policy,New policy
+333,34.0,2.7216487500000004,,Distance learning,New policy,New policy
+334,35.0,2.911893333333334,,Distance learning,New policy,New policy
+335,36.0,3.1002237500000005,,Distance learning,New policy,New policy
+336,37.0,3.289767500000001,,Distance learning,New policy,New policy
+337,38.0,3.4774466666666672,,Distance learning,New policy,New policy
+338,39.0,3.6646212500000006,,Distance learning,New policy,New policy
+339,40.0,3.850444166666667,,Distance learning,New policy,New policy
+340,41.0,4.035500000000001,,Distance learning,New policy,New policy
+341,42.0,4.2195675,,Distance learning,New policy,New policy
+342,43.0,4.400698333333334,,Distance learning,New policy,New policy
+343,44.0,4.580347916666667,,Distance learning,New policy,New policy
+344,45.0,4.755385416666667,,Distance learning,New policy,New policy
+345,46.0,4.930847916666667,,Distance learning,New policy,New policy
+346,47.0,5.104367083333334,,Distance learning,New policy,New policy
+347,48.0,5.277152083333334,,Distance learning,New policy,New policy
+348,49.0,5.449574583333334,,Distance learning,New policy,New policy
+349,50.0,5.618710833333334,,Distance learning,New policy,New policy
+350,51.0,5.787296666666667,,Distance learning,New policy,New policy
+351,52.0,5.943051666666667,,Distance learning,New policy,New policy
+352,53.0,6.097777083333335,,Distance learning,New policy,New policy
+353,54.0,6.2521562500000005,,Distance learning,New policy,New policy
+354,55.0,6.4059808333333335,,Distance learning,New policy,New policy
+355,56.0,6.559705,,Distance learning,New policy,New policy
+356,57.0,6.709989166666667,,Distance learning,New policy,New policy
+357,58.0,6.859772500000001,,Distance learning,New policy,New policy
+358,59.0,6.9985108333333335,,Distance learning,New policy,New policy
+359,60.0,7.1371287500000005,,Distance learning,New policy,New policy
+360,61.0,7.276330833333334,,Distance learning,New policy,New policy
+361,62.0,7.4157954166666675,,Distance learning,New policy,New policy
+362,63.0,7.5544925,,Distance learning,New policy,New policy
+363,64.0,7.6895854166666675,,Distance learning,New policy,New policy
+364,65.0,7.823986666666667,,Distance learning,New policy,New policy
+365,66.0,7.952735833333334,,Distance learning,New policy,New policy
+366,67.0,8.082048333333335,,Distance learning,New policy,New policy
+367,68.0,8.21127375,,Distance learning,New policy,New policy
+368,69.0,8.340853333333333,,Distance learning,New policy,New policy
+369,70.0,8.470220000000001,,Distance learning,New policy,New policy
+370,71.0,8.5975225,,Distance learning,New policy,New policy
+371,72.0,8.72547125,,Distance learning,New policy,New policy
+372,73.0,8.845870833333333,,Distance learning,New policy,New policy
+373,74.0,8.966078750000001,,Distance learning,New policy,New policy
+374,75.0,9.086353333333333,,Distance learning,New policy,New policy
+375,76.0,9.206381666666665,,Distance learning,New policy,New policy
+376,77.0,9.325792916666666,,Distance learning,New policy,New policy
+377,78.0,9.442530833333333,,Distance learning,New policy,New policy
+378,79.0,9.559239583333332,,Distance learning,New policy,New policy
+379,80.0,9.672665416666666,,Distance learning,New policy,New policy
+380,81.0,9.78601625,,Distance learning,New policy,New policy
+381,82.0,9.898879583333333,,Distance learning,New policy,New policy
+382,83.0,10.010853749999999,,Distance learning,New policy,New policy
+383,84.0,10.122635833333332,,Distance learning,New policy,New policy
+384,85.0,10.231653333333332,,Distance learning,New policy,New policy
+385,86.0,10.339832916666666,,Distance learning,New policy,New policy
+386,87.0,10.441171666666666,,Distance learning,New policy,New policy
+387,88.0,10.542139999999998,,Distance learning,New policy,New policy
+388,89.0,10.64243208333333,,Distance learning,New policy,New policy
+389,90.0,10.742482499999998,,Distance learning,New policy,New policy
+390,91.0,10.842186249999997,,Distance learning,New policy,New policy
+391,92.0,10.937886666666664,,Distance learning,New policy,New policy
+392,93.0,11.03328208333333,,Distance learning,New policy,New policy
+393,94.0,11.121232916666663,,Distance learning,New policy,New policy
+394,95.0,11.20920833333333,,Distance learning,New policy,New policy
+395,96.0,11.297054166666664,,Distance learning,New policy,New policy
+396,97.0,11.385367916666663,,Distance learning,New policy,New policy
+397,98.0,11.472496666666663,,Distance learning,New policy,New policy
+398,99.0,11.557844999999995,,Distance learning,New policy,New policy
+399,100.0,11.642892916666662,,Distance learning,New policy,New policy
