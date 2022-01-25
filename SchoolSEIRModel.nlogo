@@ -256,12 +256,12 @@ end
 to setup-general-variables
   set error? false
 
-  ;if tick-duration-in-seconds != 4 and
-  ;   temperature-measurement != "no measurement"
-  ;  [
-  ;    user-message "Measure the temperature at the entrance is meaningful only with a tick equals to 4 seconds."
-  ;    set error? true
-  ;  ]
+  if tick-duration-in-seconds != 4 and
+     temperature-measurement != "no measurement"
+    [
+      user-message "Measure the temperature at the entrance is meaningful only with a tick equals to 4 seconds."
+      set error? true
+    ]
 
   set movement-time-in-seconds 4
   set movements-per-tick tick-duration-in-seconds / movement-time-in-seconds
