@@ -161,11 +161,6 @@ The model needed some external input files inside a _Utils_ directory:
 - **GymTeachers.txt**: this file contains the identifier of the gym teachers.
 
 ## EXTENDING THE MODEL
-- Fix the measure-temperature function
-- Fix the create-supply-teacher function
-- Fix the create-supply-janitor function
-- Fix the copy-teacher function
-- Fix the copy-janitor function
 - Introduce some features such as:
 	- Possibility of reinfection
 
