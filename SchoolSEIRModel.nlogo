@@ -1764,7 +1764,7 @@ to external-screening
 		
 		  if not quarantined? and
          infected?
-		    [ external-screening-2 false ]
+		    [ external-screening-2 symptomatic? ]
 		]
 end
 
@@ -4119,7 +4119,7 @@ init-infected
 init-infected
 0
 students-per-classroom * num-classrooms-per-floor * num-floors + num-classrooms-per-floor * num-floors * 2 + 1
-1.0
+0.0
 1
 1
 NIL
@@ -4149,7 +4149,7 @@ num-floors
 num-floors
 1
 3
-1.0
+3.0
 1
 1
 NIL
@@ -4468,7 +4468,7 @@ run#
 run#
 1
 1000
-804.0
+1.0
 1
 1
 NIL
@@ -4546,7 +4546,7 @@ days-of-simulation
 days-of-simulation
 1
 100
-35.0
+60.0
 1
 1
 NIL
@@ -4817,7 +4817,7 @@ fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
 1
-0.2
+0.4
 0.01
 1
 NIL
@@ -4938,7 +4938,7 @@ CHOOSER
 virus-variant
 virus-variant
 "Original" "Alfa" "Beta" "Delta" "Omicron"
-0
+4
 
 @#$#@#$#@
 ## INTRODUCTION

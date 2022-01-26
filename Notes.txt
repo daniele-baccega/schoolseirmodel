@@ -1,0 +1,12 @@
+## Assumptions
+
+Screening policies and quarantine policies:
+-We swab an agent at most one time for each day.
+-New school's policy (November 2021 - December 2021): if we find an infected student into a classroom we put this student in quarantine and we swab all the other students in the same classroom; if we find other num-infected-needed-to-quarantine-whole-classroom - 1 infected students, then we quarantine the whole classroom. Otherwise we put only the new detected infected students in quarantine and we swab again all the negative students after number-of-after-days-special-swab days. Again, if we have at least num-infected-needed-to-quarantine-whole-classroom infected students in that classroom, then we quarantine the whole classroom. Otherwise we put only the new detected infected students in quarantine.
+
+
+## References
+
+Virus variants: https://heystacks.org/doc/483/2020_covid-19_aerosol_transmission_estimator
+Probability of having symptoms: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2777314, https://www.cdc.gov/mmwr/volumes/69/wr/mm6924e2.htm#T2_down
+New school's policy (November 2021 - December 2021): https://www.regione.piemonte.it/web/pinforma/notizie/scuola-operative-entro-17-novembre-nuove-regole-per-quarantene

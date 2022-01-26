@@ -12,7 +12,6 @@ def main():
 	policy 													= str(sys.argv[2])
 	day_name 												= str(sys.argv[3])
 	vaccinated_students_perc								= str(sys.argv[4])
-	n														= 36
 	population												= 240
 	
 	long_path												= "../../Results/" + path + "/" + policy + "/Results" + vaccinated_students_perc + policy + day_name
@@ -62,6 +61,8 @@ def main():
 
 
 		counter												= counter + 1
+		#if counter == 100:
+		#	break;
 
 	df_variance 											= df_variance / (counter-1)
 
