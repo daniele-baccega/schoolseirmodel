@@ -6,23 +6,23 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 2:
-		print("Error, parameters are missing: python run-ggplot2-single-dad.py policy")
+		print("Error, parameters are missing: python run-ggplot2-single-dad.py path policy day_name")
 		exit()
 
-	policy										= str(sys.argv[1])
-	n											= 36
+	long_path									= str(sys.argv[1])
+	policy										= str(sys.argv[2])
+	day_name 									= str(sys.argv[3])
 	paths										= []
 	type_pretty									= []
+	vaccinated_students_perc					= ["0", "10", "40"]#, "70"]
 
-	paths.append(Path(__file__).parent / ("../../mean-results/OldPoliciesvsNewPolicies/Prob-0.001/WholeQuarantined/" + policy + "/Wednesday/mean_" + policy + "_Wednesday.csv"))
-	paths.append(Path(__file__).parent / ("../../mean-results/OldPoliciesvsNewPolicies/Prob-0.001/OneQuarantined/" + policy + "/Wednesday/mean_" + policy + "_Wednesday.csv"))
-	type_pretty.append("Old policy")
-	type_pretty.append("New policy")
+	for perc in vaccinated_students_perc:
+		paths.append(Path(__file__).parent / ("../../mean-results/" + long_path + "/" + policy + "/" + day_name + "/mean_" + perc + "_" + policy + "_" + day_name + ".csv"))
+		type_pretty.append(perc + "%")
 		
 	my_plot										= None
 	df_plot										= None
 	k											= 0
-	population									= 240
 	
 	for path in paths:
 		df_mean          						= pandas.read_csv(str(path), index_col=0)
@@ -49,7 +49,7 @@ def main():
 		total_dad	 							= pandas.DataFrame(columns=['day', 'students', 'dad_type'])
 		
 		total_dad['day'] 						= df_mean.loc[:, 'day']
-		total_dad['students'] 					= df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'infected'] + df_mean.loc[:, 'removed']
+		total_dad['students'] 					= df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'infected'] + df_mean.loc[:, 'removed'] + (int(vaccinated_students_perc[k]) / 100) * 20 * (12 - df_mean.loc[:, 'num-of-classroom-in-quarantine'])
 		total_dad['dl_type']					= 'Not distance learning'
 		total_dad 								= total_dad.iloc[1:]
 
@@ -60,7 +60,7 @@ def main():
 		total_not_dad['day'] 					= df_mean.loc[:, 'day']
 		total_not_dad['students']				= df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'infected-in-quarantine'] + df_mean.loc[:, 'removed-in-quarantine'] +\
 												  df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'infected-in-quarantine-external-1'] + df_mean.loc[:, 'removed-in-quarantine-external-1'] +\
-												  df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'] + df_mean.loc[:, 'infected-in-quarantine-external-2'] + df_mean.loc[:, 'removed-in-quarantine-external-2']
+												  df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'] + df_mean.loc[:, 'infected-in-quarantine-external-2'] + df_mean.loc[:, 'removed-in-quarantine-external-2'] + (int(vaccinated_students_perc[k]) / 100) * 20 * df_mean.loc[:, 'num-of-classroom-in-quarantine']
 		total_not_dad['dl_type']				= 'Distance learning'
 		total_not_dad 							= total_not_dad.iloc[1:]
 
@@ -68,7 +68,6 @@ def main():
 
 
 		df_mod 									= total_dad.append(total_not_dad, ignore_index=True)
-		df_mod['type'] 							= type_pretty[k]
 		df_mod['type_pretty'] 					= type_pretty[k]
 		if df_plot is None:
 			df_plot 							= df_mod
@@ -79,15 +78,15 @@ def main():
 								      		        
 	df_plot.type_pretty = pandas.Categorical(df_plot.type_pretty, \
 							   		    ordered = True, \
-							   		    categories = ["Old policy", "New policy"])
+							   		    categories = ["0%", "10%", "40%"])#, "70%"])
 	
 	my_plot = (ggplot(df_plot) \
 		+ aes(x = 'day', y = 'students', color = 'dl_type', linetype = 'type_pretty') \
 		+ geom_line() \
     	+ labs(title = "Old school's policy vs New school's policy (" + policy + " policy)", x = 'day', y = 'cumulative number of days', color = 'Distance learning type', linetype = 'Policy type')) \
-    	+ scale_y_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 , 75, 80, 85, 90, 95, 100]) \
+    	+ scale_y_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]) \
     	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../../plot-ggplot2/OldPoliciesvsNewPolicies/Prob-0.001/' + policy + '/dl.png', dpi=600)
-	df_plot.to_csv('../../plot-ggplot2/OldPoliciesvsNewPolicies/Prob-0.001/' + policy + '/dl.csv')
+	my_plot.save('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/dl.png', dpi=600)
+	df_plot.to_csv('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/dl.csv')
 main();

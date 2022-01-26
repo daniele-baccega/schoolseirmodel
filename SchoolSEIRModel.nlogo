@@ -14,7 +14,7 @@ globals [
   movement-time-in-seconds
   movements-per-tick
 
-  num-students num-teachers num-school-janitors
+  num-students num-teachers num-janitors
   num-agents
   num-susceptible num-exposed num-infected num-removed
   num-susceptible-in-quarantine num-exposed-in-quarantine
@@ -34,10 +34,10 @@ globals [
 
   classroom-letters age-groups rooms-aerosol classroom-name
 
-  contact-time-with-infected-matrix-in-ticks is-in-contact-matrix? contact-time-matrix-in-ticks number-of-contact-matrix
+  contact-timein-ticks-with-infected-matrix is-in-contact-matrix? contact-time-in-ticks-matrix number-of-contact-matrix
   contamination-risk contamination-risk-decreased-with-mask
 
-  exhalation-mask-efficiency inhalation-mask-efficiency
+  exhalation-mask-efficacy inhalation-mask-efficacy
 
   infectious-vaccinated-factor
 
@@ -80,7 +80,7 @@ globals [
   inhalation-rate-teachers inhalation-rate-teachers-in-classroom
   inhalation-rate-principals inhalation-rate-janitors
 
-  variant-factor
+  virus-variant-factor
 
   num-active-agents
   mean-quanta-inhaled
@@ -114,7 +114,7 @@ globals [
   num-in-queue1 num-in-queue2
 
   next-group-activate screening-groups sub-screening-groups next-screening-group next-sub-screening-group
-  num-of-screening-group num-of-sub-screening-group
+  num-of-screening-groups num-of-sub-screening-groups
 
   num-of-screened-agents
   num-of-screened-agents-external-1
@@ -326,8 +326,8 @@ to setup-counters-variables
 
   set next-screening-group 0
   set next-sub-screening-group 0
-  set num-of-screening-group 0
-  set num-of-sub-screening-group 0
+  set num-of-screening-groups 0
+  set num-of-sub-screening-groups 0
 
   set num-of-screened-agents 0
   set num-of-screened-agents-external-1 0
@@ -371,8 +371,8 @@ to setup-graphical-variables
 end
 
 to setup-contagion-variables
-  set exhalation-mask-efficiency 0
-  set inhalation-mask-efficiency 0
+  set exhalation-mask-efficacy 0
+  set inhalation-mask-efficacy 0
   set contamination-risk-decreased-with-mask 0
 
   if mask-type = "no mask"
@@ -380,33 +380,33 @@ to setup-contagion-variables
 
   if mask-type = "surgical"
     [
-      set exhalation-mask-efficiency 0.59
-      set inhalation-mask-efficiency 0.59
+      set exhalation-mask-efficacy 0.59
+      set inhalation-mask-efficacy 0.59
       set contamination-risk-decreased-with-mask 0.47
     ]
 
   if mask-type = "ffp2"
     [
-      set exhalation-mask-efficiency 0.9
-      set inhalation-mask-efficiency 0.9
+      set exhalation-mask-efficacy 0.9
+      set inhalation-mask-efficacy 0.9
       set contamination-risk-decreased-with-mask 0.47
     ]
 
   set contamination-risk 0.024 * (1 - contamination-risk-decreased-with-mask * fraction-of-population-wearing-mask)
 
-  set variant-factor 1
+  set virus-variant-factor 1
 
   if virus-variant = "Alfa"
-    [ set variant-factor 1.5 ]
+    [ set virus-variant-factor 1.5 ]
 
   if virus-variant = "Beta"
-    [ set variant-factor 1.5 ]
+    [ set virus-variant-factor 1.5 ]
 
   if virus-variant = "Delta"
-    [ set variant-factor 2 ]
+    [ set virus-variant-factor 2 ]
 
   if virus-variant = "Omicron"
-    [ set variant-factor 2.5 ]
+    [ set virus-variant-factor 2.5 ]
 
   set one-patch-in-meters 0.7
 
@@ -459,12 +459,12 @@ to setup-contagion-variables
   set activity-type-principals 2.5556
   set activity-type-janitors 2.5556
 
-  set inhalation-rate-students (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-students) / 1000
-  set inhalation-rate-students-in-gym (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-students-in-gym) / 1000
-  set inhalation-rate-teachers (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-teachers) / 1000
-  set inhalation-rate-teachers-in-classroom (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-teachers-in-classroom) / 1000
-  set inhalation-rate-principals (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-principals) / 1000
-  set inhalation-rate-janitors (inhalation-rate-pure * (1 - inhalation-mask-efficiency * fraction-of-population-wearing-mask) * activity-type-janitors) / 1000
+  set inhalation-rate-students (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-students) / 1000
+  set inhalation-rate-students-in-gym (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-students-in-gym) / 1000
+  set inhalation-rate-teachers (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-teachers) / 1000
+  set inhalation-rate-teachers-in-classroom (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-teachers-in-classroom) / 1000
+  set inhalation-rate-principals (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-principals) / 1000
+  set inhalation-rate-janitors (inhalation-rate-pure * (1 - inhalation-mask-efficacy * fraction-of-population-wearing-mask) * activity-type-janitors) / 1000
 
   set decay-rate-of-the-virus 0.636 / 3600
   set gravitational-settling-rate 0.39 / 3600
@@ -474,13 +474,13 @@ end
 to setup-temperature-measurement-variables
   set temperature-measurement-mean-time-in-seconds 0
   set temperature-measurement-std-in-seconds 0
-  set num-school-janitors 0
+  set num-janitors 0
 
   if temperature-measurement = "by hand"
     [
       set temperature-measurement-mean-time-in-seconds 5       ;in seconds (later I will turn it into ticks)
       set temperature-measurement-std-in-seconds 5             ;in seconds (later I will turn it into ticks)
-      set num-school-janitors 2
+      set num-janitors 2
       set rooms-aerosol lput "MR" rooms-aerosol
     ]
 
@@ -488,7 +488,7 @@ to setup-temperature-measurement-variables
     [
       set temperature-measurement-mean-time-in-seconds 10      ;in seconds (later I will turn it into ticks)
       set temperature-measurement-std-in-seconds 10            ;in seconds (later I will turn it into ticks)
-      set num-school-janitors 2
+      set num-janitors 2
       set rooms-aerosol lput "MR" rooms-aerosol
     ]
 end
@@ -499,20 +499,20 @@ to setup-screening-variables
 
   if screening-policy = "1/4 of the class every week, in rotation"
     [
-      set num-of-screening-group 4
-      set num-of-sub-screening-group 1
+      set num-of-screening-groups 4
+      set num-of-sub-screening-groups 1
     ]
 
   if screening-policy = "1/4 of the class every week, in rotation, spread over two days of the week"
     [
-      set num-of-screening-group 4
-      set num-of-sub-screening-group 2
+      set num-of-screening-groups 4
+      set num-of-sub-screening-groups 2
     ]
 
   if screening-policy = "all every week"
     [
-      set num-of-screening-group 1
-      set num-of-sub-screening-group 1
+      set num-of-screening-groups 1
+      set num-of-sub-screening-groups 1
     ]
 
   set classrooms-in-quarantine []
@@ -1113,7 +1113,7 @@ end
 
 to setup-agents
   set num-teachers get-num-teachers
-  set num-agents num-students + num-teachers + num-school-janitors + 1
+  set num-agents num-students + num-teachers + num-janitors + 1
   set num-susceptible num-agents
 
   setup-students
@@ -1193,12 +1193,12 @@ to setup-screening-students
                     ask n-of floor ((floor (students-per-classroom * (1 - dad-% / 100))) * (screening-adhesion-% / 100)) students with [ classroom = c-name and not quarantined? ]
                       [
                         set screening-adhesion? true
-                        set actual-screening-group (actual-screening-group mod num-of-screening-group) + 1
+                        set actual-screening-group (actual-screening-group mod num-of-screening-groups) + 1
                         set screening-group actual-screening-group
                         set sub-screening-group actual-sub-screening-group
 
-                        if actual-screening-group = num-of-screening-group
-                          [ set actual-sub-screening-group (actual-sub-screening-group mod num-of-sub-screening-group) + 1 ]
+                        if actual-screening-group = num-of-screening-groups
+                          [ set actual-sub-screening-group (actual-sub-screening-group mod num-of-sub-screening-groups) + 1 ]
                       ]
         ]
     ]
@@ -1262,9 +1262,9 @@ to setup-janitors
   let desks sort-on [pxcor] patches with [ chair? and measurement-room? ]
   let janitor-index 0
 
-  create-janitors num-school-janitors
+  create-janitors num-janitors
     [
-      set desk item (who mod num-school-janitors) desks
+      set desk item (who mod num-janitors) desks
       set classroom [room-name] of desk
       set floor-idx get-floor-by-classroom classroom
 
@@ -1420,7 +1420,7 @@ to setup-vaccinated-agents
 
   if vaccinated-janitors?
     [
-      ask n-of (floor (num-school-janitors * fraction-of-vaccinated-janitors)) janitors
+      ask n-of (floor (num-janitors * fraction-of-vaccinated-janitors)) janitors
         [
           ifelse vaccine-efficacy < 1
             [
@@ -1478,7 +1478,7 @@ to setup-infected
 
   if init-infected-type = "janitors"
     [
-      ifelse num-school-janitors > 0
+      ifelse num-janitors > 0
         [ set initial-infected-breed janitors ]
         [
           user-message "There are no janitors. Please, select another type of initial infected agents."
@@ -1486,7 +1486,7 @@ to setup-infected
           stop
         ]
 
-      if init-infected > num-school-janitors
+      if init-infected > num-janitors
         [
           user-message "There aren't enough janitors. Please, select another type of initial infected agents."
           set error? true
@@ -1517,7 +1517,7 @@ to go
 
   move
 
-  ;Uncomment if you want to measure the temperature at the entrance (meaningful only with a tick equal to 4 seconds)
+  ;Measure the temperature at the entrance is meaningful only with a tick equal to 4 seconds.
   if temperature-measurement != "no-measurement"
     [ measure-temperature ]
 
@@ -1526,13 +1526,58 @@ to go
 
   accumulate-aerosol-all-rooms
   accumulate-contact-with-infected
-  ;Uncomment if you want to count the contacts (with 4 seconds tick, otherwise we lose a lot of contacts)
+  ;Uncomment if you want to count the contacts (with 4 seconds tick, otherwise we lose lots of contacts)
   ;verify-contact
 
   if next-group-activate > 0
     [ update-school-clock ]
 
   tick
+end
+
+to move
+  ask turtles with [ not hidden? ]
+    [
+      let start-move-group-time staggered-group * staggered-time-in-ticks + 1
+
+      if ticks >= start-move-group-time
+        [
+          repeat movements-per-tick
+            [
+              ifelse patch-here != first targets
+                [ fd 1 ]
+                [
+                  ifelse length targets > 1
+                    [
+                      if [stair?] of first targets
+                        [
+                          let f floor-idx
+
+                          set xcor [pxcor] of one-of patches with [ stair? and floor-number = f ]
+                          set ycor [pycor] of one-of patches with [ stair? and floor-number = f ]
+                        ]
+
+                      set targets but-first targets
+                      face first targets
+                    ]
+                    [
+                      if not hidden? and
+                         first targets = patch-here and
+                         outdoor? and
+                         not entrance? and
+                         temperature-already-measured?
+                        [
+                          set hidden? true
+                          if temperature-measurement != "no measurement"
+                            [ set temperature-already-measured? false ]
+
+                          compute-mean-quanta-inhaled-per-room
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
 end
 
 to end-of-day-computation
@@ -1682,9 +1727,9 @@ to sanitize-school
   ask patches
     [ set cumulative-quanta-concentration 0 ]
 
-  set contact-time-with-infected-matrix-in-ticks matrix:make-constant (num-agents * 2) (num-agents * 2) 0
+  set contact-timein-ticks-with-infected-matrix matrix:make-constant (num-agents * 2) (num-agents * 2) 0
   set is-in-contact-matrix? matrix:make-constant (num-agents * 2) (num-agents * 2) 0
-  set contact-time-matrix-in-ticks matrix:make-constant (num-agents * 2) (num-agents * 2) 0
+  set contact-time-in-ticks-matrix matrix:make-constant (num-agents * 2) (num-agents * 2) 0
   set number-of-contact-matrix matrix:make-constant (num-agents * 2) (num-agents * 2) 0
 
   set num-active-agents n-values 5 [0]
@@ -1728,8 +1773,8 @@ to school-screening-complete-simulation [first-day-screening second-day-screenin
     [
       set num-of-screened-agents num-of-screened-agents + count students with [ not quarantined? and screening-group = item next-screening-group screening-groups and sub-screening-group = item next-sub-screening-group sub-screening-groups ]
 
-      set next-screening-group (next-screening-group + 1) mod num-of-screening-group
-      set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-group
+      set next-screening-group (next-screening-group + 1) mod num-of-screening-groups
+      set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-groups
     ]
 
   if screening-policy = "1/4 of the class every week, in rotation, spread over two days of the week"
@@ -1738,9 +1783,9 @@ to school-screening-complete-simulation [first-day-screening second-day-screenin
         [
           set num-of-screened-agents num-of-screened-agents + count students with [ not quarantined? and screening-group = item next-screening-group screening-groups and sub-screening-group = item next-sub-screening-group sub-screening-groups ]
 
-          set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-group
+          set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-groups
           if next-sub-screening-group = 1
-            [ set next-screening-group (next-screening-group + 1) mod num-of-screening-group ]
+            [ set next-screening-group (next-screening-group + 1) mod num-of-screening-groups ]
         ]
     ]
 end
@@ -1784,9 +1829,9 @@ to screening
                   ]
     ]
 
-  set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-group
+  set next-sub-screening-group (next-sub-screening-group + 1) mod num-of-sub-screening-groups
   if next-sub-screening-group = 1
-    [ set next-screening-group (next-screening-group + 1) mod num-of-screening-group ]
+    [ set next-screening-group (next-screening-group + 1) mod num-of-screening-groups ]
 end
 
 to external-screening-1
@@ -2005,51 +2050,6 @@ to update-day-scheduling
         ]
     ]
     [ set classroom "-" ]
-end
-
-to move
-  ask turtles with [ not hidden? ]
-    [
-      let start-move-group-time staggered-group * staggered-time-in-ticks + 1
-
-      if ticks >= start-move-group-time
-        [
-          repeat movements-per-tick
-            [
-              ifelse patch-here != first targets
-                [ fd 1 ]
-                [
-                  ifelse length targets > 1
-                    [
-                      if [stair?] of first targets
-                        [
-                          let f floor-idx
-
-                          set xcor [pxcor] of one-of patches with [ stair? and floor-number = f ]
-                          set ycor [pycor] of one-of patches with [ stair? and floor-number = f ]
-                        ]
-
-                      set targets but-first targets
-                      face first targets
-                    ]
-                    [
-                      if not hidden? and
-                         first targets = patch-here and
-                         outdoor? and
-                         not entrance? and
-                         temperature-already-measured?
-                        [
-                          set hidden? true
-                          if temperature-measurement != "no measurement"
-                            [ set temperature-already-measured? false ]
-
-                          compute-mean-quanta-inhaled-per-room
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
 end
 
 to measure-temperature-janitors
@@ -2444,33 +2444,33 @@ to accumulate-aerosol [room]
         [ set infectious-vaccinated-factor-janitors infectious-vaccinated-factor ]
     ]
 
-  let base-n-r-students ((activity-type-students * ngen-base) / (10 ^ vl)) * variant-factor
-  let base-n-r-students-in-gym ((activity-type-students-in-gym * ngen-base) / (10 ^ vl)) * variant-factor
-  let base-n-r-teachers ((activity-type-teachers * ngen-base) / (10 ^ vl)) * variant-factor
-  let base-n-r-teachers-in-classroom ((activity-type-teachers-in-classroom * ngen-base) / (10 ^ vl)) * variant-factor
-  let base-n-r-principals ((activity-type-principals * ngen-base) / (10 ^ vl)) * variant-factor
-  let base-n-r-janitors ((activity-type-janitors * ngen-base) / (10 ^ vl)) * variant-factor
+  let base-n-r-students ((activity-type-students * ngen-base) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-students-in-gym ((activity-type-students-in-gym * ngen-base) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-teachers ((activity-type-teachers * ngen-base) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-teachers-in-classroom ((activity-type-teachers-in-classroom * ngen-base) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-principals ((activity-type-principals * ngen-base) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-janitors ((activity-type-janitors * ngen-base) / (10 ^ vl)) * virus-variant-factor
 
-  let base-n-r-students-vaccinated ((activity-type-students * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * variant-factor
-  let base-n-r-students-in-gym-vaccinated ((activity-type-students-in-gym * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * variant-factor
-  let base-n-r-teachers-vaccinated ((activity-type-teachers * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * variant-factor
-  let base-n-r-teachers-in-classroom-vaccinated ((activity-type-teachers-in-classroom * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * variant-factor
-  let base-n-r-principals-vaccinated ((activity-type-principals * ngen-base * infectious-vaccinated-factor-principals) / (10 ^ vl)) * variant-factor
-  let base-n-r-janitors-vaccinated ((activity-type-janitors * ngen-base * infectious-vaccinated-factor-janitors) / (10 ^ vl)) * variant-factor
+  let base-n-r-students-vaccinated ((activity-type-students * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-students-in-gym-vaccinated ((activity-type-students-in-gym * ngen-base * infectious-vaccinated-factor-students) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-teachers-vaccinated ((activity-type-teachers * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-teachers-in-classroom-vaccinated ((activity-type-teachers-in-classroom * ngen-base * infectious-vaccinated-factor-teachers) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-principals-vaccinated ((activity-type-principals * ngen-base * infectious-vaccinated-factor-principals) / (10 ^ vl)) * virus-variant-factor
+  let base-n-r-janitors-vaccinated ((activity-type-janitors * ngen-base * infectious-vaccinated-factor-janitors) / (10 ^ vl)) * virus-variant-factor
 
-  let n-r-students (10 ^ vl) * base-n-r-students * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-students-in-gym (10 ^ vl) * base-n-r-students-in-gym * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-teachers (10 ^ vl) * base-n-r-teachers * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-teachers-in-classroom (10 ^ vl) * base-n-r-teachers-in-classroom * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-principals (10 ^ vl) * base-n-r-principals * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-janitors (10 ^ vl) * base-n-r-janitors * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
+  let n-r-students (10 ^ vl) * base-n-r-students * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-students-in-gym (10 ^ vl) * base-n-r-students-in-gym * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-teachers (10 ^ vl) * base-n-r-teachers * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-teachers-in-classroom (10 ^ vl) * base-n-r-teachers-in-classroom * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-principals (10 ^ vl) * base-n-r-principals * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-janitors (10 ^ vl) * base-n-r-janitors * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
 
-  let n-r-students-vaccinated (10 ^ vl) * base-n-r-students-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-students-in-gym-vaccinated (10 ^ vl) * base-n-r-students-in-gym-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-teachers-vaccinated (10 ^ vl) * base-n-r-teachers-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-teachers-in-classroom-vaccinated (10 ^ vl) * base-n-r-teachers-in-classroom-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-principals-vaccinated (10 ^ vl) * base-n-r-principals-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
-  let n-r-janitors-vaccinated (10 ^ vl) * base-n-r-janitors-vaccinated * (1 - exhalation-mask-efficiency * fraction-of-population-wearing-mask)
+  let n-r-students-vaccinated (10 ^ vl) * base-n-r-students-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-students-in-gym-vaccinated (10 ^ vl) * base-n-r-students-in-gym-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-teachers-vaccinated (10 ^ vl) * base-n-r-teachers-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-teachers-in-classroom-vaccinated (10 ^ vl) * base-n-r-teachers-in-classroom-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-principals-vaccinated (10 ^ vl) * base-n-r-principals-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
+  let n-r-janitors-vaccinated (10 ^ vl) * base-n-r-janitors-vaccinated * (1 - exhalation-mask-efficacy * fraction-of-population-wearing-mask)
 
   let total-n-r n-r-students * infected-student + n-r-students-vaccinated * infected-student-vaccinated +
       n-r-teachers-in-classroom * infected-teacher + n-r-teachers-in-classroom-vaccinated * infected-teacher-vaccinated +
@@ -2640,27 +2640,27 @@ to accumulate-contact-with-infected
 
       ask (turtles-on neighbors) with [ not hidden? and susceptible? and room-name = [room-name] of myself ]
       [
-        let contact-value matrix:get contact-time-with-infected-matrix-in-ticks who who-infected
+        let contact-value matrix:get contact-timein-ticks-with-infected-matrix who who-infected
 
         ifelse [vaccinated?] of myself or
                vaccinated?
-          [ matrix:set contact-time-with-infected-matrix-in-ticks who who-infected ((contact-value + 1) * infectious-vaccinated-factor) ]
-          [ matrix:set contact-time-with-infected-matrix-in-ticks who who-infected (contact-value + 1) ]
+          [ matrix:set contact-timein-ticks-with-infected-matrix who who-infected ((contact-value + 1) * infectious-vaccinated-factor) ]
+          [ matrix:set contact-timein-ticks-with-infected-matrix who who-infected (contact-value + 1) ]
       ]
     ]
 end
 
 to infect-with-contact
-  ask turtles with [ hidden? and sum matrix:get-row contact-time-with-infected-matrix-in-ticks who != 0 and susceptible? ]
+  ask turtles with [ hidden? and sum matrix:get-row contact-timein-ticks-with-infected-matrix who != 0 and susceptible? ]
     [
-      let contact-time-in-min (((sum matrix:get-row contact-time-with-infected-matrix-in-ticks who) * tick-duration-in-seconds) / 60) * variant-factor
+      let contact-time-in-min (((sum matrix:get-row contact-timein-ticks-with-infected-matrix who) * tick-duration-in-seconds) / 60) * virus-variant-factor
 
       let pi-agent contamination-risk * (contact-time-in-min / contact-space-volume)
 
       if random 1000 < pi-agent * 1000
         [ get-the-infection false ]
 
-      matrix:set-row contact-time-with-infected-matrix-in-ticks who (n-values (num-agents * 2) [0])
+      matrix:set-row contact-timein-ticks-with-infected-matrix who (n-values (num-agents * 2) [0])
     ]
 end
 
@@ -2672,8 +2672,8 @@ to verify-contact
 
       ask (turtles-on neighbors) with [ not hidden? and room-name = [room-name] of myself ]
         [
-          let contact-value matrix:get contact-time-matrix-in-ticks who who-ego
-          matrix:set contact-time-matrix-in-ticks who who-ego (contact-value + 1)
+          let contact-value matrix:get contact-time-in-ticks-matrix who who-ego
+          matrix:set contact-time-in-ticks-matrix who who-ego (contact-value + 1)
 
           if matrix:get is-in-contact-matrix? who who-ego = 0
             [
@@ -2686,12 +2686,12 @@ to verify-contact
           if infected-ego? and
              susceptible?
             [
-              let contact-infected-value matrix:get contact-time-with-infected-matrix-in-ticks who who-ego
+              let contact-infected-value matrix:get contact-timein-ticks-with-infected-matrix who who-ego
 
               ifelse [vaccinated?] of myself or
                vaccinated?
-                [ matrix:set contact-time-with-infected-matrix-in-ticks who who-ego ((contact-infected-value + 1) * infectious-vaccinated-factor) ]
-                [ matrix:set contact-time-with-infected-matrix-in-ticks who who-ego (contact-infected-value + 1) ]
+                [ matrix:set contact-timein-ticks-with-infected-matrix who who-ego ((contact-infected-value + 1) * infectious-vaccinated-factor) ]
+                [ matrix:set contact-timein-ticks-with-infected-matrix who who-ego (contact-infected-value + 1) ]
             ]
         ]
 
@@ -3803,7 +3803,7 @@ to create-supply-janitors
 
       set hidden? true
 
-      set num-school-janitors num-school-janitors + 1
+      set num-janitors num-janitors + 1
       set num-agents num-agents + 1
       set num-susceptible num-susceptible + 1
       set remain-infected-days 0
@@ -4375,10 +4375,10 @@ NIL
 HORIZONTAL
 
 CHOOSER
-1376
-708
-1561
-753
+1379
+709
+1564
+754
 mask-type
 mask-type
 "no mask" "surgical" "ffp2"
@@ -4468,7 +4468,7 @@ run#
 run#
 1
 1000
-555.0
+804.0
 1
 1
 NIL
@@ -4636,9 +4636,9 @@ vaccinated-teachers?
 
 SWITCH
 1380
-838
+837
 1564
-871
+870
 vaccinated-principals?
 vaccinated-principals?
 0
@@ -4646,10 +4646,10 @@ vaccinated-principals?
 -1000
 
 SWITCH
-1379
-872
-1564
-905
+1380
+874
+1565
+907
 vaccinated-janitors?
 vaccinated-janitors?
 0
@@ -4817,7 +4817,7 @@ fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
 1
-0.4
+0.2
 0.01
 1
 NIL
@@ -4830,7 +4830,7 @@ SWITCH
 906
 vaccinated-students?
 vaccinated-students?
-1
+0
 1
 -1000
 

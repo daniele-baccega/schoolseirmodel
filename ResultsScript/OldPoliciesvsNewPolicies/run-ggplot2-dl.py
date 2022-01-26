@@ -10,7 +10,6 @@ def main():
 		exit()
 
 	policy										= str(sys.argv[1])
-	n											= 36
 	paths										= []
 	type_pretty									= []
 

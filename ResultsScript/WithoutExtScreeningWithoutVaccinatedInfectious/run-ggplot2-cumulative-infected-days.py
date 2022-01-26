@@ -75,7 +75,7 @@ def main():
     	+ labs(title = policy + ' policy (with NPIs): cumulative infected', x = 'day', y = 'cumulative infected', color = 'Agent type', linetype = 'type_of_screening_pretty')) \
     	+ scale_color_manual(values=['#990000']) \
     	+ scale_x_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35]) \
-+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
+		+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 		
 	my_plot.save('../../plot-ggplot2/' + long_path + '/' + policy + '/mean-days/plot-' + policy + '_cumulative-infected', dpi=600)
 	df_plot.to_csv('../../plot-ggplot2/' + long_path + '/' + policy + '/mean-days/plot-file/plot-' + policy + '_cumulative-infected.csv')

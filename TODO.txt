@@ -1,5 +1,0 @@
--Contatto tra due vaccinati? Dobbiamo ridurre di più la probabilità di infezione rispetto al caso un vaccinato e un non vaccinato?
-
-
-Assunzioni nuova politica:
--Se uno studente in una classe è l'unico infetto viene messo in quarantena e facciamo il tampone a tutti. Se ne scopriamo un altro, mettiamo tutti in quarantena, altrimenti rifacciamo il tampone a tutti, se sono tutti negativi, dopo 5 giorni. In generale se troviamo m studenti infetti in una classe, mettiamo tutta la classe in quarantena. Se qualche giorno prima della fine della quarantena di uno o più studenti, mettiamo in quarantena l'intera classe, prolunghiamo anche la quarantena di questi studenti.
