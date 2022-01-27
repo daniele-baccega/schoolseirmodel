@@ -4,198 +4,198 @@
 2,2,0,-
 3,3,0,-
 4,4,0,-
-5,5,26,School screening
-6,6,0,-
-7,7,33,School screening
-8,8,0,-
+5,5,0,-
+6,6,19,School screening
+7,7,19,School screening
+8,8,19,School screening
 9,9,0,-
-10,10,12,School screening
+10,10,0,-
 11,11,0,-
 12,12,0,-
 13,13,0,-
-14,14,21,External screening
-15,15,0,-
-16,16,12,School screening
-17,17,12,School screening
-18,18,19,School screening
-19,19,12,School screening
-20,20,26,School screening
+14,14,0,-
+15,15,19,School screening
+16,16,0,-
+17,17,26,External screening
+18,18,0,-
+19,19,0,-
+20,20,12,School screening
 21,21,0,-
-22,22,0,-
-23,23,26,School screening
-24,24,19,School screening
+22,22,12,School screening
+23,23,15,External screening
+24,24,0,-
 25,25,0,-
-26,26,19,School screening
-27,27,26,School screening
-28,28,26,School screening
-29,29,19,School screening
-30,30,12,School screening
-31,31,0,-
+26,26,0,-
+27,27,0,-
+28,28,12,School screening
+29,29,0,-
+30,30,5,School screening
+31,31,26,School screening
 32,32,0,-
-33,33,12,School screening
-34,34,11,External screening
-35,35,33,School screening
+33,33,0,-
+34,34,0,-
+35,35,19,School screening
 36,36,26,School screening
-37,37,33,School screening
-38,38,33,External screening
-39,39,0,-
-40,40,19,School screening
-41,41,0,-
-42,42,12,School screening
+37,37,26,School screening
+38,38,12,School screening
+39,39,33,School screening
+40,40,0,-
+41,41,12,School screening
+42,42,0,-
 43,43,0,-
-44,44,0,-
-45,45,0,-
-46,46,5,School screening
+44,44,19,School screening
+45,45,11,External screening
+46,46,26,School screening
 47,47,0,-
 48,48,0,-
 49,49,0,-
 50,50,0,-
-51,51,0,-
-52,52,0,-
-53,53,33,School screening
+51,51,19,School screening
+52,52,21,External screening
+53,53,0,-
 54,54,0,-
-55,55,19,School screening
-56,56,5,School screening
-57,57,0,-
-58,58,26,School screening
-59,59,0,-
+55,55,0,-
+56,56,0,-
+57,57,33,School screening
+58,58,19,School screening
+59,59,26,School screening
 60,60,26,School screening
-61,61,0,-
+61,61,12,School screening
 62,62,0,-
 63,63,0,-
 64,64,0,-
 65,65,19,School screening
 66,66,0,-
-67,67,33,School screening
-68,68,0,-
+67,67,26,School screening
+68,68,33,School screening
 69,69,0,-
 70,70,0,-
-71,71,0,-
-72,72,0,-
+71,71,19,School screening
+72,72,12,School screening
 73,73,0,-
 74,74,0,-
-75,75,0,-
+75,75,22,External screening
 76,76,0,-
-77,77,19,School screening
-78,78,0,-
-79,79,0,-
-80,80,26,School screening
-81,81,0,-
-82,82,12,School screening
+77,77,0,-
+78,78,26,School screening
+79,79,26,School screening
+80,80,0,-
+81,81,26,School screening
+82,82,0,-
 83,83,0,-
-84,84,12,External screening
+84,84,0,-
 85,85,0,-
-86,86,0,-
+86,86,19,School screening
 87,87,33,School screening
-88,88,5,School screening
+88,88,26,School screening
 89,89,0,-
 90,90,0,-
-91,91,0,-
+91,91,12,External screening
 92,92,0,-
 93,93,0,-
-94,94,0,-
-95,95,33,School screening
-96,96,33,School screening
-97,97,26,School screening
-98,98,12,School screening
-99,99,19,School screening
-100,100,0,-
-101,101,19,School screening
+94,94,19,School screening
+95,95,0,-
+96,96,0,-
+97,97,0,-
+98,98,0,-
+99,99,0,-
+100,100,19,School screening
+101,101,0,-
 102,102,5,School screening
-103,103,22,External screening
-104,104,12,School screening
-105,105,19,School screening
+103,103,26,School screening
+104,104,0,-
+105,105,0,-
 106,106,33,External screening
-107,107,0,-
-108,108,28,External screening
-109,109,19,School screening
-110,110,0,-
+107,107,12,School screening
+108,108,0,-
+109,109,33,School screening
+110,110,5,School screening
 111,111,0,-
-112,112,19,School screening
-113,113,5,School screening
+112,112,0,-
+113,113,19,School screening
 114,114,0,-
-115,115,0,-
-116,116,19,School screening
+115,115,26,School screening
+116,116,0,-
 117,117,0,-
-118,118,26,External screening
-119,119,12,School screening
+118,118,33,School screening
+119,119,0,-
 120,120,0,-
-121,121,26,School screening
+121,121,0,-
 122,122,0,-
-123,123,26,School screening
+123,123,33,School screening
 124,124,0,-
 125,125,0,-
-126,126,33,School screening
-127,127,19,School screening
+126,126,19,School screening
+127,127,0,-
 128,128,0,-
 129,129,0,-
-130,130,26,School screening
+130,130,5,School screening
 131,131,0,-
 132,132,0,-
 133,133,0,-
-134,134,0,-
-135,135,26,School screening
-136,136,0,-
-137,137,26,School screening
+134,134,33,School screening
+135,135,0,-
+136,136,12,School screening
+137,137,12,School screening
 138,138,0,-
 139,139,0,-
-140,140,26,School screening
+140,140,0,-
 141,141,0,-
 142,142,0,-
-143,143,19,School screening
-144,144,0,-
-145,145,12,School screening
+143,143,33,School screening
+144,144,12,School screening
+145,145,0,-
 146,146,0,-
-147,147,0,-
-148,148,0,-
+147,147,19,School screening
+148,148,26,School screening
 149,149,0,-
-150,150,19,School screening
-151,151,26,School screening
-152,152,0,-
-153,153,33,School screening
-154,154,0,-
+150,150,0,-
+151,151,0,-
+152,152,19,School screening
+153,153,12,School screening
+154,154,12,School screening
 155,155,0,-
 156,156,0,-
-157,157,0,-
+157,157,33,School screening
 158,158,0,-
 159,159,0,-
 160,160,0,-
-161,161,0,-
-162,162,0,-
+161,161,26,School screening
+162,162,33,School screening
 163,163,0,-
-164,164,19,School screening
-165,165,0,-
-166,166,0,-
-167,167,0,-
+164,164,0,-
+165,165,12,School screening
+166,166,28,External screening
+167,167,26,School screening
 168,168,0,-
-169,169,26,School screening
-170,170,26,School screening
-171,171,19,School screening
+169,169,0,-
+170,170,5,School screening
+171,171,0,-
 172,172,0,-
 173,173,0,-
 174,174,0,-
 175,175,0,-
-176,176,12,School screening
-177,177,26,School screening
-178,178,0,-
-179,179,26,School screening
+176,176,0,-
+177,177,33,School screening
+178,178,12,School screening
+179,179,19,School screening
 180,180,0,-
-181,181,0,-
+181,181,26,School screening
 182,182,0,-
-183,183,33,School screening
-184,184,12,School screening
-185,185,0,-
-186,186,12,School screening
-187,187,0,-
-188,188,0,-
+183,183,33,External screening
+184,184,0,-
+185,185,26,School screening
+186,186,0,-
+187,187,26,School screening
+188,188,19,School screening
 189,189,0,-
-190,190,15,External screening
+190,190,26,School screening
 191,191,0,-
 192,192,0,-
 193,193,0,-
 194,194,0,-
-195,195,0,-
+195,195,19,School screening
 196,196,0,-
 197,197,0,-
-198,198,19,School screening
-199,199,33,School screening
+198,198,26,School screening
+199,199,0,-

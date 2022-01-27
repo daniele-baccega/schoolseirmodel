@@ -78,7 +78,7 @@ def main():
 		# else:
 		# 	df_plot 							= df_plot.append(df_mod, ignore_index=True)
 
-		# k										= k + 1
+		k										= k + 1
 								      		        
 	df_plot.type_pretty = pandas.Categorical(df_plot.type_pretty, \
 										ordered = True, \

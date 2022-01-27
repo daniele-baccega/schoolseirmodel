@@ -10,7 +10,7 @@ def main():
 		exit()
 
 	long_path												= str(sys.argv[1])
-	types_of_screening										= ["screening25", "screening50", "screening100"]
+	types_of_screening										= ["Screening25", "Screening50", "Screening100"]
 	types_of_screening_pretty								= ["Screening 25%", "Screening 50%", "Screening 100%"]
 	policies												= ["A1", "D1", "D2"]
 	policies_pretty											= ["A1", "D1", "D2"]

@@ -143,6 +143,7 @@ def main():
 		df_left   								        	 	= df_mean - 1.96 * (df_std / math.sqrt(counter))
 		df_right	           									= df_mean + 1.96 * (df_std / math.sqrt(counter))
 
+		df_variance['day']										= df['day']
 		df_left['day']											= df['day']
 		df_right['day']											= df['day']
 

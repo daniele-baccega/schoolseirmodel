@@ -1,1001 +1,1001 @@
 ,trace,day,type
-0,0,32,School screening
+0,0,4,School screening
 1,1,0,-
-2,2,0,-
+2,2,11,School screening
 3,3,4,School screening
-4,4,11,School screening
-5,5,11,School screening
+4,4,18,School screening
+5,5,18,School screening
 6,6,11,School screening
-7,7,11,School screening
+7,7,18,School screening
 8,8,11,School screening
-9,9,11,School screening
-10,10,11,School screening
-11,11,18,School screening
-12,12,0,-
+9,9,18,School screening
+10,10,0,-
+11,11,11,School screening
+12,12,11,School screening
 13,13,0,-
-14,14,11,School screening
-15,15,25,School screening
-16,16,0,-
-17,17,4,School screening
-18,18,0,-
-19,19,11,School screening
+14,14,0,-
+15,15,4,School screening
+16,16,11,School screening
+17,17,18,School screening
+18,18,18,School screening
+19,19,0,-
 20,20,11,School screening
-21,21,11,School screening
-22,22,11,School screening
+21,21,0,-
+22,22,25,School screening
 23,23,18,School screening
 24,24,11,School screening
-25,25,4,School screening
-26,26,0,-
-27,27,11,School screening
-28,28,11,School screening
+25,25,11,School screening
+26,26,11,School screening
+27,27,0,-
+28,28,0,-
 29,29,18,School screening
-30,30,25,School screening
-31,31,11,School screening
-32,32,18,School screening
-33,33,18,School screening
+30,30,11,School screening
+31,31,4,School screening
+32,32,11,School screening
+33,33,4,School screening
 34,34,4,School screening
-35,35,0,-
-36,36,4,School screening
-37,37,18,School screening
-38,38,18,School screening
-39,39,25,School screening
+35,35,4,School screening
+36,36,0,-
+37,37,11,School screening
+38,38,25,School screening
+39,39,11,School screening
 40,40,11,School screening
-41,41,18,School screening
-42,42,18,School screening
-43,43,11,School screening
-44,44,18,School screening
-45,45,11,School screening
-46,46,0,-
-47,47,0,-
-48,48,18,School screening
-49,49,11,School screening
-50,50,0,-
-51,51,18,School screening
-52,52,18,School screening
-53,53,4,School screening
-54,54,25,School screening
-55,55,11,School screening
-56,56,11,School screening
-57,57,0,-
-58,58,18,School screening
+41,41,25,School screening
+42,42,11,School screening
+43,43,0,-
+44,44,4,School screening
+45,45,18,School screening
+46,46,18,School screening
+47,47,11,School screening
+48,48,4,School screening
+49,49,18,School screening
+50,50,18,School screening
+51,51,11,School screening
+52,52,0,-
+53,53,18,School screening
+54,54,0,-
+55,55,18,School screening
+56,56,0,-
+57,57,11,School screening
+58,58,11,School screening
 59,59,11,School screening
-60,60,0,-
-61,61,25,School screening
-62,62,18,School screening
+60,60,18,School screening
+61,61,4,School screening
+62,62,11,School screening
 63,63,4,School screening
-64,64,11,School screening
-65,65,4,School screening
+64,64,25,School screening
+65,65,11,School screening
 66,66,11,School screening
 67,67,18,School screening
-68,68,11,School screening
-69,69,11,School screening
-70,70,11,School screening
-71,71,4,School screening
+68,68,18,School screening
+69,69,25,School screening
+70,70,25,School screening
+71,71,11,School screening
 72,72,4,School screening
 73,73,0,-
-74,74,11,School screening
-75,75,4,School screening
-76,76,0,-
+74,74,18,School screening
+75,75,0,-
+76,76,4,School screening
 77,77,4,School screening
 78,78,11,School screening
-79,79,18,School screening
-80,80,4,School screening
-81,81,4,School screening
+79,79,11,School screening
+80,80,11,School screening
+81,81,18,School screening
 82,82,18,School screening
-83,83,18,School screening
-84,84,18,School screening
-85,85,0,-
-86,86,18,School screening
-87,87,0,-
-88,88,4,School screening
+83,83,11,School screening
+84,84,4,School screening
+85,85,11,School screening
+86,86,25,School screening
+87,87,25,School screening
+88,88,25,School screening
 89,89,11,School screening
-90,90,4,School screening
-91,91,25,School screening
-92,92,0,-
-93,93,32,School screening
-94,94,18,School screening
+90,90,11,School screening
+91,91,11,School screening
+92,92,11,School screening
+93,93,11,School screening
+94,94,11,School screening
 95,95,0,-
-96,96,18,School screening
-97,97,18,School screening
-98,98,11,School screening
-99,99,11,School screening
-100,100,4,School screening
-101,101,0,-
-102,102,25,School screening
-103,103,18,School screening
-104,104,11,School screening
-105,105,4,School screening
-106,106,11,School screening
-107,107,11,School screening
-108,108,0,-
-109,109,11,School screening
-110,110,18,School screening
+96,96,0,-
+97,97,0,-
+98,98,18,School screening
+99,99,4,School screening
+100,100,18,School screening
+101,101,11,School screening
+102,102,4,School screening
+103,103,11,School screening
+104,104,18,School screening
+105,105,11,School screening
+106,106,18,School screening
+107,107,32,School screening
+108,108,25,School screening
+109,109,18,School screening
+110,110,11,School screening
 111,111,18,School screening
 112,112,0,-
-113,113,18,School screening
-114,114,25,School screening
+113,113,11,School screening
+114,114,4,School screening
 115,115,11,School screening
-116,116,18,School screening
-117,117,18,School screening
-118,118,18,School screening
-119,119,0,-
-120,120,0,-
-121,121,11,School screening
-122,122,18,School screening
-123,123,18,School screening
-124,124,0,-
+116,116,4,School screening
+117,117,0,-
+118,118,0,-
+119,119,25,School screening
+120,120,25,School screening
+121,121,0,-
+122,122,4,School screening
+123,123,25,School screening
+124,124,11,School screening
 125,125,11,School screening
-126,126,11,School screening
-127,127,11,School screening
-128,128,0,-
-129,129,18,School screening
+126,126,25,School screening
+127,127,18,School screening
+128,128,11,School screening
+129,129,11,School screening
 130,130,0,-
-131,131,11,School screening
+131,131,0,-
 132,132,11,School screening
-133,133,11,School screening
-134,134,11,School screening
+133,133,18,School screening
+134,134,4,School screening
 135,135,11,School screening
 136,136,11,School screening
-137,137,18,School screening
-138,138,11,School screening
-139,139,18,School screening
-140,140,4,School screening
+137,137,11,School screening
+138,138,0,-
+139,139,11,School screening
+140,140,25,School screening
 141,141,4,School screening
-142,142,4,School screening
-143,143,11,School screening
-144,144,0,-
-145,145,0,-
-146,146,11,School screening
-147,147,18,School screening
-148,148,4,School screening
-149,149,11,School screening
-150,150,18,School screening
+142,142,0,-
+143,143,0,-
+144,144,18,School screening
+145,145,11,School screening
+146,146,0,-
+147,147,11,School screening
+148,148,11,School screening
+149,149,4,School screening
+150,150,4,School screening
 151,151,11,School screening
 152,152,11,School screening
-153,153,11,School screening
-154,154,25,School screening
-155,155,4,School screening
-156,156,11,School screening
-157,157,11,School screening
-158,158,18,School screening
-159,159,4,School screening
-160,160,11,School screening
-161,161,11,School screening
-162,162,0,-
-163,163,18,School screening
-164,164,11,School screening
-165,165,11,School screening
+153,153,0,-
+154,154,18,School screening
+155,155,18,School screening
+156,156,25,School screening
+157,157,4,School screening
+158,158,32,School screening
+159,159,0,-
+160,160,18,School screening
+161,161,0,-
+162,162,11,School screening
+163,163,4,School screening
+164,164,0,-
+165,165,18,School screening
 166,166,4,School screening
-167,167,25,School screening
-168,168,0,-
-169,169,11,School screening
+167,167,4,School screening
+168,168,4,School screening
+169,169,18,School screening
 170,170,11,School screening
 171,171,4,School screening
-172,172,0,-
-173,173,4,School screening
+172,172,18,School screening
+173,173,11,School screening
 174,174,32,School screening
-175,175,18,School screening
-176,176,11,School screening
-177,177,4,School screening
-178,178,4,School screening
-179,179,32,School screening
-180,180,18,School screening
-181,181,11,School screening
-182,182,4,School screening
-183,183,18,School screening
-184,184,0,-
-185,185,0,-
+175,175,4,School screening
+176,176,18,School screening
+177,177,11,School screening
+178,178,0,-
+179,179,11,School screening
+180,180,11,School screening
+181,181,18,School screening
+182,182,0,-
+183,183,25,School screening
+184,184,18,School screening
+185,185,4,School screening
 186,186,11,School screening
-187,187,25,School screening
-188,188,18,School screening
+187,187,11,School screening
+188,188,0,-
 189,189,0,-
-190,190,0,-
-191,191,11,School screening
-192,192,11,School screening
-193,193,4,School screening
-194,194,11,School screening
-195,195,0,-
-196,196,0,-
-197,197,11,School screening
-198,198,18,School screening
-199,199,18,School screening
-200,200,4,School screening
-201,201,4,School screening
-202,202,18,School screening
-203,203,11,School screening
-204,204,25,School screening
-205,205,25,School screening
-206,206,25,School screening
-207,207,25,School screening
-208,208,11,School screening
-209,209,11,School screening
-210,210,11,School screening
+190,190,18,School screening
+191,191,32,School screening
+192,192,4,School screening
+193,193,0,-
+194,194,32,School screening
+195,195,11,School screening
+196,196,18,School screening
+197,197,4,School screening
+198,198,11,School screening
+199,199,11,School screening
+200,200,0,-
+201,201,32,School screening
+202,202,11,School screening
+203,203,18,School screening
+204,204,18,School screening
+205,205,4,School screening
+206,206,11,School screening
+207,207,11,School screening
+208,208,4,School screening
+209,209,32,School screening
+210,210,0,-
 211,211,18,School screening
 212,212,4,School screening
 213,213,11,School screening
-214,214,0,-
-215,215,11,School screening
-216,216,18,School screening
-217,217,18,School screening
-218,218,18,School screening
-219,219,0,-
-220,220,18,School screening
-221,221,0,-
+214,214,18,School screening
+215,215,25,School screening
+216,216,11,School screening
+217,217,0,-
+218,218,4,School screening
+219,219,4,School screening
+220,220,4,School screening
+221,221,4,School screening
 222,222,4,School screening
-223,223,4,School screening
+223,223,11,School screening
 224,224,11,School screening
-225,225,4,School screening
-226,226,32,School screening
-227,227,18,School screening
+225,225,11,School screening
+226,226,4,School screening
+227,227,11,School screening
 228,228,0,-
 229,229,18,School screening
-230,230,11,School screening
-231,231,25,School screening
-232,232,0,-
-233,233,18,School screening
-234,234,18,School screening
+230,230,0,-
+231,231,18,School screening
+232,232,11,School screening
+233,233,4,School screening
+234,234,0,-
 235,235,18,School screening
-236,236,25,School screening
+236,236,11,School screening
 237,237,18,School screening
-238,238,18,School screening
-239,239,32,School screening
-240,240,11,School screening
-241,241,4,School screening
-242,242,0,-
-243,243,4,School screening
-244,244,18,School screening
-245,245,4,School screening
+238,238,11,School screening
+239,239,11,School screening
+240,240,4,School screening
+241,241,0,-
+242,242,11,School screening
+243,243,25,School screening
+244,244,11,School screening
+245,245,0,-
 246,246,11,School screening
-247,247,18,School screening
-248,248,11,School screening
-249,249,4,School screening
-250,250,18,School screening
-251,251,4,School screening
-252,252,11,School screening
+247,247,11,School screening
+248,248,25,School screening
+249,249,11,School screening
+250,250,4,School screening
+251,251,18,School screening
+252,252,18,School screening
 253,253,0,-
 254,254,11,School screening
-255,255,18,School screening
-256,256,18,School screening
-257,257,4,School screening
+255,255,4,School screening
+256,256,11,School screening
+257,257,11,School screening
 258,258,18,School screening
-259,259,4,School screening
-260,260,11,School screening
-261,261,25,School screening
-262,262,0,-
-263,263,32,School screening
+259,259,0,-
+260,260,32,School screening
+261,261,11,School screening
+262,262,25,School screening
+263,263,25,School screening
 264,264,11,School screening
-265,265,18,School screening
-266,266,18,School screening
-267,267,18,School screening
-268,268,4,School screening
-269,269,4,School screening
+265,265,11,School screening
+266,266,4,School screening
+267,267,32,School screening
+268,268,18,School screening
+269,269,25,School screening
 270,270,18,School screening
 271,271,18,School screening
 272,272,0,-
-273,273,18,School screening
-274,274,18,School screening
-275,275,25,School screening
-276,276,11,School screening
-277,277,0,-
-278,278,11,School screening
+273,273,11,School screening
+274,274,4,School screening
+275,275,4,School screening
+276,276,18,School screening
+277,277,25,School screening
+278,278,18,School screening
 279,279,11,School screening
-280,280,11,School screening
+280,280,4,School screening
 281,281,4,School screening
 282,282,18,School screening
-283,283,4,School screening
-284,284,25,School screening
-285,285,0,-
-286,286,11,School screening
-287,287,11,School screening
-288,288,18,School screening
+283,283,11,School screening
+284,284,11,School screening
+285,285,25,School screening
+286,286,25,School screening
+287,287,18,School screening
+288,288,25,School screening
 289,289,25,School screening
-290,290,25,School screening
+290,290,11,School screening
 291,291,11,School screening
-292,292,11,School screening
+292,292,18,School screening
 293,293,11,School screening
-294,294,11,School screening
+294,294,18,School screening
 295,295,18,School screening
-296,296,18,School screening
-297,297,11,School screening
+296,296,11,School screening
+297,297,4,School screening
 298,298,11,School screening
-299,299,0,-
-300,300,11,School screening
+299,299,4,School screening
+300,300,25,School screening
 301,301,11,School screening
-302,302,11,School screening
-303,303,4,School screening
-304,304,18,School screening
-305,305,32,School screening
-306,306,4,School screening
-307,307,18,School screening
-308,308,25,School screening
-309,309,0,-
-310,310,25,School screening
+302,302,4,School screening
+303,303,18,School screening
+304,304,25,School screening
+305,305,4,School screening
+306,306,18,School screening
+307,307,11,School screening
+308,308,18,School screening
+309,309,11,School screening
+310,310,18,School screening
 311,311,11,School screening
-312,312,4,School screening
-313,313,4,School screening
-314,314,4,School screening
-315,315,25,School screening
+312,312,11,School screening
+313,313,11,School screening
+314,314,11,School screening
+315,315,11,School screening
 316,316,11,School screening
-317,317,11,School screening
-318,318,11,School screening
+317,317,18,School screening
+318,318,4,School screening
 319,319,11,School screening
-320,320,4,School screening
+320,320,0,-
 321,321,4,School screening
-322,322,4,School screening
+322,322,11,School screening
 323,323,11,School screening
-324,324,4,School screening
-325,325,0,-
-326,326,11,School screening
+324,324,25,School screening
+325,325,18,School screening
+326,326,18,School screening
 327,327,25,School screening
-328,328,11,School screening
-329,329,25,School screening
-330,330,18,School screening
-331,331,18,School screening
-332,332,18,School screening
-333,333,0,-
+328,328,18,School screening
+329,329,18,School screening
+330,330,32,School screening
+331,331,4,School screening
+332,332,0,-
+333,333,11,School screening
 334,334,18,School screening
-335,335,0,-
+335,335,25,School screening
 336,336,4,School screening
-337,337,18,School screening
-338,338,18,School screening
-339,339,0,-
-340,340,11,School screening
-341,341,18,School screening
-342,342,4,School screening
-343,343,4,School screening
-344,344,11,School screening
-345,345,18,School screening
-346,346,4,School screening
-347,347,0,-
-348,348,4,School screening
-349,349,18,School screening
+337,337,11,School screening
+338,338,4,School screening
+339,339,11,School screening
+340,340,0,-
+341,341,4,School screening
+342,342,11,School screening
+343,343,0,-
+344,344,4,School screening
+345,345,0,-
+346,346,18,School screening
+347,347,11,School screening
+348,348,0,-
+349,349,4,School screening
 350,350,11,School screening
 351,351,11,School screening
-352,352,18,School screening
-353,353,4,School screening
-354,354,4,School screening
-355,355,4,School screening
+352,352,4,School screening
+353,353,18,School screening
+354,354,32,School screening
+355,355,11,School screening
 356,356,11,School screening
-357,357,4,School screening
-358,358,0,-
+357,357,18,School screening
+358,358,4,School screening
 359,359,11,School screening
 360,360,11,School screening
-361,361,18,School screening
+361,361,11,School screening
 362,362,0,-
 363,363,11,School screening
-364,364,4,School screening
-365,365,11,School screening
-366,366,18,School screening
-367,367,11,School screening
+364,364,0,-
+365,365,0,-
+366,366,32,School screening
+367,367,18,School screening
 368,368,11,School screening
-369,369,18,School screening
-370,370,18,School screening
-371,371,11,School screening
-372,372,11,School screening
-373,373,4,School screening
-374,374,18,School screening
+369,369,25,School screening
+370,370,0,-
+371,371,4,School screening
+372,372,4,School screening
+373,373,18,School screening
+374,374,0,-
 375,375,11,School screening
 376,376,18,School screening
-377,377,18,School screening
-378,378,4,School screening
-379,379,25,School screening
-380,380,18,School screening
-381,381,32,School screening
-382,382,11,School screening
-383,383,18,School screening
+377,377,4,School screening
+378,378,18,School screening
+379,379,0,-
+380,380,0,-
+381,381,18,School screening
+382,382,4,School screening
+383,383,11,School screening
 384,384,11,School screening
 385,385,4,School screening
 386,386,11,School screening
-387,387,4,School screening
-388,388,25,School screening
-389,389,18,School screening
+387,387,0,-
+388,388,32,School screening
+389,389,4,School screening
 390,390,18,School screening
-391,391,0,-
-392,392,25,School screening
-393,393,0,-
+391,391,18,School screening
+392,392,11,School screening
+393,393,18,School screening
 394,394,0,-
 395,395,11,School screening
-396,396,11,School screening
-397,397,0,-
-398,398,0,-
-399,399,0,-
-400,400,25,School screening
-401,401,32,School screening
-402,402,18,School screening
-403,403,0,-
+396,396,0,-
+397,397,18,School screening
+398,398,18,School screening
+399,399,18,School screening
+400,400,4,School screening
+401,401,11,School screening
+402,402,11,School screening
+403,403,11,School screening
 404,404,11,School screening
-405,405,0,-
-406,406,4,School screening
-407,407,11,School screening
-408,408,0,-
+405,405,4,School screening
+406,406,11,School screening
+407,407,4,School screening
+408,408,18,School screening
 409,409,11,School screening
-410,410,4,School screening
+410,410,18,School screening
 411,411,11,School screening
 412,412,4,School screening
 413,413,0,-
-414,414,11,School screening
-415,415,4,School screening
-416,416,4,School screening
+414,414,18,School screening
+415,415,18,School screening
+416,416,0,-
 417,417,11,School screening
-418,418,11,School screening
-419,419,11,School screening
+418,418,4,School screening
+419,419,4,School screening
 420,420,11,School screening
-421,421,4,School screening
-422,422,11,School screening
-423,423,25,School screening
-424,424,4,School screening
+421,421,0,-
+422,422,25,School screening
+423,423,18,School screening
+424,424,11,School screening
 425,425,11,School screening
-426,426,11,School screening
+426,426,18,School screening
 427,427,18,School screening
-428,428,18,School screening
+428,428,4,School screening
 429,429,11,School screening
 430,430,0,-
-431,431,11,School screening
-432,432,4,School screening
-433,433,18,School screening
-434,434,18,School screening
-435,435,25,School screening
+431,431,0,-
+432,432,11,School screening
+433,433,11,School screening
+434,434,11,School screening
+435,435,0,-
 436,436,0,-
 437,437,11,School screening
-438,438,11,School screening
-439,439,11,School screening
-440,440,11,School screening
+438,438,4,School screening
+439,439,0,-
+440,440,4,School screening
 441,441,11,School screening
-442,442,4,School screening
-443,443,11,School screening
+442,442,11,School screening
+443,443,4,School screening
 444,444,4,School screening
 445,445,11,School screening
 446,446,4,School screening
-447,447,25,School screening
+447,447,0,-
 448,448,4,School screening
-449,449,0,-
-450,450,18,School screening
-451,451,25,School screening
+449,449,25,School screening
+450,450,0,-
+451,451,0,-
 452,452,18,School screening
-453,453,18,School screening
-454,454,11,School screening
-455,455,11,School screening
-456,456,18,School screening
-457,457,18,School screening
+453,453,25,School screening
+454,454,18,School screening
+455,455,4,School screening
+456,456,32,School screening
+457,457,25,School screening
 458,458,11,School screening
-459,459,18,School screening
-460,460,32,School screening
+459,459,11,School screening
+460,460,11,School screening
 461,461,11,School screening
-462,462,11,School screening
-463,463,11,School screening
-464,464,0,-
-465,465,4,School screening
+462,462,0,-
+463,463,18,School screening
+464,464,4,School screening
+465,465,0,-
 466,466,11,School screening
-467,467,18,School screening
-468,468,0,-
-469,469,11,School screening
-470,470,11,School screening
-471,471,4,School screening
+467,467,11,School screening
+468,468,32,School screening
+469,469,4,School screening
+470,470,32,School screening
+471,471,18,School screening
 472,472,4,School screening
-473,473,18,School screening
-474,474,11,School screening
+473,473,11,School screening
+474,474,18,School screening
 475,475,11,School screening
-476,476,18,School screening
-477,477,11,School screening
-478,478,4,School screening
-479,479,18,School screening
+476,476,11,School screening
+477,477,0,-
+478,478,0,-
+479,479,4,School screening
 480,480,18,School screening
-481,481,11,School screening
+481,481,18,School screening
 482,482,18,School screening
-483,483,18,School screening
-484,484,11,School screening
-485,485,25,School screening
-486,486,4,School screening
-487,487,4,School screening
-488,488,11,School screening
-489,489,11,School screening
+483,483,0,-
+484,484,25,School screening
+485,485,11,School screening
+486,486,11,School screening
+487,487,18,School screening
+488,488,18,School screening
+489,489,18,School screening
 490,490,11,School screening
-491,491,11,School screening
-492,492,25,School screening
-493,493,11,School screening
-494,494,4,School screening
-495,495,25,School screening
-496,496,11,School screening
+491,491,18,School screening
+492,492,0,-
+493,493,18,School screening
+494,494,11,School screening
+495,495,18,School screening
+496,496,4,School screening
 497,497,4,School screening
-498,498,18,School screening
+498,498,11,School screening
 499,499,11,School screening
-500,500,18,School screening
+500,500,0,-
 501,501,18,School screening
-502,502,11,School screening
-503,503,11,School screening
-504,504,11,School screening
-505,505,18,School screening
-506,506,11,School screening
-507,507,0,-
-508,508,0,-
-509,509,25,School screening
+502,502,18,School screening
+503,503,0,-
+504,504,18,School screening
+505,505,4,School screening
+506,506,18,School screening
+507,507,4,School screening
+508,508,11,School screening
+509,509,0,-
 510,510,4,School screening
-511,511,11,School screening
-512,512,32,School screening
-513,513,0,-
-514,514,0,-
-515,515,11,School screening
+511,511,18,School screening
+512,512,4,School screening
+513,513,25,School screening
+514,514,11,School screening
+515,515,4,School screening
 516,516,11,School screening
 517,517,11,School screening
 518,518,11,School screening
-519,519,0,-
-520,520,11,School screening
-521,521,0,-
+519,519,25,School screening
+520,520,0,-
+521,521,11,School screening
 522,522,11,School screening
 523,523,18,School screening
-524,524,4,School screening
+524,524,0,-
 525,525,11,School screening
-526,526,11,School screening
-527,527,18,School screening
+526,526,4,School screening
+527,527,25,School screening
 528,528,0,-
-529,529,11,School screening
+529,529,4,School screening
 530,530,18,School screening
-531,531,11,School screening
-532,532,0,-
-533,533,25,School screening
+531,531,18,School screening
+532,532,4,School screening
+533,533,4,School screening
 534,534,11,School screening
-535,535,32,School screening
-536,536,11,School screening
-537,537,4,School screening
-538,538,4,School screening
-539,539,18,School screening
-540,540,4,School screening
-541,541,0,-
-542,542,0,-
-543,543,11,School screening
+535,535,0,-
+536,536,18,School screening
+537,537,18,School screening
+538,538,18,School screening
+539,539,32,School screening
+540,540,32,School screening
+541,541,4,School screening
+542,542,25,School screening
+543,543,0,-
 544,544,11,School screening
 545,545,11,School screening
-546,546,11,School screening
-547,547,25,School screening
-548,548,11,School screening
-549,549,11,School screening
-550,550,11,School screening
-551,551,0,-
-552,552,32,School screening
-553,553,11,School screening
-554,554,32,School screening
-555,555,0,-
+546,546,4,School screening
+547,547,4,School screening
+548,548,0,-
+549,549,4,School screening
+550,550,0,-
+551,551,11,School screening
+552,552,0,-
+553,553,18,School screening
+554,554,0,-
+555,555,4,School screening
 556,556,25,School screening
 557,557,4,School screening
 558,558,11,School screening
-559,559,0,-
-560,560,4,School screening
-561,561,11,School screening
-562,562,4,School screening
-563,563,11,School screening
+559,559,4,School screening
+560,560,11,School screening
+561,561,18,School screening
+562,562,11,School screening
+563,563,0,-
 564,564,11,School screening
-565,565,25,School screening
+565,565,18,School screening
 566,566,4,School screening
-567,567,18,School screening
+567,567,11,School screening
 568,568,11,School screening
 569,569,18,School screening
-570,570,4,School screening
+570,570,11,School screening
 571,571,0,-
-572,572,11,School screening
-573,573,18,School screening
-574,574,18,School screening
-575,575,11,School screening
-576,576,11,School screening
-577,577,11,School screening
-578,578,11,School screening
+572,572,25,School screening
+573,573,11,School screening
+574,574,25,School screening
+575,575,0,-
+576,576,18,School screening
+577,577,0,-
+578,578,32,School screening
 579,579,11,School screening
-580,580,32,School screening
-581,581,0,-
-582,582,0,-
-583,583,11,School screening
-584,584,18,School screening
+580,580,18,School screening
+581,581,18,School screening
+582,582,18,School screening
+583,583,18,School screening
+584,584,4,School screening
 585,585,18,School screening
 586,586,18,School screening
-587,587,11,School screening
-588,588,18,School screening
-589,589,0,-
+587,587,25,School screening
+588,588,11,School screening
+589,589,11,School screening
 590,590,0,-
-591,591,18,School screening
-592,592,11,School screening
-593,593,18,School screening
-594,594,4,School screening
-595,595,25,School screening
+591,591,25,School screening
+592,592,18,School screening
+593,593,11,School screening
+594,594,18,School screening
+595,595,18,School screening
 596,596,18,School screening
-597,597,4,School screening
+597,597,25,School screening
 598,598,18,School screening
-599,599,4,School screening
+599,599,11,School screening
 600,600,11,School screening
-601,601,32,School screening
+601,601,0,-
 602,602,11,School screening
-603,603,32,School screening
-604,604,11,School screening
-605,605,11,School screening
-606,606,4,School screening
+603,603,11,School screening
+604,604,4,School screening
+605,605,18,School screening
+606,606,11,School screening
 607,607,4,School screening
 608,608,18,School screening
-609,609,25,School screening
-610,610,0,-
+609,609,4,School screening
+610,610,4,School screening
 611,611,4,School screening
-612,612,32,School screening
+612,612,25,School screening
 613,613,0,-
-614,614,4,School screening
-615,615,4,School screening
-616,616,25,School screening
-617,617,4,School screening
-618,618,4,School screening
-619,619,4,School screening
-620,620,18,School screening
-621,621,0,-
-622,622,0,-
-623,623,11,School screening
-624,624,11,School screening
-625,625,18,School screening
-626,626,0,-
-627,627,25,School screening
-628,628,0,-
-629,629,4,School screening
-630,630,11,School screening
-631,631,11,School screening
-632,632,18,School screening
+614,614,18,School screening
+615,615,0,-
+616,616,11,School screening
+617,617,0,-
+618,618,18,School screening
+619,619,18,School screening
+620,620,11,School screening
+621,621,18,School screening
+622,622,11,School screening
+623,623,0,-
+624,624,32,School screening
+625,625,11,School screening
+626,626,4,School screening
+627,627,32,School screening
+628,628,11,School screening
+629,629,32,School screening
+630,630,25,School screening
+631,631,18,School screening
+632,632,11,School screening
 633,633,11,School screening
-634,634,25,School screening
+634,634,11,School screening
 635,635,0,-
-636,636,25,School screening
-637,637,18,School screening
-638,638,0,-
-639,639,0,-
-640,640,11,School screening
+636,636,11,School screening
+637,637,11,School screening
+638,638,4,School screening
+639,639,11,School screening
+640,640,18,School screening
 641,641,11,School screening
-642,642,0,-
-643,643,11,School screening
-644,644,11,School screening
-645,645,11,School screening
-646,646,4,School screening
-647,647,25,School screening
-648,648,18,School screening
-649,649,0,-
-650,650,11,School screening
-651,651,25,School screening
-652,652,11,School screening
-653,653,11,School screening
+642,642,25,School screening
+643,643,32,School screening
+644,644,18,School screening
+645,645,4,School screening
+646,646,18,School screening
+647,647,4,School screening
+648,648,0,-
+649,649,4,School screening
+650,650,4,School screening
+651,651,11,School screening
+652,652,18,School screening
+653,653,18,School screening
 654,654,11,School screening
-655,655,4,School screening
-656,656,18,School screening
-657,657,18,School screening
-658,658,4,School screening
-659,659,18,School screening
-660,660,4,School screening
-661,661,0,-
+655,655,0,-
+656,656,11,School screening
+657,657,0,-
+658,658,11,School screening
+659,659,25,School screening
+660,660,25,School screening
+661,661,11,School screening
 662,662,11,School screening
-663,663,18,School screening
+663,663,11,School screening
 664,664,18,School screening
-665,665,0,-
+665,665,4,School screening
 666,666,11,School screening
-667,667,11,School screening
-668,668,11,School screening
+667,667,0,-
+668,668,18,School screening
 669,669,0,-
 670,670,11,School screening
-671,671,4,School screening
+671,671,0,-
 672,672,0,-
-673,673,4,School screening
-674,674,32,School screening
-675,675,4,School screening
-676,676,18,School screening
-677,677,4,School screening
+673,673,0,-
+674,674,11,School screening
+675,675,18,School screening
+676,676,11,School screening
+677,677,11,School screening
 678,678,11,School screening
-679,679,0,-
-680,680,11,School screening
-681,681,25,School screening
+679,679,25,School screening
+680,680,18,School screening
+681,681,11,School screening
 682,682,11,School screening
-683,683,18,School screening
+683,683,0,-
 684,684,11,School screening
-685,685,18,School screening
-686,686,18,School screening
-687,687,32,School screening
-688,688,11,School screening
-689,689,25,School screening
+685,685,11,School screening
+686,686,4,School screening
+687,687,11,School screening
+688,688,18,School screening
+689,689,4,School screening
 690,690,11,School screening
-691,691,25,School screening
-692,692,11,School screening
+691,691,4,School screening
+692,692,18,School screening
 693,693,11,School screening
-694,694,18,School screening
-695,695,0,-
-696,696,11,School screening
-697,697,0,-
+694,694,25,School screening
+695,695,11,School screening
+696,696,18,School screening
+697,697,18,School screening
 698,698,11,School screening
-699,699,4,School screening
-700,700,11,School screening
-701,701,18,School screening
-702,702,0,-
-703,703,18,School screening
+699,699,18,School screening
+700,700,4,School screening
+701,701,4,School screening
+702,702,11,School screening
+703,703,11,School screening
 704,704,25,School screening
-705,705,4,School screening
-706,706,11,School screening
+705,705,11,School screening
+706,706,4,School screening
 707,707,11,School screening
-708,708,11,School screening
-709,709,11,School screening
-710,710,4,School screening
-711,711,11,School screening
-712,712,4,School screening
-713,713,25,School screening
-714,714,25,School screening
-715,715,18,School screening
-716,716,0,-
-717,717,18,School screening
-718,718,4,School screening
-719,719,18,School screening
+708,708,25,School screening
+709,709,18,School screening
+710,710,11,School screening
+711,711,4,School screening
+712,712,18,School screening
+713,713,4,School screening
+714,714,11,School screening
+715,715,11,School screening
+716,716,4,School screening
+717,717,11,School screening
+718,718,11,School screening
+719,719,4,School screening
 720,720,11,School screening
 721,721,11,School screening
 722,722,11,School screening
-723,723,4,School screening
-724,724,18,School screening
-725,725,4,School screening
-726,726,0,-
-727,727,25,School screening
-728,728,18,School screening
-729,729,11,School screening
-730,730,4,School screening
-731,731,0,-
+723,723,11,School screening
+724,724,0,-
+725,725,0,-
+726,726,11,School screening
+727,727,0,-
+728,728,25,School screening
+729,729,18,School screening
+730,730,11,School screening
+731,731,11,School screening
 732,732,4,School screening
-733,733,18,School screening
+733,733,4,School screening
 734,734,4,School screening
-735,735,4,School screening
-736,736,11,School screening
-737,737,0,-
+735,735,11,School screening
+736,736,4,School screening
+737,737,11,School screening
 738,738,11,School screening
 739,739,11,School screening
 740,740,4,School screening
-741,741,4,School screening
-742,742,11,School screening
-743,743,11,School screening
-744,744,25,School screening
-745,745,18,School screening
-746,746,4,School screening
-747,747,18,School screening
-748,748,25,School screening
-749,749,0,-
-750,750,25,School screening
+741,741,11,School screening
+742,742,18,School screening
+743,743,25,School screening
+744,744,4,School screening
+745,745,0,-
+746,746,18,School screening
+747,747,11,School screening
+748,748,11,School screening
+749,749,25,School screening
+750,750,0,-
 751,751,11,School screening
-752,752,4,School screening
+752,752,0,-
 753,753,11,School screening
-754,754,11,School screening
-755,755,11,School screening
-756,756,11,School screening
-757,757,11,School screening
+754,754,4,School screening
+755,755,0,-
+756,756,4,School screening
+757,757,4,School screening
 758,758,0,-
-759,759,18,School screening
-760,760,0,-
-761,761,11,School screening
-762,762,18,School screening
-763,763,25,School screening
+759,759,11,School screening
+760,760,4,School screening
+761,761,18,School screening
+762,762,11,School screening
+763,763,32,School screening
 764,764,18,School screening
 765,765,4,School screening
-766,766,11,School screening
-767,767,0,-
-768,768,18,School screening
-769,769,4,School screening
-770,770,11,School screening
+766,766,0,-
+767,767,11,School screening
+768,768,4,School screening
+769,769,25,School screening
+770,770,18,School screening
 771,771,18,School screening
 772,772,18,School screening
-773,773,0,-
-774,774,18,School screening
-775,775,25,School screening
-776,776,0,-
-777,777,4,School screening
+773,773,11,School screening
+774,774,11,School screening
+775,775,18,School screening
+776,776,25,School screening
+777,777,0,-
 778,778,11,School screening
-779,779,11,School screening
-780,780,11,School screening
-781,781,18,School screening
-782,782,4,School screening
-783,783,11,School screening
-784,784,32,School screening
-785,785,0,-
-786,786,18,School screening
-787,787,18,School screening
-788,788,25,School screening
-789,789,11,School screening
-790,790,25,School screening
+779,779,0,-
+780,780,32,School screening
+781,781,4,School screening
+782,782,11,School screening
+783,783,4,School screening
+784,784,0,-
+785,785,25,School screening
+786,786,11,School screening
+787,787,25,School screening
+788,788,18,School screening
+789,789,18,School screening
+790,790,11,School screening
 791,791,11,School screening
-792,792,11,School screening
-793,793,0,-
-794,794,0,-
-795,795,25,School screening
-796,796,32,School screening
-797,797,18,School screening
-798,798,32,School screening
-799,799,18,School screening
-800,800,18,School screening
+792,792,18,School screening
+793,793,11,School screening
+794,794,25,School screening
+795,795,18,School screening
+796,796,11,School screening
+797,797,4,School screening
+798,798,4,School screening
+799,799,4,School screening
+800,800,32,School screening
 801,801,18,School screening
-802,802,0,-
-803,803,11,School screening
-804,804,0,-
+802,802,11,School screening
+803,803,18,School screening
+804,804,4,School screening
 805,805,4,School screening
-806,806,0,-
+806,806,11,School screening
 807,807,11,School screening
-808,808,25,School screening
+808,808,32,School screening
 809,809,4,School screening
-810,810,4,School screening
-811,811,11,School screening
-812,812,0,-
-813,813,11,School screening
+810,810,25,School screening
+811,811,18,School screening
+812,812,25,School screening
+813,813,4,School screening
 814,814,11,School screening
-815,815,4,School screening
+815,815,11,School screening
 816,816,11,School screening
-817,817,18,School screening
-818,818,11,School screening
-819,819,11,School screening
-820,820,25,School screening
-821,821,0,-
-822,822,11,School screening
-823,823,0,-
-824,824,11,School screening
-825,825,25,School screening
-826,826,4,School screening
-827,827,4,School screening
-828,828,18,School screening
+817,817,32,School screening
+818,818,4,School screening
+819,819,0,-
+820,820,0,-
+821,821,11,School screening
+822,822,18,School screening
+823,823,11,School screening
+824,824,0,-
+825,825,11,School screening
+826,826,18,School screening
+827,827,18,School screening
+828,828,11,School screening
 829,829,11,School screening
-830,830,11,School screening
-831,831,0,-
-832,832,4,School screening
-833,833,18,School screening
-834,834,18,School screening
-835,835,11,School screening
-836,836,25,School screening
-837,837,4,School screening
-838,838,11,School screening
-839,839,18,School screening
-840,840,18,School screening
+830,830,4,School screening
+831,831,4,School screening
+832,832,0,-
+833,833,11,School screening
+834,834,25,School screening
+835,835,4,School screening
+836,836,11,School screening
+837,837,18,School screening
+838,838,4,School screening
+839,839,25,School screening
+840,840,25,School screening
 841,841,11,School screening
-842,842,18,School screening
-843,843,4,School screening
-844,844,18,School screening
-845,845,0,-
+842,842,4,School screening
+843,843,11,School screening
+844,844,0,-
+845,845,11,School screening
 846,846,0,-
 847,847,11,School screening
-848,848,4,School screening
-849,849,4,School screening
-850,850,0,-
-851,851,18,School screening
-852,852,0,-
+848,848,11,School screening
+849,849,25,School screening
+850,850,4,School screening
+851,851,4,School screening
+852,852,4,School screening
 853,853,11,School screening
 854,854,11,School screening
 855,855,25,School screening
 856,856,11,School screening
-857,857,18,School screening
-858,858,4,School screening
-859,859,4,School screening
-860,860,4,School screening
-861,861,25,School screening
-862,862,32,School screening
+857,857,11,School screening
+858,858,11,School screening
+859,859,11,School screening
+860,860,11,School screening
+861,861,4,School screening
+862,862,11,School screening
 863,863,11,School screening
-864,864,25,School screening
-865,865,11,School screening
-866,866,4,School screening
-867,867,4,School screening
-868,868,4,School screening
-869,869,18,School screening
-870,870,11,School screening
-871,871,4,School screening
+864,864,4,School screening
+865,865,0,-
+866,866,0,-
+867,867,11,School screening
+868,868,11,School screening
+869,869,0,-
+870,870,0,-
+871,871,25,School screening
 872,872,18,School screening
-873,873,11,School screening
-874,874,4,School screening
-875,875,4,School screening
-876,876,11,School screening
-877,877,11,School screening
-878,878,11,School screening
+873,873,25,School screening
+874,874,0,-
+875,875,18,School screening
+876,876,18,School screening
+877,877,0,-
+878,878,18,School screening
 879,879,11,School screening
-880,880,18,School screening
-881,881,11,School screening
+880,880,11,School screening
+881,881,25,School screening
 882,882,4,School screening
-883,883,4,School screening
-884,884,11,School screening
+883,883,11,School screening
+884,884,18,School screening
 885,885,11,School screening
-886,886,4,School screening
-887,887,11,School screening
-888,888,11,School screening
-889,889,4,School screening
-890,890,0,-
-891,891,4,School screening
-892,892,4,School screening
-893,893,11,School screening
+886,886,18,School screening
+887,887,18,School screening
+888,888,18,School screening
+889,889,18,School screening
+890,890,4,School screening
+891,891,11,School screening
+892,892,18,School screening
+893,893,4,School screening
 894,894,11,School screening
 895,895,11,School screening
-896,896,25,School screening
-897,897,4,School screening
-898,898,0,-
-899,899,25,School screening
-900,900,25,School screening
-901,901,18,School screening
-902,902,4,School screening
-903,903,25,School screening
-904,904,11,School screening
-905,905,4,School screening
-906,906,18,School screening
+896,896,11,School screening
+897,897,18,School screening
+898,898,18,School screening
+899,899,18,School screening
+900,900,0,-
+901,901,11,School screening
+902,902,18,School screening
+903,903,18,School screening
+904,904,18,School screening
+905,905,11,School screening
+906,906,25,School screening
 907,907,11,School screening
-908,908,25,School screening
+908,908,0,-
 909,909,11,School screening
-910,910,11,School screening
+910,910,4,School screening
 911,911,11,School screening
-912,912,11,School screening
-913,913,25,School screening
-914,914,4,School screening
+912,912,32,School screening
+913,913,4,School screening
+914,914,11,School screening
 915,915,0,-
 916,916,4,School screening
-917,917,0,-
-918,918,32,School screening
+917,917,11,School screening
+918,918,11,School screening
 919,919,11,School screening
-920,920,4,School screening
-921,921,4,School screening
+920,920,11,School screening
+921,921,18,School screening
 922,922,18,School screening
-923,923,11,School screening
+923,923,4,School screening
 924,924,11,School screening
 925,925,11,School screening
-926,926,0,-
-927,927,0,-
+926,926,18,School screening
+927,927,18,School screening
 928,928,11,School screening
-929,929,11,School screening
+929,929,0,-
 930,930,11,School screening
-931,931,32,School screening
-932,932,4,School screening
+931,931,4,School screening
+932,932,18,School screening
 933,933,11,School screening
 934,934,4,School screening
-935,935,18,School screening
-936,936,11,School screening
-937,937,18,School screening
+935,935,25,School screening
+936,936,18,School screening
+937,937,4,School screening
 938,938,11,School screening
-939,939,18,School screening
-940,940,11,School screening
-941,941,18,School screening
-942,942,11,School screening
-943,943,11,School screening
+939,939,25,School screening
+940,940,0,-
+941,941,25,School screening
+942,942,18,School screening
+943,943,4,School screening
 944,944,11,School screening
-945,945,4,School screening
-946,946,0,-
-947,947,4,School screening
+945,945,11,School screening
+946,946,11,School screening
+947,947,25,School screening
 948,948,11,School screening
-949,949,4,School screening
-950,950,25,School screening
+949,949,25,School screening
+950,950,11,School screening
 951,951,4,School screening
-952,952,4,School screening
-953,953,4,School screening
+952,952,11,School screening
+953,953,0,-
 954,954,18,School screening
-955,955,18,School screening
+955,955,4,School screening
 956,956,4,School screening
-957,957,0,-
-958,958,25,School screening
-959,959,0,-
-960,960,11,School screening
-961,961,11,School screening
-962,962,18,School screening
+957,957,18,School screening
+958,958,11,School screening
+959,959,11,School screening
+960,960,4,School screening
+961,961,0,-
+962,962,25,School screening
 963,963,11,School screening
 964,964,4,School screening
-965,965,32,School screening
+965,965,0,-
 966,966,11,School screening
 967,967,11,School screening
-968,968,11,School screening
-969,969,0,-
-970,970,11,School screening
-971,971,0,-
-972,972,0,-
+968,968,4,School screening
+969,969,18,School screening
+970,970,4,School screening
+971,971,25,School screening
+972,972,18,School screening
 973,973,18,School screening
-974,974,18,School screening
-975,975,18,School screening
-976,976,11,School screening
+974,974,11,School screening
+975,975,11,School screening
+976,976,4,School screening
 977,977,4,School screening
-978,978,11,School screening
+978,978,18,School screening
 979,979,18,School screening
-980,980,11,School screening
-981,981,32,School screening
-982,982,11,School screening
-983,983,25,School screening
+980,980,18,School screening
+981,981,18,School screening
+982,982,4,School screening
+983,983,11,School screening
 984,984,11,School screening
-985,985,25,School screening
-986,986,4,School screening
-987,987,18,School screening
-988,988,32,School screening
-989,989,0,-
-990,990,18,School screening
-991,991,11,School screening
-992,992,18,School screening
-993,993,4,School screening
-994,994,18,School screening
-995,995,25,School screening
-996,996,4,School screening
+985,985,11,School screening
+986,986,0,-
+987,987,11,School screening
+988,988,4,School screening
+989,989,4,School screening
+990,990,0,-
+991,991,0,-
+992,992,32,School screening
+993,993,11,School screening
+994,994,11,School screening
+995,995,11,School screening
+996,996,11,School screening
 997,997,0,-
-998,998,0,-
+998,998,11,School screening
 999,999,11,School screening

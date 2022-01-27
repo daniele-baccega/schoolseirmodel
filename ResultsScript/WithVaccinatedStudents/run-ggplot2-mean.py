@@ -12,8 +12,7 @@ def main():
 	policy 													= str(sys.argv[2])
 	day_name 												= str(sys.argv[3])
 	vaccinated_students_perc								= str(sys.argv[4])
-	population												= 240
-	
+		
 	long_path												= "../../Results/" + path + "/" + policy + "/Results" + vaccinated_students_perc + policy + day_name
 	files													= os.listdir(long_path)
 	num_files												= len(files)
@@ -61,7 +60,7 @@ def main():
 
 
 		counter												= counter + 1
-		#if counter == 100:
+		#if counter == 500:
 		#	break;
 
 	df_variance 											= df_variance / (counter-1)
@@ -71,12 +70,13 @@ def main():
 	df_left   								        	 	= df_mean - 1.96 * (df_std / math.sqrt(counter))
 	df_right	           									= df_mean + 1.96 * (df_std / math.sqrt(counter))
 
+	df_variance['day']										= df['day']
 	df_left['day']											= df['day']
 	df_right['day']											= df['day']
 
-	df_mean.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/mean_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_variance.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/variance_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_left.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/left_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_right.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/right_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_mean.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/mean_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
+	df_variance.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/variance_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
+	df_left.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/left_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
+	df_right.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/right_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
 
 main();

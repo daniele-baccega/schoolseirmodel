@@ -4,17 +4,18 @@ import pandas
 import math
 
 def main():
-	if len(sys.argv) < 4:
-		print("Error, parameters are missing: python run-ggplot2-mean.py path policy day_name")
+	if len(sys.argv) < 5:
+		print("Error, parameters are missing: python run-ggplot2-mean.py path policy day_name quarantine_policy")
 		exit()
 
 	path													= str(sys.argv[1])
 	policy 													= str(sys.argv[2])
 	day_name 												= str(sys.argv[3])
+	quarantine_policy										= str(sys.argv[4])
 	n														= 36
 	population												= 240
 	
-	long_path												= "../../Results/" + path + "/" + policy + "/Results" + policy + day_name + "Screening100/"
+	long_path												= "../../Results/" + path + "/" + quarantine_policy + "/" + policy + "/Results" + policy + day_name + "Screening100/"
 	files													= os.listdir(long_path)
 	num_files												= len(files)
 	df_mean													= None
@@ -69,12 +70,13 @@ def main():
 	df_left   								        	 	= df_mean - 1.96 * (df_std / math.sqrt(counter))
 	df_right	           									= df_mean + 1.96 * (df_std / math.sqrt(counter))
 
+	df_variance['day']										= df['day']
 	df_left['day']											= df['day']
 	df_right['day']											= df['day']
 
-	df_mean.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/mean_' + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_variance.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/variance_' + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_left.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/left_' + policy + "_" + day_name + '.csv', float_format="%.4f")
-	df_right.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/right_' + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_mean.to_csv('../../mean-results/' + path + '/' + quarantine_policy + '/' + policy + '/' + day_name + '/mean_' + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_variance.to_csv('../../mean-results/' + path + '/' + quarantine_policy + '/' + policy + '/' + day_name + '/variance_' + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_left.to_csv('../../mean-results/' + path + '/' + quarantine_policy + '/' + policy + '/' + day_name + '/left_' + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_right.to_csv('../../mean-results/' + path + '/' + quarantine_policy + '/' + policy + '/' + day_name + '/right_' + policy + "_" + day_name + '.csv', float_format="%.4f")
 
 main();

@@ -1,5 +1,5 @@
 ,trace,day,type
-0,0,4,School screening
+0,0,4,External screening
 1,1,4,School screening
 2,2,4,School screening
 3,3,4,School screening
@@ -7,50 +7,50 @@
 5,5,4,School screening
 6,6,4,School screening
 7,7,4,School screening
-8,8,0,-
+8,8,4,School screening
 9,9,4,School screening
 10,10,4,School screening
 11,11,4,School screening
-12,12,1,External screening
-13,13,4,School screening
+12,12,4,School screening
+13,13,11,School screening
 14,14,4,School screening
 15,15,4,School screening
 16,16,4,School screening
 17,17,4,School screening
 18,18,4,School screening
 19,19,4,School screening
-20,20,0,-
+20,20,4,School screening
 21,21,4,School screening
 22,22,4,School screening
 23,23,4,School screening
 24,24,4,School screening
 25,25,4,School screening
-26,26,11,School screening
-27,27,0,-
+26,26,4,School screening
+27,27,4,School screening
 28,28,4,School screening
 29,29,4,School screening
 30,30,4,School screening
-31,31,4,School screening
+31,31,1,External screening
 32,32,4,School screening
 33,33,4,School screening
 34,34,4,School screening
-35,35,4,School screening
-36,36,11,School screening
+35,35,1,External screening
+36,36,4,School screening
 37,37,4,School screening
-38,38,0,-
+38,38,4,School screening
 39,39,4,School screening
 40,40,4,School screening
 41,41,4,School screening
-42,42,2,External screening
-43,43,4,School screening
+42,42,4,School screening
+43,43,0,-
 44,44,4,School screening
 45,45,4,School screening
-46,46,0,-
+46,46,4,School screening
 47,47,4,School screening
-48,48,4,External screening
+48,48,4,School screening
 49,49,4,School screening
 50,50,4,School screening
-51,51,4,School screening
+51,51,11,School screening
 52,52,4,School screening
 53,53,4,School screening
 54,54,4,School screening
@@ -58,123 +58,123 @@
 56,56,4,School screening
 57,57,4,School screening
 58,58,4,School screening
-59,59,4,School screening
+59,59,4,External screening
 60,60,4,School screening
 61,61,4,School screening
 62,62,4,School screening
 63,63,0,-
 64,64,4,School screening
-65,65,4,School screening
-66,66,11,School screening
-67,67,4,School screening
-68,68,4,School screening
+65,65,4,External screening
+66,66,1,External screening
+67,67,0,-
+68,68,0,-
 69,69,4,School screening
-70,70,4,School screening
+70,70,0,-
 71,71,4,School screening
 72,72,4,School screening
-73,73,0,-
+73,73,4,School screening
 74,74,4,School screening
-75,75,4,School screening
-76,76,11,School screening
-77,77,4,School screening
+75,75,0,-
+76,76,0,-
+77,77,0,-
 78,78,4,School screening
 79,79,4,School screening
 80,80,4,School screening
 81,81,4,School screening
 82,82,4,School screening
-83,83,4,School screening
-84,84,9,External screening
+83,83,11,School screening
+84,84,4,School screening
 85,85,4,School screening
 86,86,4,School screening
 87,87,4,School screening
-88,88,4,School screening
+88,88,0,-
 89,89,4,School screening
-90,90,4,School screening
-91,91,4,School screening
+90,90,0,-
+91,91,9,External screening
 92,92,4,School screening
-93,93,4,External screening
+93,93,4,School screening
 94,94,4,School screening
 95,95,4,School screening
 96,96,4,School screening
 97,97,4,School screening
 98,98,4,School screening
 99,99,4,School screening
-100,100,4,School screening
-101,101,11,School screening
+100,100,11,School screening
+101,101,4,School screening
 102,102,4,School screening
-103,103,0,-
-104,104,4,School screening
-105,105,4,External screening
+103,103,11,School screening
+104,104,0,-
+105,105,11,School screening
 106,106,0,-
 107,107,4,School screening
 108,108,4,School screening
 109,109,4,School screening
-110,110,4,School screening
-111,111,4,School screening
+110,110,0,-
+111,111,6,External screening
 112,112,4,School screening
 113,113,4,School screening
 114,114,4,School screening
 115,115,4,School screening
-116,116,4,School screening
+116,116,0,-
 117,117,4,School screening
 118,118,4,School screening
 119,119,4,School screening
 120,120,4,School screening
-121,121,1,External screening
-122,122,11,School screening
+121,121,4,School screening
+122,122,4,School screening
 123,123,4,School screening
 124,124,4,School screening
-125,125,0,-
+125,125,4,School screening
 126,126,4,School screening
 127,127,4,School screening
-128,128,0,-
+128,128,4,School screening
 129,129,4,School screening
 130,130,4,School screening
 131,131,4,School screening
-132,132,4,School screening
+132,132,1,External screening
 133,133,4,School screening
-134,134,0,-
-135,135,4,External screening
-136,136,11,School screening
+134,134,4,School screening
+135,135,0,-
+136,136,4,School screening
 137,137,4,School screening
 138,138,4,School screening
 139,139,4,School screening
-140,140,4,School screening
-141,141,0,-
+140,140,11,School screening
+141,141,4,School screening
 142,142,4,School screening
 143,143,4,School screening
 144,144,4,School screening
 145,145,4,School screening
-146,146,0,-
-147,147,0,-
+146,146,4,School screening
+147,147,4,School screening
 148,148,4,School screening
 149,149,4,School screening
 150,150,4,School screening
-151,151,4,School screening
+151,151,18,School screening
 152,152,4,School screening
 153,153,4,School screening
-154,154,1,External screening
+154,154,2,External screening
 155,155,4,School screening
-156,156,4,School screening
+156,156,0,-
 157,157,4,School screening
 158,158,4,School screening
 159,159,4,School screening
-160,160,4,School screening
+160,160,4,External screening
 161,161,4,School screening
-162,162,0,-
+162,162,4,School screening
 163,163,4,School screening
 164,164,4,School screening
-165,165,11,School screening
+165,165,4,School screening
 166,166,4,School screening
 167,167,4,School screening
-168,168,4,School screening
+168,168,11,School screening
 169,169,4,School screening
-170,170,0,-
+170,170,4,School screening
 171,171,4,School screening
 172,172,4,School screening
 173,173,4,School screening
 174,174,4,School screening
-175,175,6,External screening
+175,175,4,School screening
 176,176,4,School screening
 177,177,4,School screening
 178,178,4,School screening
@@ -184,18 +184,18 @@
 182,182,4,School screening
 183,183,0,-
 184,184,4,School screening
-185,185,2,External screening
+185,185,4,School screening
 186,186,4,School screening
-187,187,4,School screening
-188,188,11,School screening
+187,187,0,-
+188,188,4,School screening
 189,189,4,School screening
 190,190,4,School screening
 191,191,4,School screening
 192,192,4,School screening
 193,193,4,School screening
 194,194,4,School screening
-195,195,18,School screening
-196,196,4,School screening
-197,197,4,School screening
-198,198,1,External screening
+195,195,4,School screening
+196,196,11,School screening
+197,197,2,External screening
+198,198,4,School screening
 199,199,4,School screening

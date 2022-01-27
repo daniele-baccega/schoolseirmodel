@@ -1,39 +1,39 @@
 ,day,agents,type,type_of_screening_pretty
 0,1.0,1.0,Infected,Without screening
 1,2.0,1.0951,Infected,Without screening
-2,3.0,1.3564,Infected,Without screening
+2,3.0,1.3584,Infected,Without screening
 3,4.0,1.7037,Infected,Without screening
-4,5.0,2.2573,Infected,Without screening
-5,6.0,2.8408,Infected,Without screening
-6,7.0,3.1572,Infected,Without screening
-7,8.0,3.2142,Infected,Without screening
-8,9.0,3.6697,Infected,Without screening
-9,10.0,4.3363,Infected,Without screening
-10,11.0,4.995,Infected,Without screening
-11,12.0,5.7948,Infected,Without screening
-12,13.0,6.6977,Infected,Without screening
-13,14.0,6.9199,Infected,Without screening
-14,15.0,6.8068,Infected,Without screening
-15,16.0,7.1431,Infected,Without screening
-16,17.0,7.7768,Infected,Without screening
-17,18.0,8.4745,Infected,Without screening
-18,19.0,9.2352,Infected,Without screening
-19,20.0,10.2012,Infected,Without screening
-20,21.0,10.3794,Infected,Without screening
-21,22.0,10.046,Infected,Without screening
-22,23.0,10.3313,Infected,Without screening
-23,24.0,10.9029,Infected,Without screening
-24,25.0,11.7017,Infected,Without screening
-25,26.0,12.7017,Infected,Without screening
-26,27.0,13.5586,Infected,Without screening
-27,28.0,13.6386,Infected,Without screening
-28,29.0,13.2362,Infected,Without screening
-29,30.0,13.5856,Infected,Without screening
-30,31.0,14.2523,Infected,Without screening
-31,32.0,15.007,Infected,Without screening
-32,33.0,15.959,Infected,Without screening
-33,34.0,17.2302,Infected,Without screening
-34,35.0,17.2052,Infected,Without screening
+4,5.0,2.2563,Infected,Without screening
+5,6.0,2.8378,Infected,Without screening
+6,7.0,3.1532,Infected,Without screening
+7,8.0,3.2092,Infected,Without screening
+8,9.0,3.6667,Infected,Without screening
+9,10.0,4.3333,Infected,Without screening
+10,11.0,4.991,Infected,Without screening
+11,12.0,5.7898,Infected,Without screening
+12,13.0,6.6947,Infected,Without screening
+13,14.0,6.9169,Infected,Without screening
+14,15.0,6.8058,Infected,Without screening
+15,16.0,7.1441,Infected,Without screening
+16,17.0,7.7808,Infected,Without screening
+17,18.0,8.4795,Infected,Without screening
+18,19.0,9.2432,Infected,Without screening
+19,20.0,10.2082,Infected,Without screening
+20,21.0,10.3924,Infected,Without screening
+21,22.0,10.0561,Infected,Without screening
+22,23.0,10.3443,Infected,Without screening
+23,24.0,10.9159,Infected,Without screening
+24,25.0,11.7157,Infected,Without screening
+25,26.0,12.7177,Infected,Without screening
+26,27.0,13.5786,Infected,Without screening
+27,28.0,13.6597,Infected,Without screening
+28,29.0,13.2593,Infected,Without screening
+29,30.0,13.6096,Infected,Without screening
+30,31.0,14.2743,Infected,Without screening
+31,32.0,15.029,Infected,Without screening
+32,33.0,15.978,Infected,Without screening
+33,34.0,17.2472,Infected,Without screening
+34,35.0,17.2172,Infected,Without screening
 35,1.0,0.0,Infected in quarantine,Without screening
 36,2.0,0.0,Infected in quarantine,Without screening
 37,3.0,0.0,Infected in quarantine,Without screening
@@ -71,39 +71,39 @@
 69,35.0,0.0,Infected in quarantine,Without screening
 70,1.0,1.0,Infected,Screening 25%
 71,2.0,1.1011,Infected,Screening 25%
-72,3.0,1.2082,Infected,Screening 25%
-73,4.0,1.5546,Infected,Screening 25%
-74,5.0,1.993,Infected,Screening 25%
-75,6.0,2.5205,Infected,Screening 25%
-76,7.0,2.7437,Infected,Screening 25%
-77,8.0,2.7768,Infected,Screening 25%
-78,9.0,3.1481,Infected,Screening 25%
-79,10.0,2.7317,Infected,Screening 25%
-80,11.0,3.2623,Infected,Screening 25%
-81,12.0,3.5786,Infected,Screening 25%
-82,13.0,4.2092,Infected,Screening 25%
-83,14.0,4.4685,Infected,Screening 25%
-84,15.0,4.4004,Infected,Screening 25%
-85,16.0,4.7477,Infected,Screening 25%
-86,17.0,3.6807,Infected,Screening 25%
-87,18.0,4.1982,Infected,Screening 25%
-88,19.0,4.4525,Infected,Screening 25%
-89,20.0,5.0551,Infected,Screening 25%
-90,21.0,5.1902,Infected,Screening 25%
-91,22.0,5.1582,Infected,Screening 25%
-92,23.0,5.4394,Infected,Screening 25%
-93,24.0,4.3614,Infected,Screening 25%
-94,25.0,4.9189,Infected,Screening 25%
-95,26.0,5.0511,Infected,Screening 25%
-96,27.0,5.5996,Infected,Screening 25%
-97,28.0,5.7377,Infected,Screening 25%
-98,29.0,5.6196,Infected,Screening 25%
-99,30.0,5.8899,Infected,Screening 25%
-100,31.0,4.5285,Infected,Screening 25%
-101,32.0,4.97,Infected,Screening 25%
-102,33.0,5.2012,Infected,Screening 25%
-103,34.0,5.7758,Infected,Screening 25%
-104,35.0,5.983,Infected,Screening 25%
+72,3.0,1.2102,Infected,Screening 25%
+73,4.0,1.5566,Infected,Screening 25%
+74,5.0,1.997,Infected,Screening 25%
+75,6.0,2.5265,Infected,Screening 25%
+76,7.0,2.7497,Infected,Screening 25%
+77,8.0,2.7818,Infected,Screening 25%
+78,9.0,3.1572,Infected,Screening 25%
+79,10.0,2.7407,Infected,Screening 25%
+80,11.0,3.2733,Infected,Screening 25%
+81,12.0,3.5936,Infected,Screening 25%
+82,13.0,4.2252,Infected,Screening 25%
+83,14.0,4.4845,Infected,Screening 25%
+84,15.0,4.4144,Infected,Screening 25%
+85,16.0,4.7638,Infected,Screening 25%
+86,17.0,3.6977,Infected,Screening 25%
+87,18.0,4.2152,Infected,Screening 25%
+88,19.0,4.4755,Infected,Screening 25%
+89,20.0,5.0811,Infected,Screening 25%
+90,21.0,5.2142,Infected,Screening 25%
+91,22.0,5.1862,Infected,Screening 25%
+92,23.0,5.4665,Infected,Screening 25%
+93,24.0,4.3804,Infected,Screening 25%
+94,25.0,4.9409,Infected,Screening 25%
+95,26.0,5.0781,Infected,Screening 25%
+96,27.0,5.6296,Infected,Screening 25%
+97,28.0,5.7678,Infected,Screening 25%
+98,29.0,5.6446,Infected,Screening 25%
+99,30.0,5.9219,Infected,Screening 25%
+100,31.0,4.5616,Infected,Screening 25%
+101,32.0,5.004,Infected,Screening 25%
+102,33.0,5.2352,Infected,Screening 25%
+103,34.0,5.8118,Infected,Screening 25%
+104,35.0,6.015,Infected,Screening 25%
 105,1.0,0.0,Infected in quarantine,Screening 25%
 106,2.0,0.0,Infected in quarantine,Screening 25%
 107,3.0,0.1481,Infected in quarantine,Screening 25%
@@ -127,50 +127,50 @@
 125,21.0,1.993,Infected in quarantine,Screening 25%
 126,22.0,1.8088,Infected in quarantine,Screening 25%
 127,23.0,1.6026,Infected in quarantine,Screening 25%
-128,24.0,2.7197,Infected in quarantine,Screening 25%
-129,25.0,2.5455,Infected in quarantine,Screening 25%
-130,26.0,2.7187,Infected in quarantine,Screening 25%
-131,27.0,2.5435,Infected in quarantine,Screening 25%
-132,28.0,2.3083,Infected in quarantine,Screening 25%
-133,29.0,2.0651,Infected in quarantine,Screening 25%
-134,30.0,1.8569,Infected in quarantine,Screening 25%
-135,31.0,3.1041,Infected in quarantine,Screening 25%
+128,24.0,2.7287,Infected in quarantine,Screening 25%
+129,25.0,2.5536,Infected in quarantine,Screening 25%
+130,26.0,2.7267,Infected in quarantine,Screening 25%
+131,27.0,2.5506,Infected in quarantine,Screening 25%
+132,28.0,2.3123,Infected in quarantine,Screening 25%
+133,29.0,2.0701,Infected in quarantine,Screening 25%
+134,30.0,1.8609,Infected in quarantine,Screening 25%
+135,31.0,3.1061,Infected in quarantine,Screening 25%
 136,32.0,2.9329,Infected in quarantine,Screening 25%
-137,33.0,2.9329,Infected in quarantine,Screening 25%
-138,34.0,2.6396,Infected in quarantine,Screening 25%
-139,35.0,2.4224,Infected in quarantine,Screening 25%
+137,33.0,2.9319,Infected in quarantine,Screening 25%
+138,34.0,2.6386,Infected in quarantine,Screening 25%
+139,35.0,2.4214,Infected in quarantine,Screening 25%
 140,1.0,1.0,Infected,Screening 50%
-141,2.0,1.0671,Infected,Screening 50%
-142,3.0,1.1552,Infected,Screening 50%
+141,2.0,1.0661,Infected,Screening 50%
+142,3.0,1.1562,Infected,Screening 50%
 143,4.0,1.5335,Infected,Screening 50%
 144,5.0,1.5976,Infected,Screening 50%
-145,6.0,2.035,Infected,Screening 50%
-146,7.0,2.3023,Infected,Screening 50%
-147,8.0,2.3514,Infected,Screening 50%
+145,6.0,2.033,Infected,Screening 50%
+146,7.0,2.3003,Infected,Screening 50%
+147,8.0,2.3504,Infected,Screening 50%
 148,9.0,2.6977,Infected,Screening 50%
-149,10.0,1.959,Infected,Screening 50%
-150,11.0,2.3814,Infected,Screening 50%
-151,12.0,2.0621,Infected,Screening 50%
-152,13.0,2.5115,Infected,Screening 50%
-153,14.0,2.7267,Infected,Screening 50%
-154,15.0,2.7147,Infected,Screening 50%
-155,16.0,2.983,Infected,Screening 50%
+149,10.0,1.962,Infected,Screening 50%
+150,11.0,2.3844,Infected,Screening 50%
+151,12.0,2.0661,Infected,Screening 50%
+152,13.0,2.5145,Infected,Screening 50%
+153,14.0,2.7287,Infected,Screening 50%
+154,15.0,2.7157,Infected,Screening 50%
+155,16.0,2.985,Infected,Screening 50%
 156,17.0,2.1782,Infected,Screening 50%
-157,18.0,2.6026,Infected,Screening 50%
-158,19.0,2.1772,Infected,Screening 50%
-159,20.0,2.5886,Infected,Screening 50%
-160,21.0,2.7497,Infected,Screening 50%
-161,22.0,2.7087,Infected,Screening 50%
-162,23.0,2.9369,Infected,Screening 50%
+157,18.0,2.6016,Infected,Screening 50%
+158,19.0,2.1832,Infected,Screening 50%
+159,20.0,2.5936,Infected,Screening 50%
+160,21.0,2.7538,Infected,Screening 50%
+161,22.0,2.7127,Infected,Screening 50%
+162,23.0,2.9409,Infected,Screening 50%
 163,24.0,2.029,Infected,Screening 50%
-164,25.0,2.3564,Infected,Screening 50%
-165,26.0,2.045,Infected,Screening 50%
-166,27.0,2.3594,Infected,Screening 50%
-167,28.0,2.5125,Infected,Screening 50%
-168,29.0,2.4995,Infected,Screening 50%
-169,30.0,2.6747,Infected,Screening 50%
-170,31.0,1.8579,Infected,Screening 50%
-171,32.0,2.1331,Infected,Screening 50%
+164,25.0,2.3574,Infected,Screening 50%
+165,26.0,2.046,Infected,Screening 50%
+166,27.0,2.3624,Infected,Screening 50%
+167,28.0,2.5155,Infected,Screening 50%
+168,29.0,2.5025,Infected,Screening 50%
+169,30.0,2.6777,Infected,Screening 50%
+170,31.0,1.8629,Infected,Screening 50%
+171,32.0,2.1381,Infected,Screening 50%
 172,33.0,1.9219,Infected,Screening 50%
 173,34.0,2.2382,Infected,Screening 50%
 174,35.0,2.3273,Infected,Screening 50%
@@ -183,52 +183,52 @@
 181,7.0,0.5365,Infected in quarantine,Screening 50%
 182,8.0,0.5095,Infected in quarantine,Screening 50%
 183,9.0,0.4755,Infected in quarantine,Screening 50%
-184,10.0,1.6887,Infected in quarantine,Screening 50%
-185,11.0,1.6927,Infected in quarantine,Screening 50%
-186,12.0,2.3313,Infected in quarantine,Screening 50%
-187,13.0,2.1832,Infected in quarantine,Screening 50%
-188,14.0,2.008,Infected in quarantine,Screening 50%
-189,15.0,1.8669,Infected in quarantine,Screening 50%
-190,16.0,1.7147,Infected in quarantine,Screening 50%
-191,17.0,2.7007,Infected in quarantine,Screening 50%
-192,18.0,2.4945,Infected in quarantine,Screening 50%
-193,19.0,2.9339,Infected in quarantine,Screening 50%
-194,20.0,2.7578,Infected in quarantine,Screening 50%
-195,21.0,2.5696,Infected in quarantine,Screening 50%
-196,22.0,2.3213,Infected in quarantine,Screening 50%
-197,23.0,2.0701,Infected in quarantine,Screening 50%
+184,10.0,1.6857,Infected in quarantine,Screening 50%
+185,11.0,1.6887,Infected in quarantine,Screening 50%
+186,12.0,2.3273,Infected in quarantine,Screening 50%
+187,13.0,2.1792,Infected in quarantine,Screening 50%
+188,14.0,2.004,Infected in quarantine,Screening 50%
+189,15.0,1.8629,Infected in quarantine,Screening 50%
+190,16.0,1.7097,Infected in quarantine,Screening 50%
+191,17.0,2.6967,Infected in quarantine,Screening 50%
+192,18.0,2.4905,Infected in quarantine,Screening 50%
+193,19.0,2.9249,Infected in quarantine,Screening 50%
+194,20.0,2.7508,Infected in quarantine,Screening 50%
+195,21.0,2.5626,Infected in quarantine,Screening 50%
+196,22.0,2.3143,Infected in quarantine,Screening 50%
+197,23.0,2.0641,Infected in quarantine,Screening 50%
 198,24.0,2.7357,Infected in quarantine,Screening 50%
 199,25.0,2.5996,Infected in quarantine,Screening 50%
-200,26.0,2.9159,Infected in quarantine,Screening 50%
-201,27.0,2.6987,Infected in quarantine,Screening 50%
-202,28.0,2.4494,Infected in quarantine,Screening 50%
-203,29.0,2.2312,Infected in quarantine,Screening 50%
-204,30.0,2.036,Infected in quarantine,Screening 50%
-205,31.0,2.6837,Infected in quarantine,Screening 50%
-206,32.0,2.4955,Infected in quarantine,Screening 50%
-207,33.0,2.5606,Infected in quarantine,Screening 50%
-208,34.0,2.3614,Infected in quarantine,Screening 50%
-209,35.0,2.1431,Infected in quarantine,Screening 50%
+200,26.0,2.9149,Infected in quarantine,Screening 50%
+201,27.0,2.6967,Infected in quarantine,Screening 50%
+202,28.0,2.4484,Infected in quarantine,Screening 50%
+203,29.0,2.2302,Infected in quarantine,Screening 50%
+204,30.0,2.035,Infected in quarantine,Screening 50%
+205,31.0,2.6827,Infected in quarantine,Screening 50%
+206,32.0,2.4945,Infected in quarantine,Screening 50%
+207,33.0,2.5676,Infected in quarantine,Screening 50%
+208,34.0,2.3684,Infected in quarantine,Screening 50%
+209,35.0,2.1502,Infected in quarantine,Screening 50%
 210,1.0,1.0,Infected,Screening 100%
-211,2.0,1.0831,Infected,Screening 100%
-212,3.0,1.029,Infected,Screening 100%
+211,2.0,1.0821,Infected,Screening 100%
+212,3.0,1.028,Infected,Screening 100%
 213,4.0,1.3383,Infected,Screening 100%
 214,5.0,1.2092,Infected,Screening 100%
 215,6.0,1.5766,Infected,Screening 100%
 216,7.0,1.7868,Infected,Screening 100%
 217,8.0,1.8849,Infected,Screening 100%
 218,9.0,2.1712,Infected,Screening 100%
-219,10.0,1.029,Infected,Screening 100%
-220,11.0,1.2973,Infected,Screening 100%
-221,12.0,0.8889,Infected,Screening 100%
-222,13.0,1.1261,Infected,Screening 100%
+219,10.0,1.03,Infected,Screening 100%
+220,11.0,1.2983,Infected,Screening 100%
+221,12.0,0.8899,Infected,Screening 100%
+222,13.0,1.1271,Infected,Screening 100%
 223,14.0,1.2172,Infected,Screening 100%
-224,15.0,1.2533,Infected,Screening 100%
-225,16.0,1.4064,Infected,Screening 100%
-226,17.0,0.7888,Infected,Screening 100%
-227,18.0,0.973,Infected,Screening 100%
-228,19.0,0.6486,Infected,Screening 100%
-229,20.0,0.8549,Infected,Screening 100%
+224,15.0,1.2543,Infected,Screening 100%
+225,16.0,1.4074,Infected,Screening 100%
+226,17.0,0.7898,Infected,Screening 100%
+227,18.0,0.974,Infected,Screening 100%
+228,19.0,0.6507,Infected,Screening 100%
+229,20.0,0.8559,Infected,Screening 100%
 230,21.0,0.9469,Infected,Screening 100%
 231,22.0,0.952,Infected,Screening 100%
 232,23.0,1.0681,Infected,Screening 100%
