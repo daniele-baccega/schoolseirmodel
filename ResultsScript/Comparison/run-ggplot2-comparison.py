@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 3:
-		print("Error, parameters are missing: python run-ggplot2-mean.py measure num_traces")
+		print("Error, parameters are missing: python run-ggplot2-comparison.py measure num_traces")
 		exit()
 
 	measure										= str(sys.argv[1])

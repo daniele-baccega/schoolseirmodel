@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 2:
-		print("Error, parameters are missing: python run-ggplot2-single-dad.py path policy day_name")
+		print("Error, parameters are missing: python run-ggplot2-cumulative-infected.py path policy day_name")
 		exit()
 
 	long_path									= str(sys.argv[1])
@@ -84,7 +84,7 @@ def main():
 										ordered = True, \
 										categories = ["0%", "10%", "40%"])#, "70%"])
 	
- 	my_plot = (ggplot(df_plot) \
+	my_plot = (ggplot(df_plot) \
  		+ aes(x = 'day', y = 'cumulative_infected', color = 'type_pretty') \
  		+ geom_line() \
     	+ labs(title = "Students vaccination (" + policy + " policy)", x = 'day', y = 'cumulative infected', color = 'Percentages of vaccination')) \
@@ -98,6 +98,6 @@ def main():
 	#	+ scale_x_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]) \
 	#	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_students_vaccination1000', dpi=600)
-	df_plot.to_csv('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_students_vaccination1000.csv')
+	my_plot.save('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_cumulative_infected', dpi=600)
+	df_plot.to_csv('../../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_cumulative_infected.csv')
 main();

@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 4:
-		print("Error, parameters are missing: python run-ggplot2-mean.py path policy type_of_screening [type_of_screening ...]")
+		print("Error, parameters are missing: python run-ggplot2-single-plot-days.py path policy type_of_screening [type_of_screening ...]")
 		exit()
 
 	long_path									= str(sys.argv[1])

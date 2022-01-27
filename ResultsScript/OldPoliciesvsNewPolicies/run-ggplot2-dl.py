@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 2:
-		print("Error, parameters are missing: python run-ggplot2-single-dad.py policy")
+		print("Error, parameters are missing: python run-ggplot2-dl.py policy")
 		exit()
 
 	policy										= str(sys.argv[1])

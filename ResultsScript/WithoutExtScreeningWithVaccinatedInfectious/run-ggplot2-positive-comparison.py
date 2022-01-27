@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
 	if len(sys.argv) < 2:
-		print("Error, parameters are missing: python run-ggplot2-mean.py path")
+		print("Error, parameters are missing: python run-ggplot2-positive-comparison.py path")
 		exit()
 
 	long_path												= str(sys.argv[1])

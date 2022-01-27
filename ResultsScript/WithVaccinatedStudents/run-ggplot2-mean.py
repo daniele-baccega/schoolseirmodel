@@ -74,9 +74,9 @@ def main():
 	df_left['day']											= df['day']
 	df_right['day']											= df['day']
 
-	df_mean.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/mean_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
-	df_variance.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/variance_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
-	df_left.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/left_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
-	df_right.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/right_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '-1000.csv', float_format="%.4f")
+	df_mean.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/mean_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_variance.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/variance_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_left.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/left_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
+	df_right.to_csv('../../mean-results/' + path + '/' + policy + '/' + day_name + '/right_' + vaccinated_students_perc + "_" + policy + "_" + day_name + '.csv', float_format="%.4f")
 
 main();
