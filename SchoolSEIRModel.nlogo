@@ -1894,7 +1894,7 @@ to quarantine-policy [infected-group infected-already-in-quarantine c-name index
 
             set infected-already-in-quarantine students with [ classroom = c-name and quarantined? ]
 
-            swab-other-students students with [classroom = c-name and (screening-group != item next-screening-group screening-groups or sub-screening-group != item next-sub-screening-group sub-screening-groups) and not quarantined?] infected-already-in-quarantine c-name false
+            swab-other-students students with [classroom = c-name and not quarantined? and (temperature-measurement = "no measurement" or screening-group != item next-screening-group screening-groups or sub-screening-group != item next-sub-screening-group sub-screening-groups)] infected-already-in-quarantine c-name false
           ]
       ]
       [ put-classroom-in-quarantine c-name quarantine-ext-1? quarantine-ext-2? ]

@@ -14,24 +14,6 @@ def main():
 	type_pretty									= []
 	vaccinated_students_perc					= ["0", "10", "40"]#, "70"]
 	type_of_stats								= ["mean", "variance", "left", "right"]
-	columns										= ['day', 'susceptible', 'exposed', 'infected',
-                     				   		   	   'removed', 'susceptible-in-quarantine', 'exposed-in-quarantine',
-                     				   		   	   'infected-in-quarantine', 'removed-in-quarantine',
-                     				   		   	   'susceptible-in-quarantine-external-1', 'exposed-in-quarantine-external-1',
-                     			 			   	   'infected-in-quarantine-external-1', 'removed-in-quarantine-external-1',
-                     			 			   	   'susceptible-in-quarantine-external-2', 'exposed-in-quarantine-external-2',
-                     			 		   		   'infected-in-quarantine-external-2', 'removed-in-quarantine-external-2',
-                     				   		   	   'num-of-screened-students', 'num-of-screened-students-external-1', 'num-of-screened-students-external-2',
-                     				   		   	   'num-of-positive-students', 'num-of-positive-students-external-1', 'num-of-positive-students-external-2',
-                     				   		   	   'num-vaccinated-susceptible', 'num-vaccinated-exposed', 'num-vaccinated-infected', 'num-vaccinated-removed',
-                     				   		   	   'num-vaccinated-susceptible-in-quarantine', 'num-vaccinated-exposed-in-quarantine',
-                     				   		   	   'num-vaccinated-infected-in-quarantine', 'num-vaccinated-removed-in-quarantine',
-                     				   		   	   'num-vaccinated-susceptible-in-quarantine-external-1', 'num-vaccinated-exposed-in-quarantine-external-1',
-                     				   		   	   'num-vaccinated-infected-in-quarantine-external-1', 'num-vaccinated-removed-in-quarantine-external-1',
-                     				   		   	   'num-vaccinated-susceptible-in-quarantine-external-2', 'num-vaccinated-exposed-in-quarantine-external-2',
-                     				   		   	   'num-vaccinated-infected-in-quarantine-external-2', 'num-vaccinated-removed-in-quarantine-external-2',
-                     				   		   	   'num-infected-outside', 'num-of-classroom-in-quarantine',
-                     			   			   	   'classroom-with-at-least-one-infected']
 		
 	my_plot										= None
 	df_plot										= None
@@ -48,11 +30,7 @@ def main():
 
 		for path_num_traces, path_1000 in zip(paths_num_traces, paths_1000):
 			df_mean_num_traces        				= pandas.read_csv(str(path_num_traces), index_col=0)
-			df_mean_num_traces.columns				= columns
-
 			df_mean_1000        					= pandas.read_csv(str(path_1000), index_col=0)
-			df_mean_1000.columns 					= columns
-
 
 			diff		 							= pandas.DataFrame(columns=['day', measure])
 			diff['day']								= df_mean_num_traces.loc[:, 'day']

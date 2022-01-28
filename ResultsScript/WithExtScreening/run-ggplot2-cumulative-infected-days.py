@@ -35,17 +35,6 @@ def main():
 	for path in paths:
 		df_mean          						= pandas.read_csv(str(path), index_col=0)
 
-		df_mean.columns 						= ['day', 'susceptible', 'exposed', 'infected',
-                     			   			   	   'removed', 'susceptible-in-quarantine', 'exposed-in-quarantine',
-                     			   			   	   'infected-in-quarantine', 'removed-in-quarantine',
-                     			   			   	   'susceptible-in-quarantine-external-1', 'exposed-in-quarantine-external-1',
-                     			 			   	   'infected-in-quarantine-external-1', 'removed-in-quarantine-external-1',
-                     			 			   	   'susceptible-in-quarantine-external-2', 'exposed-in-quarantine-external-2',
-                     			 			   	   'infected-in-quarantine-external-2', 'removed-in-quarantine-external-2',
-                     			   			   	   'num-of-screened-students', 'num-of-screened-students-external-1', 'num-of-screened-students-external-2',
-                     			   			   	   'num-of-positive-students', 'num-of-positive-students-external-1', 'num-of-positive-students-external-2',
-					                     		   'num-infected-outside', 'num-of-classroom-in-quarantine', 'classroom-with-at-least-one-infected']
-
 		total_infected 							= pandas.DataFrame(columns=['day', 'cumulative_infected'])
 		
 		total_infected['day'] 					= df_mean.loc[:, 'day']
