@@ -1,0 +1,7 @@
+										My network (>= 20s)		Sensors network (>= 20s)
+Nodes															327
+Links															5818
+Density															0.11
+Average shortest path length									2.16 (0.6)
+Average clustering coefficient									0.5 (0.14)
+Average degree													36 (13)

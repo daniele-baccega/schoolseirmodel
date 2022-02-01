@@ -7,7 +7,7 @@ from plotnine import *
 from pathlib import Path
 
 def main():
-	types													= ['number-of-contacts', 'contacts-time']
+	types														= ['number-of-contacts', 'contacts-time']
 
 	for type in types:
 		path													= Path(__file__).parent / ("Results/" + type + "/")

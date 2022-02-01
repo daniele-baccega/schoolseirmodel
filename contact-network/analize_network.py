@@ -17,8 +17,8 @@ with open(FILE, "rb") as infile:
     G       = nx.from_numpy_matrix(adj_mat, create_using=nx.Graph())
     G.edges(data=True)
 
-edge_weights = nx.get_edge_attributes(G, 'weight')
-G.remove_edges_from((e for e, w in edge_weights.items() if w < 5))# 15))
+#edge_weights = nx.get_edge_attributes(G, 'weight')
+#G.remove_edges_from((e for e, w in edge_weights.items() if w < 5))
 
 with open("mean_contacts-time.graphml", "wb") as ofile:
     nx.write_graphml(G, ofile)
@@ -33,13 +33,13 @@ print("Number of edges:", E)
 # Density
 print("Density:", nx.density(G))
 
-print (sorted(G.edges(data=True), key= lambda x: x[2]['weight'], reverse=True))
+#print (sorted(G.edges(data=True), key= lambda x: x[2]['weight'], reverse=True))
 
 # Average distance (consider only Giant SCC if the network/graph is disconnected)
-sorted_strongly_components = sorted((G.subgraph(c) for c in nx.strongly_connected_components(G)), key=len, reverse=True)
-GSCC = sorted_strongly_components[0]
-average_distance = nx.average_shortest_path_length(GSCC)
-print("Average distance:", average_distance)
+#sorted_strongly_components = sorted((G.subgraph(c) for c in nx.strongly_connected_components(G)), key=len, reverse=True)
+#GSCC = sorted_strongly_components[0]
+#average_distance = nx.average_shortest_path_length(GSCC)
+#print("Average distance:", average_distance)
 
 # Distance distribution plot
 distances = nx.shortest_path_length(G)
@@ -76,15 +76,15 @@ def average_degree(degrees, str):
 degrees = list(G.degree())
 degrees_list = [degree for _, degree in degrees]
 # In degree
-in_degrees = list(G.in_degree())
-in_degrees_list = [degree for _, degree in in_degrees]
+#in_degrees = list(G.in_degree())
+#in_degrees_list = [degree for _, degree in in_degrees]
 #Out degree
-out_degrees = list(G.out_degree())
-out_degrees_list = [degree for _, degree in out_degrees]
+#out_degrees = list(G.out_degree())
+#out_degrees_list = [degree for _, degree in out_degrees]
 
 average_degree(degrees_list, "degree")
-average_degree(in_degrees_list, "in degree")
-average_degree(out_degrees_list, "out degree")
+#average_degree(in_degrees_list, "in degree")
+#average_degree(out_degrees_list, "out degree")
 
 # Degree distribution plot
 count = Counter(degrees_list)
@@ -113,56 +113,56 @@ plt.ylabel("Number of nodes")
 dzcnapy.plot("Degree distribution", True)
 
 # In degree distribution plot
-count = Counter(in_degrees_list)
-#x: in_degree, y: number of nodes
-x = [el[0] for el in count.items()]
-y = [el[1] for el in count.items()]
-x, y = zip(*sorted(zip(x, y)))
-xx = x[5:70]
-yy = y[5:70]
-xvalues = np.linspace(1, max(x), 100)
-f = np.polyfit([log(el) for el in xx], [log(el) for el in yy], 1)
-c = f[0]
-a = exp(f[1])
-print("In-degree -> Slope:", c)
-print("In-degree -> Y-intercept:", a)
+# count = Counter(in_degrees_list)
+# #x: in_degree, y: number of nodes
+# x = [el[0] for el in count.items()]
+# y = [el[1] for el in count.items()]
+# x, y = zip(*sorted(zip(x, y)))
+# xx = x[5:70]
+# yy = y[5:70]
+# xvalues = np.linspace(1, max(x), 100)
+# f = np.polyfit([log(el) for el in xx], [log(el) for el in yy], 1)
+# c = f[0]
+# a = exp(f[1])
+# print("In-degree -> Slope:", c)
+# print("In-degree -> Y-intercept:", a)
 
-plt.figure(3)
-plt.plot(x, y, 'bo', xvalues, a*(xvalues**c), 'r-')
-plt.xscale("log")
-plt.yscale("log")
-plt.title("In degree distribution")
-plt.xlim(1, max(x))
-plt.ylim(1, max(y))
-plt.xlabel("In degree")
-plt.ylabel("Number of nodes")
-dzcnapy.plot("In degree distribution", True)
+# plt.figure(3)
+# plt.plot(x, y, 'bo', xvalues, a*(xvalues**c), 'r-')
+# plt.xscale("log")
+# plt.yscale("log")
+# plt.title("In degree distribution")
+# plt.xlim(1, max(x))
+# plt.ylim(1, max(y))
+# plt.xlabel("In degree")
+# plt.ylabel("Number of nodes")
+# dzcnapy.plot("In degree distribution", True)
 
-# Out degree distribution plot
-count = Counter(out_degrees_list)
-#x: out_degree, y: number of nodes
-x = [el[0] for el in count.items()]
-y = [el[1] for el in count.items()]
-x, y = zip(*sorted(zip(x, y)))
-xx = x[5:70]
-yy = y[5:70]
-xvalues = np.linspace(1, max(x), 100)
-f = np.polyfit([log(el) for el in xx], [log(el) for el in yy], 1)
-c = f[0]
-a = exp(f[1])
-print("Out-degree -> Slope:", c)
-print("Out-degree -> Y-intercept:", a)
+# # Out degree distribution plot
+# count = Counter(out_degrees_list)
+# #x: out_degree, y: number of nodes
+# x = [el[0] for el in count.items()]
+# y = [el[1] for el in count.items()]
+# x, y = zip(*sorted(zip(x, y)))
+# xx = x[5:70]
+# yy = y[5:70]
+# xvalues = np.linspace(1, max(x), 100)
+# f = np.polyfit([log(el) for el in xx], [log(el) for el in yy], 1)
+# c = f[0]
+# a = exp(f[1])
+# print("Out-degree -> Slope:", c)
+# print("Out-degree -> Y-intercept:", a)
 
-plt.figure(4)
-plt.plot(x, y, 'bo', xvalues, a*(xvalues**c), 'r-')
-plt.xscale("log")
-plt.yscale("log")
-plt.title("Out degree distribution")
-plt.xlim(1, max(x))
-plt.ylim(1, max(y))
-plt.xlabel("Out degree")
-plt.ylabel("Number of nodes")
-dzcnapy.plot("Out degree distribution", True)
+# plt.figure(4)
+# plt.plot(x, y, 'bo', xvalues, a*(xvalues**c), 'r-')
+# plt.xscale("log")
+# plt.yscale("log")
+# plt.title("Out degree distribution")
+# plt.xlim(1, max(x))
+# plt.ylim(1, max(y))
+# plt.xlabel("Out degree")
+# plt.ylabel("Number of nodes")
+# dzcnapy.plot("Out degree distribution", True)
 
 G_undirected = G.to_undirected()
 
@@ -188,28 +188,28 @@ tr = nx.transitivity(G_undirected)
 print("Transitivity:", tr)
 
 # Giant strongly connected component and other components (already extract)
-print("Number of strongly connected components:", len(sorted_strongly_components))
-print("Dimension of GSCC:", len(GSCC))
+#print("Number of strongly connected components:", len(sorted_strongly_components))
+#print("Dimension of GSCC:", len(GSCC))
 
 # Weakly connected components
-weakly_components = sorted((G.subgraph(c) for c in nx.weakly_connected_components(G)), key=len, reverse=True)
-GWCC = weakly_components[0]
-print("Number of weakly connected components:", len(weakly_components))
-print("Dimension of GWCC:", len(GWCC))
+#weakly_components = sorted((G.subgraph(c) for c in nx.weakly_connected_components(G)), key=len, reverse=True)
+#GWCC = weakly_components[0]
+#print("Number of weakly connected components:", len(weakly_components))
+#print("Dimension of GWCC:", len(GWCC))
 
 # Eccentricity
-ecc = nx.eccentricity(GSCC)
-diameter = nx.diameter(GSCC, ecc)
-radius = nx.radius(GSCC, ecc)
-center = nx.center(GSCC, ecc)
-periphery = nx.periphery(GSCC, ecc)
+#ecc = nx.eccentricity(GSCC)
+#diameter = nx.diameter(GSCC, ecc)
+#radius = nx.radius(GSCC, ecc)
+#center = nx.center(GSCC, ecc)
+#periphery = nx.periphery(GSCC, ecc)
 
-print("Diameter:", diameter)
-print("Radius:", radius)
-print("Center:", center)
-print("Center (number of nodes):", len(center))
-print("Periphery (number of nodes):", len(periphery))
-print("Periphery:", periphery)
+#print("Diameter:", diameter)
+#print("Radius:", radius)
+#print("Center:", center)
+#print("Center (number of nodes):", len(center))
+#print("Periphery (number of nodes):", len(periphery))
+#print("Periphery:", periphery)
 
 # Degree assortativity (with plot)
 deg_ass = nx.degree_assortativity_coefficient(G)
@@ -232,20 +232,20 @@ dzcnapy.plot("Assortativeness", True)
 
 # Centralities
 degree_centralities = nx.degree_centrality(G)
-in_degree_centralities = nx.in_degree_centrality(G)
-out_degree_centralities = nx.out_degree_centrality(G)
+#in_degree_centralities = nx.in_degree_centrality(G)
+#out_degree_centralities = nx.out_degree_centrality(G)
 betweenness_centralities = nx.betweenness_centrality(G)
 closeness_centralities = nx.closeness_centrality(G)
 eigenvector_centralities = nx.eigenvector_centrality(G)
 page_rank_centralities = nx.pagerank(G)
-hits_centralities = nx.hits(G)
+#hits_centralities = nx.hits(G)
 
 print(pd.DataFrame(sorted(degree_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Degree centrality"}))
-print(pd.DataFrame(sorted(in_degree_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "In-degree centrality"}))
-print(pd.DataFrame(sorted(out_degree_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Out-degree centrality"}))
+#print(pd.DataFrame(sorted(in_degree_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "In-degree centrality"}))
+#print(pd.DataFrame(sorted(out_degree_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Out-degree centrality"}))
 print(pd.DataFrame(sorted(betweenness_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Betweennes centrality"}))
 print(pd.DataFrame(sorted(closeness_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Closeness centrality"}))
 print(pd.DataFrame(sorted(eigenvector_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "Eigenvector centrality"}))
 print(pd.DataFrame(sorted(page_rank_centralities.items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "PageRank centrality"}))
-print(pd.DataFrame(sorted(hits_centralities[0].items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "HITS Hub centrality"}))
-print(pd.DataFrame(sorted(hits_centralities[1].items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "HITS Authority centrality"}))
+#print(pd.DataFrame(sorted(hits_centralities[0].items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "HITS Hub centrality"}))
+#print(pd.DataFrame(sorted(hits_centralities[1].items(), key=lambda c: c[1], reverse=True)[:10]).rename(columns={0: "Node", 1: "HITS Authority centrality"}))

@@ -55,4 +55,3 @@ def plot(fname, save = False):
     plt.tight_layout()
     if save:
         plt.savefig("plots/{}.pdf".format(fname), dpi=600)
-    #plt.show()
