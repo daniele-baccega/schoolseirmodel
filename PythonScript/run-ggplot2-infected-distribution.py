@@ -1,0 +1,82 @@
+import os
+import sys
+import pandas
+import statistics
+from plotnine import *
+from pathlib import Path
+
+def main():
+	if len(sys.argv) < 6:
+		print("Error, parameters are missing: python run-ggplot2-cumulative-infected-vaccinated-students.py path policy day_name num_traces type_of_screening")
+		exit()
+
+	long_path										= str(sys.argv[1])
+	policy											= str(sys.argv[2])
+	day_name 										= str(sys.argv[3])
+	num_traces										= str(sys.argv[4])
+	type_of_screening								= str(sys.argv[5])
+	paths											= []
+	type_pretty										= []
+	vaccinated_students_perc						= ["0", "10", "40", "70"]
+	k												= 0
+	my_plot											= None
+	df_plot											= None
+
+	for vaccinated_students in vaccinated_students_perc:
+		if policy == "WithoutScreening":
+			paths.append(Path(__file__).parent / ("../Results/" + long_path + "/Results" + vaccinated_students))
+		else:
+			paths.append(Path(__file__).parent / ("../Results/" + long_path + "/" + policy + "/Results" + vaccinated_students + day_name + type_of_screening))
+		type_pretty.append(vaccinated_students + "%")
+
+				
+	for path in paths:
+		files										= os.listdir(path)
+		counter										= 0
+
+		for file in files:
+			df 										= pandas.read_csv(str(path) + "/" + file, sep='\t', index_col=False)
+
+			population								= df.loc[0, 'susceptible']
+
+			total_infected 							= pandas.DataFrame(columns=['day', 'final_infected', 'type_pretty'])
+
+			total_infected['day']					= df.loc[:, 'day']
+			total_infected['final_infected']	 	= population - (df.loc[:, 'susceptible'] + df.loc[:, 'susceptible-in-quarantine'] + df.loc[:, 'susceptible-in-quarantine-external-1'] + df.loc[:, 'susceptible-in-quarantine-external-2'] + \
+ 															        df.loc[:, 'exposed'] + df.loc[:, 'exposed-in-quarantine'] + df.loc[:, 'exposed-in-quarantine-external-1'] + df.loc[:, 'exposed-in-quarantine-external-2'])
+			total_infected['type_pretty']			= type_pretty[k]
+
+			if df_plot is None:
+				df_plot 							= total_infected
+			else:
+				df_plot 							= df_plot.append(total_infected, ignore_index=True)
+
+			counter									= counter + 1
+
+			if counter == int(num_traces):
+ 				break;
+
+		k											= k + 1
+
+	df_plot = df_plot[df_plot.day == 60]
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_final_infected_distribution.csv')
+
+	policy_pretty 									= "D1"
+
+	if policy == "WithoutScreening":
+		policy_pretty								= "without screening"
+	
+	my_plot = (ggplot(df_plot) \
+		+ aes(x = 'final_infected') \
+		+ geom_histogram(aes(y = '..density..'), color="black", bins = 50) \
+		+ facet_wrap('type_pretty', scales = 'free_y') \
+		+ labs(title = "Final infected distribution", x = 'final infected', y = 'density') \
+		+ geom_density(alpha=.2, fill="#FF0000") \
+		#+ geom_vline(aes(xintercept = statistics.mean(df_plot.final_infected), group='type_pretty'), colour = 'red') \
+		+ theme(subplots_adjust={'wspace': 0.25}, plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold")))
+
+	#+ geom_vline(aes(xintercept = statistics.mean(df_plot.final_infected)), color="blue", linetype="dashed", size=1)
+
+	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_final_infected_distribution', dpi=600)
+
+main();

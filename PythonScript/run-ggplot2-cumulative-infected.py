@@ -19,7 +19,7 @@ def main():
 	type_of_screening_pretty					= []
 
 	if not "WithVaccinatedStudents" in long_path:
-		vaccinated_students										= ""
+		vaccinated_students						= ""
 
 	index 										= 6
 	while index < len(sys.argv):

@@ -38,7 +38,6 @@ def main():
 	
 	for path in paths:
 		files													= os.listdir(path)
-		num_files												= len(files)
 		counter													= 0
 		df_mean													= None
 		df_variance												= None
