@@ -282,3 +282,10 @@ python3 run-ggplot2-traces-comparison.py StochasticArrivals/WithExtScreening/Pro
 
 python3 run-ggplot2-distance-learning.py A1 Wednesday 1000 Screening100
 python3 run-ggplot2-distance-learning.py D1 Wednesday 1000 Screening100
+
+
+
+
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/Omicron D1 Monday 500 Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/Omicron WithoutScreening Monday 500 Screening100

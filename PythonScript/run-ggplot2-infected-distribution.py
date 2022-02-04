@@ -68,14 +68,11 @@ def main():
 	
 	my_plot = (ggplot(df_plot) \
 		+ aes(x = 'final_infected') \
-		+ geom_histogram(aes(y = '..density..'), color="black", bins = 50) \
+		+ geom_histogram(aes(y = '..density..'), color="black", bins = 70) \
 		+ facet_wrap('type_pretty', scales = 'free_y') \
-		+ labs(title = "Final infected distribution", x = 'final infected', y = 'density') \
+		+ labs(title = "Final infected distribution (" + policy + " policy)", x = 'final infected', y = 'density') \
 		+ geom_density(alpha=.2, fill="#FF0000") \
-		#+ geom_vline(aes(xintercept = statistics.mean(df_plot.final_infected), group='type_pretty'), colour = 'red') \
 		+ theme(subplots_adjust={'wspace': 0.25}, plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold")))
-
-	#+ geom_vline(aes(xintercept = statistics.mean(df_plot.final_infected)), color="blue", linetype="dashed", size=1)
 
 	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_final_infected_distribution', dpi=600)
 

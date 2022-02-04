@@ -10,3 +10,4 @@ Screening policies and quarantine policies:
 Virus variants: https://heystacks.org/doc/483/2020_covid-19_aerosol_transmission_estimator
 Probability of having symptoms: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2777314, https://www.cdc.gov/mmwr/volumes/69/wr/mm6924e2.htm#T2_down
 New school's policy (November 2021 - December 2021): https://www.regione.piemonte.it/web/pinforma/notizie/scuola-operative-entro-17-novembre-nuove-regole-per-quarantene
+Contacts network: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136497, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023176
