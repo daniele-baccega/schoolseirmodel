@@ -73,7 +73,12 @@ def main():
     	+ scale_color_manual(values=["#FF0000", "#00FF00", "#0000FF", "#FF00FF"]) \
     	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_cumulative_infected', dpi=600)
-	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_cumulative_infected.csv')
+	day_name 									= "/" + day_name
+
+	if policy == "WithoutScreening":
+		day_name 								= ""
+
+	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_cumulative_infected', dpi=600)
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_cumulative_infected.csv')
 
 main();

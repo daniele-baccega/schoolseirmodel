@@ -24,7 +24,7 @@ def main():
 
 	for vaccinated_students in vaccinated_students_perc:
 		if policy == "WithoutScreening":
-			paths.append(Path(__file__).parent / ("../Results/" + long_path + "/Results" + vaccinated_students))
+			paths.append(Path(__file__).parent / ("../Results/" + long_path + "/" + policy + "/Results" + vaccinated_students))
 		else:
 			paths.append(Path(__file__).parent / ("../Results/" + long_path + "/" + policy + "/Results" + vaccinated_students + day_name + type_of_screening))
 		type_pretty.append(vaccinated_students + "%")
@@ -58,8 +58,13 @@ def main():
 
 		k											= k + 1
 
+	day_name 										= "/" + day_name
+
+	if policy == "WithoutScreening":
+		day_name 									= ""
+
 	df_plot = df_plot[df_plot.day == 60]
-	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_final_infected_distribution.csv')
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_final_infected_distribution.csv')
 
 	policy_pretty 									= "D1"
 
@@ -70,10 +75,10 @@ def main():
 		+ aes(x = 'final_infected') \
 		+ geom_histogram(aes(y = '..density..'), color="black", bins = 70) \
 		+ facet_wrap('type_pretty', scales = 'free_y') \
-		+ labs(title = "Final infected distribution (" + policy + " policy)", x = 'final infected', y = 'density') \
+		+ labs(title = "Final infected distribution (" + policy_pretty + " policy)", x = 'final infected', y = 'density') \
 		+ geom_density(alpha=.2, fill="#FF0000") \
 		+ theme(subplots_adjust={'wspace': 0.25}, plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold")))
 
-	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/' + day_name + '/plot_final_infected_distribution', dpi=600)
+	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_final_infected_distribution', dpi=600)
 
 main();
