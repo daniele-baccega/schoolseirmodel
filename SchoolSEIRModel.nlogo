@@ -106,6 +106,7 @@ globals [
   start-lessons-time-in-ticks finish-lessons-time-in-ticks
   start-intervals-time-in-ticks
   remain-time-for-lesson-in-ticks remain-time-for-interval-in-ticks
+  mean-between-finish-lessons-and-exit-from-school-in-ticks
 
   finish-lessons-time-in-ticks-backup
 
@@ -150,7 +151,7 @@ turtles-own [
 
   desk classroom floor-idx toilet
 
-  move-time-in-ticks
+  start-school-move-time-in-ticks end-school-move-time-in-ticks
 
   age-group staggered-group screening-group sub-screening-group
 
@@ -269,6 +270,8 @@ to setup-general-variables
   if not staggered-admissions? or
      num-classrooms-per-floor * num-floors = 1
     [ set num-groups 1 ]
+
+  set mean-between-finish-lessons-and-exit-from-school-in-ticks 10
 
   set classroom-letters (list "A" "B" "C" "D")
   set age-groups (list "Young" "Regular" "Old")
@@ -1335,8 +1338,10 @@ to setup-common-attributes
   set queue-position -1
 
   ifelse breed = janitors
-    [ set move-time-in-ticks 0 ]
-    [ set move-time-in-ticks random offset-between-entrance-and-start-lessons-in-ticks + 1 ]
+    [ set start-school-move-time-in-ticks 0 ]
+    [ set start-school-move-time-in-ticks random offset-between-entrance-and-start-lessons-in-ticks + 1 ]
+
+  set end-school-move-time-in-ticks 0
 
   set remain-incubation-days 0
   set remain-infected-days 0
@@ -1536,7 +1541,7 @@ to go
 end
 
 to move
-  ask turtles with [ not hidden? ]
+  ask turtles with [ not hidden? and ticks >= end-school-move-time-in-ticks ]
     [
       let start-move-group-time staggered-group * staggered-time-in-ticks + 1
 
@@ -1966,8 +1971,8 @@ end
 
 to start-agents
   ask turtles with [ hidden? and not quarantined? and
-                     ((staggered-group >= 0 and not item staggered-group end-day? and ticks >= move-time-in-ticks + start-day-time-in-ticks + (staggered-group * staggered-time-in-ticks)) or
-                      (staggered-group < 0 and ticks >= move-time-in-ticks + start-day-time-in-ticks )) and classroom != "-" ]
+                     ((staggered-group >= 0 and not item staggered-group end-day? and ticks >= start-school-move-time-in-ticks + start-day-time-in-ticks + (staggered-group * staggered-time-in-ticks)) or
+                      (staggered-group < 0 and ticks >= start-school-move-time-in-ticks + start-day-time-in-ticks )) and classroom != "-" ]
     [
       set hidden? false
 
@@ -2387,6 +2392,8 @@ to end-school-day [g]
              remove "-" day-scheduling != []
         [ set staggered-group 1 ]
         [ set-targets-end-school ]
+
+      set end-school-move-time-in-ticks finish-lessons-time-in-ticks + random mean-between-finish-lessons-and-exit-from-school-in-ticks
     ]
 
   set end-day? replace-item g end-day? true
@@ -2396,7 +2403,7 @@ to end-school-day [g]
       set start-day-time-in-ticks ticks + offset-between-days-in-ticks
       setup-day-school-variables
       ask turtles with [ breed != janitors ]
-        [ set move-time-in-ticks random offset-between-entrance-and-start-lessons-in-ticks + 1 ]
+        [ set start-school-move-time-in-ticks random offset-between-entrance-and-start-lessons-in-ticks + 1 ]
 
       ask patches with [ occupied? ]
         [ set occupied? false ]
@@ -4149,7 +4156,7 @@ num-floors
 num-floors
 1
 3
-3.0
+2.0
 1
 1
 NIL

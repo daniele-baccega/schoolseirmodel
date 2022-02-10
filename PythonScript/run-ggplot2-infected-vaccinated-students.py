@@ -65,7 +65,12 @@ def main():
 		+ scale_x_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]) \
 		+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/plot_cumulative_infected', dpi=600)
-	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + '/plot_cumulative_infected.csv')
+	day_name 									= "/" + day_name
+
+	if policy == "WithoutScreening":
+		day_name 								= ""
+
+	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_infected', dpi=600)
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + day_name + '/plot_infected.csv')
 
 main();
