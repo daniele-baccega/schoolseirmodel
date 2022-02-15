@@ -320,3 +320,8 @@ python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening
 
 python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
 python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+
+
+
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students-single-plot.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/Omicron/ 100 Screening100
