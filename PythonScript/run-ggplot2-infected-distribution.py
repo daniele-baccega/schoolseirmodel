@@ -6,15 +6,14 @@ from plotnine import *
 from pathlib import Path
 
 def main():
-	if len(sys.argv) < 6:
-		print("Error, parameters are missing: python run-ggplot2-cumulative-infected-vaccinated-students.py path policy day_name num_traces type_of_screening")
+	if len(sys.argv) < 5:
+		print("Error, parameters are missing: python run-ggplot2-cumulative-infected-vaccinated-students.py path policy day_name type_of_screening")
 		exit()
 
 	long_path										= str(sys.argv[1])
 	policy											= str(sys.argv[2])
 	day_name 										= str(sys.argv[3])
-	num_traces										= str(sys.argv[4])
-	type_of_screening								= str(sys.argv[5])
+	type_of_screening								= str(sys.argv[4])
 	paths											= []
 	type_pretty										= []
 	vaccinated_students_perc						= ["0", "10", "40", "70"]
@@ -53,9 +52,6 @@ def main():
 
 			counter									= counter + 1
 
-			if counter == int(num_traces):
- 				break;
-
 		k											= k + 1
 
 	day_name 										= "/" + day_name
@@ -70,12 +66,17 @@ def main():
 
 	if policy == "WithoutScreening":
 		policy_pretty								= "without screening"
+
+	vaccine_efficacy								= long_path[-2:]
+
+	if vaccine_efficacy == "00":
+		vaccine_efficacy							= long_path[-3:]
 	
 	my_plot = (ggplot(df_plot) \
 		+ aes(x = 'final_infected') \
 		+ geom_histogram(aes(y = '..density..'), color="black", bins = 70) \
 		+ facet_wrap('type_pretty', scales = 'free_y') \
-		+ labs(title = "Final infected distribution (" + policy_pretty + " policy)", x = 'final infected', y = 'density') \
+		+ labs(title = "Final infected distribution (" + policy_pretty + " policy, vaccine efficacy " + vaccine_efficacy + "%)", x = 'final infected', y = 'density') \
 		+ geom_density(alpha=.2, fill="#FF0000") \
 		+ theme(subplots_adjust={'wspace': 0.25}, plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold")))
 

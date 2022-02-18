@@ -1823,7 +1823,7 @@ to screening
                     set num-of-screened-agents num-of-screened-agents + count screened-students
                     set num-of-positive-agents num-of-positive-agents + count infected-group
 
-                    quarantine-policy infected-group infected-already-in-quarantine c-name index false false
+                    act-quarantine-policy infected-group infected-already-in-quarantine c-name index false false
                   ]
                   [
                     if remaining-days = 0
@@ -1850,7 +1850,7 @@ to external-screening-1
           let index position classroom after-days-swab-classrooms
           set num-of-positive-agents-external-1 num-of-positive-agents-external-1 + 1
 
-          quarantine-policy turtles with [ who = [who] of myself ] quarantined-students-in-the-same-classroom classroom index true false
+          act-quarantine-policy turtles with [ who = [who] of myself ] quarantined-students-in-the-same-classroom classroom index true false
         ]
     ]
 end
@@ -1864,7 +1864,7 @@ to external-screening-2 [symptoms?]
       set num-of-screened-agents-external-2 num-of-screened-agents-external-2 + 1
       set num-of-positive-agents-external-2 num-of-positive-agents-external-2 + 1
 
-      quarantine-policy turtles with [ who = [who] of myself ] quarantined-students-in-the-same-classroom classroom index false true
+      act-quarantine-policy turtles with [ who = [who] of myself ] quarantined-students-in-the-same-classroom classroom index false true
     ]
 end
 
@@ -1875,10 +1875,10 @@ to external-screening-2-not-students
   put-agent-in-quarantine false true
 end
 
-to quarantine-policy [infected-group infected-already-in-quarantine c-name index quarantine-ext-1? quarantine-ext-2?]
+to act-quarantine-policy [infected-group infected-already-in-quarantine c-name index quarantine-ext-1? quarantine-ext-2?]
   if count infected-group > 0
     [
-      ifelse not whole-classroom-quarantined?
+      ifelse quarantine-policy = "November/December 2021 (Piedmont)"
       [
         ifelse count infected-group + count infected-already-in-quarantine >= num-infected-needed-to-quarantine-whole-classroom
           [
@@ -1902,7 +1902,14 @@ to quarantine-policy [infected-group infected-already-in-quarantine c-name index
             swab-other-students students with [classroom = c-name and not quarantined? and (temperature-measurement = "no measurement" or screening-group != item next-screening-group screening-groups or sub-screening-group != item next-sub-screening-group sub-screening-groups)] infected-already-in-quarantine c-name false
           ]
       ]
-      [ put-classroom-in-quarantine c-name quarantine-ext-1? quarantine-ext-2? ]
+      [
+        ifelse quarantine-policy = "January/February 2022 (Piedmont)"
+          [
+            ask infected-group
+              [ put-agent-in-quarantine quarantine-ext-1? quarantine-ext-2? ]
+          ]
+          [ put-classroom-in-quarantine c-name quarantine-ext-1? quarantine-ext-2? ]
+      ]
     ]
 end
 
@@ -4126,7 +4133,7 @@ init-infected
 init-infected
 0
 students-per-classroom * num-classrooms-per-floor * num-floors + num-classrooms-per-floor * num-floors * 2 + 1
-0.0
+1.0
 1
 1
 NIL
@@ -4156,7 +4163,7 @@ num-floors
 num-floors
 1
 3
-2.0
+1.0
 1
 1
 NIL
@@ -4164,9 +4171,9 @@ HORIZONTAL
 
 SLIDER
 7
-522
+574
 271
-555
+607
 prob-go-bathroom
 prob-go-bathroom
 0
@@ -4179,9 +4186,9 @@ HORIZONTAL
 
 SLIDER
 7
-558
+610
 270
-591
+643
 prob-go-blackboard
 prob-go-blackboard
 0
@@ -4194,9 +4201,9 @@ HORIZONTAL
 
 SLIDER
 7
-594
+646
 270
-627
+679
 prob-go-somewhere-during-interval
 prob-go-somewhere-during-interval
 0.01
@@ -4208,10 +4215,10 @@ NIL
 HORIZONTAL
 
 SWITCH
-896
-799
-1129
-832
+895
+1022
+1128
+1055
 staggered-admissions?
 staggered-admissions?
 1
@@ -4220,9 +4227,9 @@ staggered-admissions?
 
 SLIDER
 7
-630
+682
 270
-663
+715
 prob-go-principal
 prob-go-principal
 0
@@ -4271,12 +4278,12 @@ minute
 11
 
 TEXTBOX
-12
-58
-60
-101
+8
+57
+56
+100
 School clock
-11
+12
 0.0
 1
 
@@ -4293,9 +4300,9 @@ day
 
 SLIDER
 7
-666
+718
 270
-699
+751
 prob-old-teachers
 prob-old-teachers
 0
@@ -4308,9 +4315,9 @@ HORIZONTAL
 
 SLIDER
 7
-740
+792
 270
-773
+825
 prob-outside-contagion-young
 prob-outside-contagion-young
 0
@@ -4323,9 +4330,9 @@ HORIZONTAL
 
 SLIDER
 7
-778
+830
 270
-811
+863
 prob-outside-contagion-regular
 prob-outside-contagion-regular
 0
@@ -4342,35 +4349,35 @@ TEXTBOX
 92
 121
 Setup world
-11
+12
 0.0
 1
 
 TEXTBOX
-11
-501
-122
-519
+10
+553
+121
+571
 Setup probability
-11
+12
 0.0
 1
 
 TEXTBOX
-860
-769
-895
-787
-Flags
-11
+834
+1037
+918
+1071
+Other features\n
+12
 0.0
 1
 
 SLIDER
 7
-815
+867
 270
-848
+900
 prob-outside-contagion-old
 prob-outside-contagion-old
 0
@@ -4403,9 +4410,9 @@ ventilation-type-h-1
 
 SLIDER
 7
-703
+755
 270
-736
+788
 prob-old-janitors
 prob-old-janitors
 0
@@ -4427,12 +4434,12 @@ temperature-measurement
 0
 
 TEXTBOX
-785
-722
-894
-751
+780
+723
+898
+755
 Countermeasures
-11
+12
 0.0
 1
 
@@ -4498,9 +4505,9 @@ HORIZONTAL
 
 SWITCH
 1133
-800
+1022
 1372
-833
+1055
 spaced-desks?
 spaced-desks?
 0
@@ -4519,10 +4526,10 @@ second
 11
 
 SWITCH
-896
-836
-1129
-869
+895
+1058
+1128
+1091
 interval-in-front-of-classroom?
 interval-in-front-of-classroom?
 0
@@ -4580,20 +4587,20 @@ lesson-duration-in-minutes
 0
 
 TEXTBOX
-288
-715
-370
-747
+284
+717
+366
+749
 Other parameters
-11
+12
 0.0
 1
 
 SWITCH
-1378
-800
-1564
-833
+1377
+1022
+1563
+1055
 outside-contagion?
 outside-contagion?
 0
@@ -4602,9 +4609,9 @@ outside-contagion?
 
 SLIDER
 896
-1043
+985
 1034
-1076
+1018
 screening-adhesion-%
 screening-adhesion-%
 0
@@ -4632,9 +4639,9 @@ HORIZONTAL
 
 SWITCH
 896
-872
+758
 1129
-905
+791
 vaccinated-teachers?
 vaccinated-teachers?
 0
@@ -4642,10 +4649,10 @@ vaccinated-teachers?
 -1000
 
 SWITCH
-1380
-837
-1564
-870
+1566
+759
+1750
+792
 vaccinated-principals?
 vaccinated-principals?
 0
@@ -4653,10 +4660,10 @@ vaccinated-principals?
 -1000
 
 SWITCH
-1380
-874
-1565
-907
+1377
+759
+1562
+792
 vaccinated-janitors?
 vaccinated-janitors?
 0
@@ -4665,9 +4672,9 @@ vaccinated-janitors?
 
 SWITCH
 1133
-836
+1058
 1373
-869
+1091
 external-screening?
 external-screening?
 0
@@ -4676,29 +4683,29 @@ external-screening?
 
 CHOOSER
 896
-948
+890
 1372
-993
+935
 screening-policy
 screening-policy
 "no screening" "all every week" "1/4 of the class every week, in rotation" "1/4 of the class every week, in rotation, spread over two days of the week"
 2
 
 TEXTBOX
-829
-962
-897
-980
+826
+904
+894
+922
 Screening
-11
+12
 0.0
 1
 
 CHOOSER
 896
-996
+938
 1034
-1041
+983
 first-day-of-week
 first-day-of-week
 "monday" "tuesday" "wednesday" "thursday" "friday"
@@ -4706,9 +4713,9 @@ first-day-of-week
 
 CHOOSER
 1039
-996
+938
 1178
-1041
+983
 second-day-of-week
 second-day-of-week
 "monday" "tuesday" "wednesday" "thursday" "friday"
@@ -4716,9 +4723,9 @@ second-day-of-week
 
 SLIDER
 7
-961
+1013
 271
-994
+1046
 prob-external-screening-1
 prob-external-screening-1
 0
@@ -4731,9 +4738,9 @@ HORIZONTAL
 
 SLIDER
 7
-996
+1048
 271
-1029
+1081
 prob-external-screening-2
 prob-external-screening-2
 0
@@ -4771,15 +4778,15 @@ Results
 String
 
 SLIDER
-362
-864
-565
-897
+1566
+795
+1752
+829
 vaccine-efficacy
 vaccine-efficacy
 0
 1
-1.0
+0.7
 0.01
 1
 NIL
@@ -4787,9 +4794,9 @@ HORIZONTAL
 
 SLIDER
 896
-909
+795
 1130
-942
+828
 fraction-of-vaccinated-teachers
 fraction-of-vaccinated-teachers
 0
@@ -4801,10 +4808,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-1380
-909
-1564
-942
+1379
+795
+1563
+828
 fraction-of-vaccinated-janitors
 fraction-of-vaccinated-janitors
 0
@@ -4817,9 +4824,9 @@ HORIZONTAL
 
 SLIDER
 1135
-909
+795
 1373
-942
+828
 fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
@@ -4832,31 +4839,20 @@ HORIZONTAL
 
 SWITCH
 1135
-873
+759
 1373
-906
+792
 vaccinated-students?
 vaccinated-students?
 0
 1
 -1000
 
-SWITCH
-896
-760
-1128
-793
-whole-classroom-quarantined?
-whole-classroom-quarantined?
-1
-1
--1000
-
 SLIDER
-1134
-760
-1374
-793
+896
+834
+1130
+868
 num-infected-needed-to-quarantine-whole-classroom
 num-infected-needed-to-quarantine-whole-classroom
 1
@@ -4868,10 +4864,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-1379
-760
-1564
-793
+1135
+834
+1374
+868
 number-of-after-days-special-swab
 number-of-after-days-special-swab
 3
@@ -4884,9 +4880,9 @@ HORIZONTAL
 
 SLIDER
 7
-851
+903
 271
-884
+936
 prob-symptomatic-young
 prob-symptomatic-young
 0
@@ -4899,9 +4895,9 @@ HORIZONTAL
 
 SLIDER
 8
-888
+940
 271
-921
+973
 prob-symptomatic-regular
 prob-symptomatic-regular
 0
@@ -4914,9 +4910,9 @@ HORIZONTAL
 
 SLIDER
 8
-925
+977
 272
-958
+1010
 prob-symptomatic-old
 prob-symptomatic-old
 0
@@ -4928,24 +4924,44 @@ NIL
 HORIZONTAL
 
 TEXTBOX
-824
-880
-903
-903
+822
+766
+901
+789
 Vaccination
 12
 0.0
 1
 
 CHOOSER
-362
-904
-566
-949
+10
+496
+272
+542
 virus-variant
 virus-variant
 "Original" "Alfa" "Beta" "Delta" "Omicron"
 4
+
+CHOOSER
+1380
+834
+1565
+879
+quarantine-policy
+quarantine-policy
+"Old policy" "November/December 2021 (Piedmont)" "January/February 2022 (Piedmont)"
+2
+
+TEXTBOX
+820
+842
+900
+865
+Quarantine
+12
+0.0
+1
 
 @#$#@#$#@
 ## INTRODUCTION
@@ -5003,6 +5019,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _mean-infection-duration-in-days_: average number of infection days.
 - _num-of-quarantine-days_: number of quarantine days.
 - _dad-%_: percentage of distance learning.
+- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
 - _prob-go-bathroom_: probability to go to the bathroom.
 - _prob-go-blackboard_: probability to go to the blackboard.
 - _prob-go-somewhere-during-interval_: probability to go somewhere during the interval.
@@ -5026,16 +5043,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _ventilation-type-h-1_: ventilation type implemented in all rooms but not in the hallways.
 - _mask-type_: mask type used by agents.
 - _fraction-of-population-wearing-mask_: fraction of all agents that use the mask.
-- _whole-classroom-quarantined?_: we can use two diffentent _quarantine_ policies:
-	- First, if we find an infected student in a classroom, we put the whole classroom in quarantine.
-	- Second, if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after _number-of-after-days-special-swab_ days. Again, if we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected we put the whole classroom in quarantine.
-- _num-infected-needed-to-quarantine-whole-classroom_: number of infected students needed to quarantine the whole classroom with the second _quarantine_ policy.
-- _number-of-after-days-special-swab_: number of days after that, with the second _quarantine_ policy, we swab again all the other students in the same classroom of the infected student that we found.
-- _staggered-admissions?_: staggered admissions (with _num-groups_ groups).
-- _spaced-desks?_: spaced desks (social distancing).
-- _outside-contagion?_: possibility to get the infection outside the school.
-- _interval-in-front-of-classroom?_: possibility to go at most in front of their classroom during the interval and not elsewhere (the agents can always go to the bathroom).
-- _external-screening?_: external screening (outside tha school).
+- _vaccinated-students?_: vaccinated students (immunized).
 - _vaccinated-teachers?_: vaccinated teachers (immunized).
 - _vaccinated-principals?_: vaccinated principals (immunized).
 - _vaccinated-janitors?_: vaccinated janitors (immunized).
@@ -5043,6 +5051,12 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _fraction-of-vaccinated-teachers_: fraction of vaccinated teachers.
 - _fraction-of-vaccinated-janitors_: fraction of vaccinated janitors.
 - _vaccine-efficacy_: vaccine efficacy for vaccinated subjects.
+- _quarantine-policy_: we can use three diffentent _quarantine_ policies:
+	- Old policy: if we find an infected student in a classroom, we put the whole classroom in quarantine.
+	- November/December 2021 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after _number-of-after-days-special-swab_ days. Again, if we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected we put the whole classroom in quarantine.
+	- January/February 2022 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine.
+- _num-infected-needed-to-quarantine-whole-classroom_: number of infected students needed to quarantine the whole classroom with the second _quarantine_ policy.
+- _number-of-after-days-special-swab_: number of days after that, with the second _quarantine_ policy, we swab again all the other students in the same classroom of the infected student that we found.
 - _screening-policy_: infection control stategy (or screening policy); we consider four different screening policies:
 	- **A1**: all every week
 	- **D1**: 1/4 of the class every week, in rotation
@@ -5051,7 +5065,12 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _first-day-of-week_: day of the week on which school's screening takes place; In the case of D2 policy, one half of the group is swabbed on this day.
 - _second-day-of-week_: parameter used in the case of the D2 policy; the other half of the group is swabbed on this day.
 - _screening-adhesion-%_: percentage of students' adhesion to the screening campaign.
-- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
+- _staggered-admissions?_: staggered admissions (with _num-groups_ groups).
+- _spaced-desks?_: spaced desks (social distancing).
+- _outside-contagion?_: possibility to get the infection outside the school.
+- _interval-in-front-of-classroom?_: possibility to go at most in front of their classroom during the interval and not elsewhere (the agents can always go to the bathroom).
+- _external-screening?_: external screening (outside tha school).
+
 
 ----
 

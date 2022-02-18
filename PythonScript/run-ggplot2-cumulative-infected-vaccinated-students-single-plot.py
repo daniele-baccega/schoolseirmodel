@@ -47,7 +47,7 @@ def main():
 
 				df_mod 									= total_infected
 				df_mod['type_pretty'] 					= type_pretty[k]
-				df_mod['efficacy']						= efficacy
+				df_mod['efficacy']						= efficacy + "%"
 				df_mod['policy']						= policy
 				if df_plot is None:
 					df_plot 							= df_mod
@@ -62,7 +62,7 @@ def main():
 
 	df_plot.efficacy = pandas.Categorical(df_plot.efficacy, \
 										ordered = True, \
-										categories = ["Vaccine Efficacy 100", "Vaccine Efficacy 90", "Vaccine Efficacy 70"])
+										categories = ["Vaccine Efficacy 100%", "Vaccine Efficacy 90%", "Vaccine Efficacy 70%"])
 
 	df_plot.policy = pandas.Categorical(df_plot.policy, \
 										ordered = True, \
@@ -74,7 +74,7 @@ def main():
  		+ geom_line() \
  		+ facet_grid('policy ~ efficacy') \
  		+ geom_hline(aes(yintercept=1), color="#000000", linetype="dotted", size=0.3) \
-    	+ labs(title = "Students vaccination", x = 'day', y = 'cumulative infected', color = 'Percentages of vaccination')) \
+    	+ labs(title = "Students vaccination", x = 'day', y = 'normalized cumulative infected', color = 'Percentages of students vaccination')) \
     	+ scale_x_continuous(breaks=[0, 10, 20, 30, 40, 50, 60]) \
     	+ scale_color_manual(values=["#FF0000", "#00FF00", "#0000FF", "#FF00FF"]) \
     	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))

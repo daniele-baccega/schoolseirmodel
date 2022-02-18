@@ -53,6 +53,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _mean-infection-duration-in-days_: average number of infection days.
 - _num-of-quarantine-days_: number of quarantine days.
 - _dad-%_: percentage of distance learning.
+- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
 - _prob-go-bathroom_: probability to go to the bathroom.
 - _prob-go-blackboard_: probability to go to the blackboard.
 - _prob-go-somewhere-during-interval_: probability to go somewhere during the interval.
@@ -76,16 +77,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _ventilation-type-h-1_: ventilation type implemented in all rooms but not in the hallways.
 - _mask-type_: mask type used by agents.
 - _fraction-of-population-wearing-mask_: fraction of all agents that use the mask.
-- _whole-classroom-quarantined?_: we can use two diffentent _quarantine_ policies:
-	- First, if we find an infected student in a classroom, we put the whole classroom in quarantine.
-	- Second, if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after _number-of-after-days-special-swab_ days. Again, if we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected we put the whole classroom in quarantine.
-- _num-infected-needed-to-quarantine-whole-classroom_: number of infected students needed to quarantine the whole classroom with the second _quarantine_ policy.
-- _number-of-after-days-special-swab_: number of days after that, with the second _quarantine_ policy, we swab again all the other students in the same classroom of the infected student that we found.
-- _staggered-admissions?_: staggered admissions (with _num-groups_ groups).
-- _spaced-desks?_: spaced desks (social distancing).
-- _outside-contagion?_: possibility to get the infection outside the school.
-- _interval-in-front-of-classroom?_: possibility to go at most in front of their classroom during the interval and not elsewhere (the agents can always go to the bathroom).
-- _external-screening?_: external screening (outside tha school).
+- _vaccinated-students?_: vaccinated students (immunized).
 - _vaccinated-teachers?_: vaccinated teachers (immunized).
 - _vaccinated-principals?_: vaccinated principals (immunized).
 - _vaccinated-janitors?_: vaccinated janitors (immunized).
@@ -93,6 +85,12 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _fraction-of-vaccinated-teachers_: fraction of vaccinated teachers.
 - _fraction-of-vaccinated-janitors_: fraction of vaccinated janitors.
 - _vaccine-efficacy_: vaccine efficacy for vaccinated subjects.
+- _quarantine-policy_: we can use three diffentent _quarantine_ policies:
+	- Old policy: if we find an infected student in a classroom, we put the whole classroom in quarantine.
+	- November/December 2021 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after _number-of-after-days-special-swab_ days. Again, if we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected we put the whole classroom in quarantine.
+	- January/February 2022 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine.
+- _num-infected-needed-to-quarantine-whole-classroom_: number of infected students needed to quarantine the whole classroom with the second _quarantine_ policy.
+- _number-of-after-days-special-swab_: number of days after that, with the second _quarantine_ policy, we swab again all the other students in the same classroom of the infected student that we found.
 - _screening-policy_: infection control stategy (or screening policy); we consider four different screening policies:
 	- **A1**: all every week
 	- **D1**: 1/4 of the class every week, in rotation
@@ -101,7 +99,12 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _first-day-of-week_: day of the week on which school's screening takes place; In the case of D2 policy, one half of the group is swabbed on this day.
 - _second-day-of-week_: parameter used in the case of the D2 policy; the other half of the group is swabbed on this day.
 - _screening-adhesion-%_: percentage of students' adhesion to the screening campaign.
-- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
+- _staggered-admissions?_: staggered admissions (with _num-groups_ groups).
+- _spaced-desks?_: spaced desks (social distancing).
+- _outside-contagion?_: possibility to get the infection outside the school.
+- _interval-in-front-of-classroom?_: possibility to go at most in front of their classroom during the interval and not elsewhere (the agents can always go to the bathroom).
+- _external-screening?_: external screening (outside tha school).
+
 
 ----
 
