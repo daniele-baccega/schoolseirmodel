@@ -12,50 +12,65 @@ def main():
 	long_path										= str(sys.argv[1])
 	num_traces										= str(sys.argv[2])
 	type_of_screening								= str(sys.argv[3])
+	quarantine_policies								= ["NovDecPolicy", "JanFebPolicy"]
+	quarantine_policies_pretty						= ["Nov/Dec", "Jan/Feb"]
 	vaccine_efficacy								= ["Vaccine Efficacy 100", "Vaccine Efficacy 90", "Vaccine Efficacy 70"]
 	policies										= ["D1", "Without Screening"]
 	day_name 										= "Monday"
 	vaccinated_students_perc						= ["0", "10", "40", "70"]
 	my_plot											= None
 	df_plot											= None
+	i												= 0
 
-	for efficacy in vaccine_efficacy:
-		for policy in policies:
-			paths										= []
-			type_pretty									= []
-			for vaccinated_students in vaccinated_students_perc:
-				if policy == "Without Screening":
-					paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/" + efficacy.replace(" ", "") + "/" + policy.replace(" ", "") + "/mean_" + vaccinated_students + "_WithoutScreening_" + num_traces + ".csv"))
-				else:
-					paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/" + efficacy.replace(" ", "") + "/" + policy.replace(" ", "") + "/Monday/mean_" + vaccinated_students + "_D1_Monday_" + type_of_screening + "_" + num_traces + ".csv"))
-				type_pretty.append(vaccinated_students + "%")
+	for quarantine_policy in quarantine_policies:
+		for efficacy in vaccine_efficacy:
+			for policy in policies:
+				if policy == "D1" and quarantine_policy == "JanFebPolicy":
+					continue
+
+				paths										= []
+				type_pretty									= []
+				for vaccinated_students in vaccinated_students_perc:
+					if policy == "Without Screening":
+						paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/" + quarantine_policy + "/Omicron/" + efficacy.replace(" ", "") + "/" + policy.replace(" ", "") + "/mean_" + vaccinated_students + "_WithoutScreening_" + num_traces + ".csv"))
+					else:
+						paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/" + quarantine_policy + "/Omicron/" + efficacy.replace(" ", "") + "/" + policy.replace(" ", "") + "/Monday/mean_" + vaccinated_students + "_D1_Monday_" + type_of_screening + "_" + num_traces + ".csv"))
+					type_pretty.append(vaccinated_students + "%")
+					
+				k											= 0
 				
-			k											= 0
-			
-			for path in paths:
-				df_mean          						= pandas.read_csv(str(path), index_col=0)
+				for path in paths:
+					df_mean          						= pandas.read_csv(str(path), index_col=0)
 
-				population								= df_mean.loc[0, 'susceptible']
+					population								= df_mean.loc[0, 'susceptible']
 
-				total_infected 							= pandas.DataFrame(columns=['day', 'cumulative_infected'])
-				
-				total_infected['day']					= df_mean.loc[:, 'day']
-				total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + \
-																        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'])) / population
+					total_infected 							= pandas.DataFrame(columns=['day', 'cumulative_infected'])
+					
+					total_infected['day']					= df_mean.loc[:, 'day']
+					total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + \
+																	        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'])) / population
 
-				total_infected 							= total_infected.iloc[1:]
+					total_infected 							= total_infected.iloc[1:]
 
-				df_mod 									= total_infected
-				df_mod['type_pretty'] 					= type_pretty[k]
-				df_mod['efficacy']						= efficacy + "%"
-				df_mod['policy']						= policy
-				if df_plot is None:
-					df_plot 							= df_mod
-				else:
-					df_plot 							= df_plot.append(df_mod, ignore_index=True)
 
-				k										= k + 1
-								      		        
+					df_mod 									= total_infected
+					df_mod['type_pretty'] 					= type_pretty[k]
+					df_mod['efficacy']						= efficacy + "%"
+					df_mod['policy']						= policy
+
+					if policy == "Without Screening":
+						df_mod['policy'] 				    = "W0 (" + quarantine_policies_pretty[i] + ")"
+
+					if df_plot is None:
+						df_plot 							= df_mod
+					else:
+						df_plot 							= df_plot.append(df_mod, ignore_index=True)
+
+					k										= k + 1
+
+		i													= i + 1
+
+
 	df_plot.type_pretty = pandas.Categorical(df_plot.type_pretty, \
 										ordered = True, \
 										categories = ["0%", "10%", "40%", "70%"])
@@ -66,7 +81,7 @@ def main():
 
 	df_plot.policy = pandas.Categorical(df_plot.policy, \
 										ordered = True, \
-										categories = ["D1", "Without Screening"])
+										categories = ["D1", "W0 (Nov/Dec)", "W0 (Jan/Feb)"])
 
 	
 	my_plot = (ggplot(df_plot) \
@@ -79,7 +94,7 @@ def main():
     	+ scale_color_manual(values=["#FF0000", "#00FF00", "#0000FF", "#FF00FF"]) \
     	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../plot-ggplot2/' + long_path + '/plot_normalized_cumulative_infected_single_plot', dpi=600)
-	df_plot.to_csv('../plot-ggplot2/' + long_path + '/plot_normalized_cumulative_infected_single_plot.csv')
+	my_plot.save('../plot-ggplot2/' + long_path + '/plot_normalized_cumulative_infected_single_plot_omicron', dpi=600)
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/plot_normalized_cumulative_infected_single_plot_omicron.csv')
 
 main();

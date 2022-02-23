@@ -78,7 +78,7 @@ def main():
 		df_right['day']											= df['day']
 
 		if vaccinated_students != "":
-			vaccinated_students 								+= "_"
+			vaccinated_students 							   += "_"
 
 		if type_of_screening[k] == "WithoutScreening":
 			df_mean.to_csv('../mean-results/' + long_path + '/WithoutScreening/mean_' + vaccinated_students + type_of_screening[k] + '_' + num_traces + '.csv', float_format="%.4f")

@@ -11,7 +11,7 @@ from collections import Counter
 from networkx.drawing.nx_agraph import graphviz_layout
 from scipy.interpolate import interp1d
 
-FILE = "mean-results/mean_contacts-time.csv"
+FILE = "mean-results/mean_number-of-contacts.csv"
 with open(FILE, "rb") as infile:
     adj_mat = np.loadtxt(infile, dtype=float, delimiter=",")
     G       = nx.from_numpy_matrix(adj_mat, create_using=nx.Graph())
@@ -20,7 +20,7 @@ with open(FILE, "rb") as infile:
 #edge_weights = nx.get_edge_attributes(G, 'weight')
 #G.remove_edges_from((e for e, w in edge_weights.items() if w < 5))
 
-with open("mean_contacts-time.graphml", "wb") as ofile:
+with open("mean_number-of-contacts.graphml", "wb") as ofile:
     nx.write_graphml(G, ofile)
 
 # Number of nodes and edges

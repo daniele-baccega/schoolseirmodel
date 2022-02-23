@@ -4781,7 +4781,7 @@ SLIDER
 1566
 795
 1752
-829
+828
 vaccine-efficacy
 vaccine-efficacy
 0
@@ -4852,7 +4852,7 @@ SLIDER
 896
 834
 1130
-868
+867
 num-infected-needed-to-quarantine-whole-classroom
 num-infected-needed-to-quarantine-whole-classroom
 1
@@ -4867,7 +4867,7 @@ SLIDER
 1135
 834
 1374
-868
+867
 number-of-after-days-special-swab
 number-of-after-days-special-swab
 3
@@ -4937,7 +4937,7 @@ CHOOSER
 10
 496
 272
-542
+541
 virus-variant
 virus-variant
 "Original" "Alfa" "Beta" "Delta" "Omicron"
