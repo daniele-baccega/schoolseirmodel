@@ -153,7 +153,7 @@ turtles-own [
 
   start-school-move-time-in-ticks end-school-move-time-in-ticks
 
-  age-group staggered-group screening-group sub-screening-group
+  staggered-group screening-group sub-screening-group
 
   queue queue-position temperature-time-in-ticks temperature-already-measured?
 
@@ -1147,7 +1147,6 @@ to setup-students
           set classroom actual-room-name
           set floor-idx get-floor-by-classroom classroom
 
-          set age-group "Young"
           set staggered-group i mod num-groups
           set screening-group actual-screening-group
           set sub-screening-group actual-sub-screening-group
@@ -1214,10 +1213,6 @@ to setup-teachers
 
   create-teachers num-teachers
     [
-      ifelse random 100 < prob-old-teachers * 100
-        [ set age-group "Old" ]
-        [ set age-group "Regular" ]
-
       set gym-teacher? false
       set supply? false
 
@@ -1249,10 +1244,6 @@ to setup-principal
       set classroom [room-name] of desk
       set floor-idx get-floor-by-classroom classroom
 
-      ifelse random 100 < prob-old-teachers * 100
-        [ set age-group "Old" ]
-        [ set age-group "Regular" ]
-
       set staggered-group -1
 
       setup-common-attributes
@@ -1270,10 +1261,6 @@ to setup-janitors
       set desk item (who mod num-janitors) desks
       set classroom [room-name] of desk
       set floor-idx get-floor-by-classroom classroom
-
-      ifelse random 100 < prob-old-janitors * 100
-        [ set age-group "Old" ]
-        [ set age-group "Regular" ]
 
       set supply? false
 
@@ -3010,15 +2997,7 @@ to update-infected
 end
 
 to show-symptoms
-  let probability-to-show-symptoms prob-symptomatic-young
-
-  if age-group = "Regular"
-    [ set probability-to-show-symptoms prob-symptomatic-regular ]
-
-  if age-group = "Old"
-    [ set probability-to-show-symptoms prob-symptomatic-old ]
-
-  if random 100 < probability-to-show-symptoms * 100
+  if random 100 < prob-symptomatic * 100
     [ set symptomatic? true ]
 end
 
@@ -3230,14 +3209,6 @@ to remove-from-quarantine
 end
 
 to outside-contagion
-  let prob-outside-contagion prob-outside-contagion-young
-
-  if age-group = "Regular"
-    [ set prob-outside-contagion prob-outside-contagion-regular ]
-
-  if age-group = "Old"
-    [ set prob-outside-contagion prob-outside-contagion-old ]
-
   if vaccinated? and
      vaccine-efficacy < 1
     [ set prob-outside-contagion prob-outside-contagion * infectious-vaccinated-factor ]
@@ -3768,10 +3739,6 @@ to create-supply-teacher
       set remain-infected-days 0
       set remain-quarantine-days 0
 
-      ifelse random 100 < prob-old-teachers * 100
-        [ set age-group "Old" ]
-        [ set age-group "Regular" ]
-
       set queue 0
       set queue-position -1
 
@@ -3822,10 +3789,6 @@ to create-supply-janitors
       set num-susceptible num-susceptible + 1
       set remain-infected-days 0
       set remain-quarantine-days 0
-
-      ifelse random 100 < prob-old-teachers * 100
-        [ set age-group "Old" ]
-        [ set age-group "Regular" ]
 
       set queue 0
       set queue-position -1
@@ -4041,10 +4004,6 @@ end
 
 ;Stop condition
 to-report stop-condition
-  let ft final-time
-  let final-hour first ft
-  let final-minute last ft
-
   report day > days-of-simulation
 end
 @#$#@#$#@
@@ -4303,41 +4262,11 @@ SLIDER
 718
 270
 751
-prob-old-teachers
-prob-old-teachers
-0
-1
-0.26
-0.01
-1
-NIL
-HORIZONTAL
-
-SLIDER
-7
-792
-270
-825
-prob-outside-contagion-young
-prob-outside-contagion-young
+prob-outside-contagion
+prob-outside-contagion
 0
 0.01
 0.001
-0.0001
-1
-NIL
-HORIZONTAL
-
-SLIDER
-7
-830
-270
-863
-prob-outside-contagion-regular
-prob-outside-contagion-regular
-0
-0.01
-0.0029
 0.0001
 1
 NIL
@@ -4364,35 +4293,20 @@ Setup probability
 1
 
 TEXTBOX
-834
-1037
-918
-1071
+836
+1043
+920
+1077
 Other features\n
 12
 0.0
 1
 
-SLIDER
-7
-867
-270
-900
-prob-outside-contagion-old
-prob-outside-contagion-old
-0
-0.01
-0.0081
-0.0001
-1
-NIL
-HORIZONTAL
-
 CHOOSER
-1379
-709
-1564
-754
+1378
+708
+1563
+753
 mask-type
 mask-type
 "no mask" "surgical" "ffp2"
@@ -4407,21 +4321,6 @@ ventilation-type-h-1
 ventilation-type-h-1
 "no ventilation" 0.3 1 3 5 10 20
 3
-
-SLIDER
-7
-755
-270
-788
-prob-old-janitors
-prob-old-janitors
-0
-1
-0.59
-0.01
-1
-NIL
-HORIZONTAL
 
 CHOOSER
 896
@@ -4692,10 +4591,10 @@ screening-policy
 2
 
 TEXTBOX
-826
-904
-894
-922
+827
+906
+895
+924
 Screening
 12
 0.0
@@ -4723,9 +4622,9 @@ second-day-of-week
 
 SLIDER
 7
-1013
+790
 271
-1046
+823
 prob-external-screening-1
 prob-external-screening-1
 0
@@ -4738,9 +4637,9 @@ HORIZONTAL
 
 SLIDER
 7
-1048
+825
 271
-1081
+858
 prob-external-screening-2
 prob-external-screening-2
 0
@@ -4880,41 +4779,11 @@ HORIZONTAL
 
 SLIDER
 7
-903
+754
 271
-936
-prob-symptomatic-young
-prob-symptomatic-young
-0
-1
-0.0
-0.01
-1
-NIL
-HORIZONTAL
-
-SLIDER
-8
-940
-271
-973
-prob-symptomatic-regular
-prob-symptomatic-regular
-0
-1
-0.0
-0.01
-1
-NIL
-HORIZONTAL
-
-SLIDER
-8
-977
-272
-1010
-prob-symptomatic-old
-prob-symptomatic-old
+787
+prob-symptomatic
+prob-symptomatic
 0
 1
 0.0
@@ -4924,10 +4793,10 @@ NIL
 HORIZONTAL
 
 TEXTBOX
-822
-766
-901
-789
+819
+767
+898
+790
 Vaccination
 12
 0.0
@@ -5024,14 +4893,8 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _prob-go-blackboard_: probability to go to the blackboard.
 - _prob-go-somewhere-during-interval_: probability to go somewhere during the interval.
 - _prob-go-principal_: probability to go to the principal's office.
-- _prob-old-teachers_: probability that a teacher belongs to the _old_ category.
-- _prob-old-janitor_: probability that a janitor belongs to the _old_ category.
-- _prob-outside-contagion-young_: probability that an agent that belongs to the _young_ category gets the infection outside the school.
-- _prob-outside-contagion-regular_: probability that an agent that belongs to the _regular_ category gets the infection outside the school.
-- _prob-outside-contagion-old_: probability that an agent that belongs to the _old_ category gets the infection outside the school.
-- _prob-symptomatic-young_: probability to show symptoms when a _young_ agent becomes infected.
-- _prob-symptomatic-regular_: probability to show symptoms when a _regular_ agent becomes infected.
-- _prob-symptomatic-old_: probability to show symptoms when a _old_ agent becomes infected.
+- _prob-outside-contagion_: probability that an agent gets the infection outside the school.
+- _prob-symptomatic_: probability to show symptoms an agent becomes infected.
 - _prob-external-screening-1_: probability to swab a student outside the school because this student follows activities that involve screening campaings.
 - _prob-external-screening-2_: probability to swab an infected students outside the school.
 - _lesson-duration-in-minutes_: duration of a single lesson in minutes.

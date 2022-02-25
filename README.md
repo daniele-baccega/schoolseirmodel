@@ -58,14 +58,8 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _prob-go-blackboard_: probability to go to the blackboard.
 - _prob-go-somewhere-during-interval_: probability to go somewhere during the interval.
 - _prob-go-principal_: probability to go to the principal's office.
-- _prob-old-teachers_: probability that a teacher belongs to the _old_ category.
-- _prob-old-janitor_: probability that a janitor belongs to the _old_ category.
-- _prob-outside-contagion-young_: probability that an agent that belongs to the _young_ category gets the infection outside the school.
-- _prob-outside-contagion-regular_: probability that an agent that belongs to the _regular_ category gets the infection outside the school.
-- _prob-outside-contagion-old_: probability that an agent that belongs to the _old_ category gets the infection outside the school.
-- _prob-symptomatic-young_: probability to show symptoms when a _young_ agent becomes infected.
-- _prob-symptomatic-regular_: probability to show symptoms when a _regular_ agent becomes infected.
-- _prob-symptomatic-old_: probability to show symptoms when a _old_ agent becomes infected.
+- _prob-outside-contagion_: probability that an agent gets the infection outside the school.
+- _prob-symptomatic_: probability to show symptoms an agent becomes infected.
 - _prob-external-screening-1_: probability to swab a student outside the school because this student follows activities that involve screening campaings.
 - _prob-external-screening-2_: probability to swab an infected students outside the school.
 - _lesson-duration-in-minutes_: duration of a single lesson in minutes.
