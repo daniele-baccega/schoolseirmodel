@@ -6,14 +6,15 @@ from plotnine import *
 from pathlib import Path
 
 def main():
-	if len(sys.argv) < 6:
-		print("Error, parameters are missing: python run-ggplot2-mean-days.py path policy vaccinated_students_% num_traces type_of_screening [type_of_screening ...]")
+	if len(sys.argv) < 7:
+		print("Error, parameters are missing: python run-ggplot2-mean-days.py path policy day_name vaccinated_students_% num_traces type_of_screening [type_of_screening ...]")
 		exit()
 
 	long_path														= str(sys.argv[1])
 	policy 															= str(sys.argv[2])
 	vaccinated_students												= str(sys.argv[3])
-	num_traces														= str(sys.argv[4])
+	day_name 														= str(sys.argv[4])
+	num_traces														= str(sys.argv[5])
 	day_names 														= ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 	type_of_screening												= []
 	type_of_screening_pretty										= []
@@ -29,7 +30,7 @@ def main():
 	types_of_means													= ["mean", "variance", "left", "right"]
 
 	for type_of_mean in types_of_means:
-		index 														= 5
+		index 														= 6
 		paths														= []
 
 		while index < len(sys.argv):

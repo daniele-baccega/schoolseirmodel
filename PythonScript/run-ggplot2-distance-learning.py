@@ -5,19 +5,20 @@ from plotnine import *
 from pathlib import Path
 
 def main():
-	if len(sys.argv) < 5:
-		print("Error, parameters are missing: python run-ggplot2-distance-learning.py policy day_name num_traces type_of_screening")
+	if len(sys.argv) < 6:
+		print("Error, parameters are missing: python run-ggplot2-distance-learning.py path policy day_name num_traces type_of_screening")
 		exit()
 
-	policy 										= str(sys.argv[1])
-	day_name 									= str(sys.argv[2])
-	num_traces									= str(sys.argv[3])
-	type_of_screening							= str(sys.argv[4])
+	long_path									= str(sys.argv[1])
+	policy 										= str(sys.argv[2])
+	day_name 									= str(sys.argv[3])
+	num_traces									= str(sys.argv[4])
+	type_of_screening							= str(sys.argv[5])
 	paths										= []
 	type_pretty									= []
 
-	paths.append(Path(__file__).parent / ("../mean-results/OldPolicyvsNewPolicy/Prob-0.001/WholeQuarantined/" + policy + "/" + day_name + "/mean_" + policy + "_" + day_name + "_" + type_of_screening + "_" + num_traces + ".csv"))
-	paths.append(Path(__file__).parent / ("../mean-results/OldPolicyvsNewPolicy/Prob-0.001/OneQuarantined/" + policy + "/" + day_name + "/mean_" + policy + "_" + day_name + "_" + type_of_screening + "_" + num_traces + ".csv"))
+	paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/NovDecPolicy/" + policy + "/" + day_name + "/mean_" + policy + "_" + day_name + "_" + type_of_screening + "_" + num_traces + ".csv"))
+	paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/OldPolicy/" + policy + "/" + day_name + "/mean_" + policy + "_" + day_name + "_" + type_of_screening + "_" + num_traces + ".csv"))
 	type_pretty.append("Old policy")
 	type_pretty.append("New policy")
 		
@@ -70,7 +71,7 @@ def main():
     	+ scale_y_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 , 75, 80, 85, 90, 95, 100]) \
     	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
-	my_plot.save('../plot-ggplot2/OldPolicyvsNewPolicy/Prob-0.001/' + policy + '/distance-learning.png', dpi=600)
-	df_plot.to_csv('../plot-ggplot2/OldPolicyvsNewPolicy/Prob-0.001/' + policy + '/distance-learning.csv')
+	my_plot.save('../plot-ggplot2/' + long_path + '/' + policy + '/distance-learning.png', dpi=600)
+	df_plot.to_csv('../plot-ggplot2/' + long_path + '/' + policy + '/distance-learning.csv')
 
 main();

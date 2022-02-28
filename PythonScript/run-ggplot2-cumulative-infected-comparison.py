@@ -15,7 +15,7 @@ def main():
 	type_of_npis_pretty							= []
 
 	paths.append(Path(__file__).parent / ("../mean-results/" + long_path + "/WithoutScreening/mean_WithoutScreening_" + num_traces + ".csv"))
-	paths.append(Path(__file__).parent / ("../mean-results/" + long_path.replace("WithCountermeasures", "WithoutCountermeasures") + "/WithoutScreening/mean_WithoutScreening_" + num_traces + ".csv"))
+	paths.append(Path(__file__).parent / ("../mean-results/" + long_path.replace("WithCountermeasures", "WithoutCountermeasures").replace("WithoutVaccinatedStudents", "") + "/WithoutScreening/mean_WithoutScreening_" + num_traces + ".csv"))
 	type_of_npis_pretty.append("With NPIs")
 	type_of_npis_pretty.append("Without NPIs")
 		

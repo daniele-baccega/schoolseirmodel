@@ -4,7 +4,7 @@ echo "Running the command: run-ggplot2-mean.py $@"
 python3 run-ggplot2-mean.py "$@"
 
 
-if ! [[ $1 == *"WithVaccinatedStudents"* ]] && ! [[ $1 == *"OldPolicyvsNewPolicy"* ]] && ! [[ $1 == *"WithoutCountermeasures"* ]]; then
+if ! [[ $1 == *"WithVaccinatedStudents"* ]] && ! [[ $1 == *"NovDecPolicyvsOldPolicy"* ]] && ! [[ $1 == *"WithoutCountermeasures"* ]]; then
   echo "Running the command: run-ggplot2-single-plot.py $@"
   python3 run-ggplot2-single-plot.py "$@"
   echo "Running the command: run-ggplot2-infected.py $@"

@@ -80,7 +80,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _fraction-of-vaccinated-janitors_: fraction of vaccinated janitors.
 - _vaccine-efficacy_: vaccine efficacy for vaccinated subjects.
 - _quarantine-policy_: we can use three diffentent _quarantine_ policies:
-	- Old policy: if we find an infected student in a classroom, we put the whole classroom in quarantine.
+	- Old policy (Piedmont): if we find an infected student in a classroom, we put the whole classroom in quarantine.
 	- November/December 2021 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after _number-of-after-days-special-swab_ days. Again, if we find other _num-infected-needed-to-quarantine-whole-classroom_ - 1 infected we put the whole classroom in quarantine.
 	- January/February 2022 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine.
 - _num-infected-needed-to-quarantine-whole-classroom_: number of infected students needed to quarantine the whole classroom with the second _quarantine_ policy.
