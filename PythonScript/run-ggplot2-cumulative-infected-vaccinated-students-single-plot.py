@@ -41,6 +41,8 @@ def main():
 				
 				for path in paths:
 					df_mean          						= pandas.read_csv(str(path), index_col=0)
+					df_left          						= pandas.read_csv(str(path).replace("mean_", "left_"), index_col=0)
+					df_right          						= pandas.read_csv(str(path).replace("mean_", "right_"), index_col=0)
 
 					population								= df_mean.loc[0, 'susceptible']
 
@@ -49,6 +51,11 @@ def main():
 					total_infected['day']					= df_mean.loc[:, 'day']
 					total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + \
 																	        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'])) / population
+					total_infected['left'] 					= (population - (df_left.loc[:, 'susceptible'] + df_left.loc[:, 'susceptible-in-quarantine'] + df_left.loc[:, 'susceptible-in-quarantine-external-1'] + df_left.loc[:, 'susceptible-in-quarantine-external-2'] + \
+																	        df_left.loc[:, 'exposed'] + df_left.loc[:, 'exposed-in-quarantine'] + df_left.loc[:, 'exposed-in-quarantine-external-1'] + df_left.loc[:, 'exposed-in-quarantine-external-2'])) / population
+					total_infected['right'] 				= (population - (df_right.loc[:, 'susceptible'] + df_right.loc[:, 'susceptible-in-quarantine'] + df_right.loc[:, 'susceptible-in-quarantine-external-1'] + df_right.loc[:, 'susceptible-in-quarantine-external-2'] + \
+																	        df_right.loc[:, 'exposed'] + df_right.loc[:, 'exposed-in-quarantine'] + df_right.loc[:, 'exposed-in-quarantine-external-1'] + df_right.loc[:, 'exposed-in-quarantine-external-2'])) / population
+
 
 					total_infected 							= total_infected.iloc[1:]
 
@@ -87,6 +94,7 @@ def main():
 	my_plot = (ggplot(df_plot) \
  		+ aes(x = 'day', y = 'cumulative_infected', color = 'type_pretty') \
  		+ geom_line() \
+	 	#+ geom_ribbon(aes(ymin='left', ymax='right'), alpha=0.2)
  		+ facet_grid('policy ~ efficacy') \
  		+ geom_hline(aes(yintercept=1), color="#000000", linetype="dotted", size=0.3) \
     	+ labs(title = "Students vaccination", x = 'day', y = 'normalized cumulative infected', color = 'Percentages of students vaccination')) \
