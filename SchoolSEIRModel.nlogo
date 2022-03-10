@@ -4010,10 +4010,10 @@ to-report stop-condition
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-277
-10
-1895
-689
+294
+12
+1912
+691
 -1
 -1
 10.0
@@ -4037,10 +4037,10 @@ ticks
 30.0
 
 BUTTON
-120
-11
-193
-44
+136
+13
+209
+46
 NIL
 setup
 NIL
@@ -4054,10 +4054,10 @@ NIL
 1
 
 BUTTON
-196
-11
-269
-44
+213
+13
+286
+46
 NIL
 go
 T
@@ -4071,10 +4071,10 @@ NIL
 0
 
 SLIDER
-9
-121
-270
-154
+24
+136
+285
+169
 students-per-classroom
 students-per-classroom
 16
@@ -4086,10 +4086,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-229
-270
-262
+24
+245
+285
+278
 init-infected
 init-infected
 0
@@ -4101,10 +4101,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-193
-270
-226
+24
+208
+285
+241
 num-classrooms-per-floor
 num-classrooms-per-floor
 1
@@ -4116,10 +4116,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-157
-270
-190
+24
+173
+285
+206
 num-floors
 num-floors
 1
@@ -4131,10 +4131,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-7
-574
-271
-607
+20
+600
+284
+633
 prob-go-bathroom
 prob-go-bathroom
 0
@@ -4146,10 +4146,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-7
-610
-270
-643
+20
+636
+283
+669
 prob-go-blackboard
 prob-go-blackboard
 0
@@ -4161,10 +4161,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-7
-646
-270
-679
+20
+673
+283
+706
 prob-go-somewhere-during-interval
 prob-go-somewhere-during-interval
 0.01
@@ -4176,10 +4176,10 @@ NIL
 HORIZONTAL
 
 SWITCH
-895
-1022
-1128
-1055
+1054
+1018
+1287
+1051
 staggered-admissions?
 staggered-admissions?
 1
@@ -4187,10 +4187,10 @@ staggered-admissions?
 -1000
 
 SLIDER
-7
-682
-270
-715
+20
+708
+283
+741
 prob-go-principal
 prob-go-principal
 0
@@ -4202,10 +4202,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-315
-270
-348
+24
+330
+285
+363
 num-groups
 num-groups
 1
@@ -4217,10 +4217,10 @@ NIL
 HORIZONTAL
 
 MONITOR
-106
-48
-156
-93
+123
+50
+173
+95
 hour
 hour
 0
@@ -4228,31 +4228,21 @@ hour
 11
 
 MONITOR
-159
-48
-209
-93
+176
+50
+226
+95
 minute
 minute
 0
 1
 11
 
-TEXTBOX
-8
-57
-56
-100
-School clock
-12
-0.0
-1
-
 MONITOR
-54
-48
-104
-93
+70
+50
+120
+95
 day
 day
 17
@@ -4260,10 +4250,10 @@ day
 11
 
 SLIDER
-7
-718
-270
-751
+20
+745
+283
+778
 prob-outside-contagion
 prob-outside-contagion
 0
@@ -4274,81 +4264,41 @@ prob-outside-contagion
 NIL
 HORIZONTAL
 
-TEXTBOX
-11
-103
-92
-121
-Setup world
-12
-0.0
-1
-
-TEXTBOX
-10
-553
-121
-571
-Setup probability
-12
-0.0
-1
-
-TEXTBOX
-836
-1043
-920
-1077
-Other features\n
-12
-0.0
-1
-
 CHOOSER
-1378
-708
-1563
-753
+1537
+705
+1722
+750
 mask-type
 mask-type
 "no mask" "surgical" "ffp2"
 1
 
 CHOOSER
-1132
-708
-1373
-753
+1290
+705
+1531
+750
 ventilation-type-h-1
 ventilation-type-h-1
 "no ventilation" 0.3 1 3 5 10 20
 3
 
 CHOOSER
-896
-708
-1129
-753
+1055
+705
+1288
+750
 temperature-measurement
 temperature-measurement
 "no measurement" "by hand" "termoscanner"
-0
-
-TEXTBOX
-780
-723
-898
-755
-Countermeasures
-12
-0.0
-1
+2
 
 SLIDER
-9
-387
-270
-420
+24
+403
+285
+436
 mean-infection-duration-in-days
 mean-infection-duration-in-days
 5
@@ -4360,10 +4310,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-351
-270
-384
+24
+366
+285
+399
 mean-incubation-duration-in-days
 mean-incubation-duration-in-days
 1
@@ -4375,10 +4325,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-362
-790
-565
-823
+432
+787
+635
+820
 run#
 run#
 1
@@ -4390,10 +4340,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-460
-270
-493
+24
+475
+285
+508
 dad-%
 dad-%
 0
@@ -4405,10 +4355,10 @@ NIL
 HORIZONTAL
 
 SWITCH
-1133
-1022
-1372
-1055
+1292
+1018
+1531
+1051
 spaced-desks?
 spaced-desks?
 0
@@ -4416,10 +4366,10 @@ spaced-desks?
 -1000
 
 MONITOR
-212
-48
-269
-93
+228
+50
+285
+95
 NIL
 second
 17
@@ -4427,10 +4377,10 @@ second
 11
 
 SWITCH
-895
-1058
-1128
-1091
+1054
+1055
+1287
+1088
 interval-in-front-of-classroom?
 interval-in-front-of-classroom?
 0
@@ -4438,10 +4388,10 @@ interval-in-front-of-classroom?
 -1000
 
 SLIDER
-1568
-708
-1753
-741
+1727
+705
+1912
+738
 fraction-of-population-wearing-mask
 fraction-of-population-wearing-mask
 0
@@ -4453,10 +4403,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-362
-755
-565
-788
+432
+753
+635
+786
 days-of-simulation
 days-of-simulation
 1
@@ -4468,40 +4418,30 @@ NIL
 HORIZONTAL
 
 CHOOSER
-9
-266
-270
-311
+24
+282
+285
+327
 init-infected-type
 init-infected-type
 "anyone" "students" "teachers" "principals" "janitors"
 1
 
 CHOOSER
-362
-707
-565
-752
+432
+705
+635
+750
 lesson-duration-in-minutes
 lesson-duration-in-minutes
 50 60
 1
 
-TEXTBOX
-284
-717
-366
-749
-Other parameters
-12
-0.0
-1
-
 SWITCH
-1377
-1022
-1563
-1055
+1536
+1018
+1722
+1051
 outside-contagion?
 outside-contagion?
 0
@@ -4509,10 +4449,10 @@ outside-contagion?
 -1000
 
 SLIDER
-896
-985
-1034
-1018
+1055
+982
+1193
+1015
 screening-adhesion-%
 screening-adhesion-%
 0
@@ -4524,25 +4464,25 @@ NIL
 HORIZONTAL
 
 SLIDER
-9
-423
-270
-456
+24
+438
+285
+471
 num-of-quarantine-days
 num-of-quarantine-days
 7
 21
-14.0
+11.0
 1
 1
 NIL
 HORIZONTAL
 
 SWITCH
-896
-758
-1129
-791
+1055
+755
+1288
+788
 vaccinated-teachers?
 vaccinated-teachers?
 0
@@ -4550,10 +4490,10 @@ vaccinated-teachers?
 -1000
 
 SWITCH
-1566
-759
-1750
-792
+1725
+756
+1909
+789
 vaccinated-principals?
 vaccinated-principals?
 0
@@ -4561,10 +4501,10 @@ vaccinated-principals?
 -1000
 
 SWITCH
-1377
-759
-1562
-792
+1536
+756
+1721
+789
 vaccinated-janitors?
 vaccinated-janitors?
 0
@@ -4572,10 +4512,10 @@ vaccinated-janitors?
 -1000
 
 SWITCH
-1133
-1058
-1373
-1091
+1292
+1055
+1532
+1088
 external-screening?
 external-screening?
 0
@@ -4583,50 +4523,40 @@ external-screening?
 -1000
 
 CHOOSER
-896
-890
-1372
-935
+1055
+886
+1531
+931
 screening-policy
 screening-policy
 "no screening" "all every week" "1/4 of the class every week, in rotation" "1/4 of the class every week, in rotation, spread over two days of the week"
 0
 
-TEXTBOX
-827
-906
-895
-924
-Screening
-12
-0.0
-1
-
 CHOOSER
-896
-938
-1034
-983
+1055
+935
+1193
+980
 first-day-of-week
 first-day-of-week
 "monday" "tuesday" "wednesday" "thursday" "friday"
 0
 
 CHOOSER
-1039
-938
-1178
-983
+1198
+935
+1337
+980
 second-day-of-week
 second-day-of-week
 "monday" "tuesday" "wednesday" "thursday" "friday"
 0
 
 SLIDER
-7
-790
-271
-823
+20
+816
+284
+849
 prob-external-screening-1
 prob-external-screening-1
 0
@@ -4638,10 +4568,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-7
-825
-271
-858
+20
+852
+284
+885
 prob-external-screening-2
 prob-external-screening-2
 0
@@ -4653,10 +4583,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-362
-827
-565
-860
+432
+825
+635
+858
 tick-duration-in-seconds
 tick-duration-in-seconds
 4
@@ -4668,10 +4598,10 @@ NIL
 HORIZONTAL
 
 INPUTBOX
-572
-707
-776
-789
+642
+705
+846
+787
 results-dir-name
 Results
 1
@@ -4679,10 +4609,10 @@ Results
 String
 
 SLIDER
-1566
-795
-1752
-828
+1725
+792
+1911
+825
 vaccine-efficacy
 vaccine-efficacy
 0
@@ -4694,10 +4624,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-896
-795
-1130
-828
+1055
+792
+1289
+825
 fraction-of-vaccinated-teachers
 fraction-of-vaccinated-teachers
 0
@@ -4709,10 +4639,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-1379
-795
-1563
-828
+1538
+792
+1722
+825
 fraction-of-vaccinated-janitors
 fraction-of-vaccinated-janitors
 0
@@ -4724,10 +4654,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-1135
-795
-1373
-828
+1294
+792
+1532
+825
 fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
@@ -4739,10 +4669,10 @@ NIL
 HORIZONTAL
 
 SWITCH
-1135
-759
-1373
-792
+1294
+756
+1532
+789
 vaccinated-students?
 vaccinated-students?
 0
@@ -4750,10 +4680,10 @@ vaccinated-students?
 -1000
 
 SLIDER
-896
-834
-1130
-867
+1055
+830
+1289
+863
 num-infected-needed-to-quarantine-whole-classroom
 num-infected-needed-to-quarantine-whole-classroom
 1
@@ -4765,10 +4695,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-1135
-834
-1374
-867
+1294
+830
+1533
+863
 number-of-after-days-special-swab
 number-of-after-days-special-swab
 3
@@ -4780,10 +4710,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-7
-754
-271
-787
+20
+780
+284
+813
 prob-symptomatic
 prob-symptomatic
 0
@@ -4794,42 +4724,112 @@ prob-symptomatic
 NIL
 HORIZONTAL
 
-TEXTBOX
-819
-767
-898
-790
-Vaccination
-12
-0.0
-1
-
 CHOOSER
-10
-496
-272
-541
+24
+512
+286
+557
 virus-variant
 virus-variant
 "Original" "Alfa" "Beta" "Delta" "Omicron"
 4
 
 CHOOSER
-1380
-834
-1565
-879
+1538
+830
+1723
+875
 quarantine-policy
 quarantine-policy
 "Old policy" "November/December 2021 (Piedmont)" "January/February 2022 (Piedmont)"
 2
 
 TEXTBOX
-820
-842
-900
-865
+13
+57
+58
+86
+School clock
+12
+0.0
+1
+
+TEXTBOX
+27
+106
+194
+126
+Setup world
+12
+0.0
+1
+
+TEXTBOX
+25
+572
+192
+592
+Setup probability
+12
+0.0
+1
+
+TEXTBOX
+323
+713
+403
+745
+Other parameters
+12
+0.0
+1
+
+TEXTBOX
+899
+720
+1024
+740
+Countermeasures
+12
+0.0
+1
+
+TEXTBOX
+940
+783
+1019
+803
+Vaccination
+12
+0.0
+1
+
+TEXTBOX
+942
+837
+1020
+857
 Quarantine
+12
+0.0
+1
+
+TEXTBOX
+952
+950
+1019
+970
+Screening
+12
+0.0
+1
+
+TEXTBOX
+963
+1034
+1021
+1066
+Other features
 12
 0.0
 1
