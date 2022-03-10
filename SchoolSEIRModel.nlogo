@@ -3209,11 +3209,13 @@ to remove-from-quarantine
 end
 
 to outside-contagion
+  let local-prob-outside-contagion prob-outside-contagion
+
   if vaccinated? and
      vaccine-efficacy < 1
-    [ set prob-outside-contagion prob-outside-contagion * infectious-vaccinated-factor ]
+    [ set local-prob-outside-contagion prob-outside-contagion * infectious-vaccinated-factor ]
 
-  if random 10000 < prob-outside-contagion * 10000
+  if random 10000 < local-prob-outside-contagion * 10000
     [
       get-the-infection false
       set num-infected-outside num-infected-outside + 1
@@ -4092,7 +4094,7 @@ init-infected
 init-infected
 0
 students-per-classroom * num-classrooms-per-floor * num-floors + num-classrooms-per-floor * num-floors * 2 + 1
-1.0
+0.0
 1
 1
 NIL
@@ -4122,7 +4124,7 @@ num-floors
 num-floors
 1
 3
-1.0
+3.0
 1
 1
 NIL
@@ -4266,7 +4268,7 @@ prob-outside-contagion
 prob-outside-contagion
 0
 0.1
-0.001
+0.046
 0.0001
 1
 NIL
@@ -4483,7 +4485,7 @@ CHOOSER
 lesson-duration-in-minutes
 lesson-duration-in-minutes
 50 60
-0
+1
 
 TEXTBOX
 284
@@ -4588,7 +4590,7 @@ CHOOSER
 screening-policy
 screening-policy
 "no screening" "all every week" "1/4 of the class every week, in rotation" "1/4 of the class every week, in rotation, spread over two days of the week"
-2
+0
 
 TEXTBOX
 827
@@ -4685,7 +4687,7 @@ vaccine-efficacy
 vaccine-efficacy
 0
 1
-0.7
+1.0
 0.01
 1
 NIL
@@ -4730,7 +4732,7 @@ fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
 1
-0.4
+0.0
 0.01
 1
 NIL

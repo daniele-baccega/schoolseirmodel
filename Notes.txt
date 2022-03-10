@@ -9,6 +9,7 @@ Quarantine policies:
 -December/November 2021 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine and we swab all the other students in the same classroom. If we find other num-infected-needed-to-quarantine-whole-classroom - 1 infected students we put the whole classroom in quarantine, otherwise we'll swab again all the other students in the same classroom after number-of-after-days-special-swab days. Again, if we find other num-infected-needed-to-quarantine-whole-classroom - 1 infected we put the whole classroom in quarantine.
 -January/February 2022 (Piedmont): if we find an infected student in a classroom, we put only this student in quarantine.
 
+
 ## References
 
 Virus variants: https://heystacks.org/doc/483/2020_covid-19_aerosol_transmission_estimator
