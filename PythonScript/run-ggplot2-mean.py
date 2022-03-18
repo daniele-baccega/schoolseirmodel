@@ -45,9 +45,17 @@ def main():
 		
 		for file in files:
 			df          										= pandas.read_csv(str(path) + "/" + file, sep='\t', index_col=False)
+			
+			print(file)
+
+			#with pandas.option_context('display.max_rows', None, 'display.max_columns', None):
+			#	print(df)
+			#print(df_mean)
 
 			del df['seedRun']
 			del df['classroom-in-quarantine']
+			if 'prob-outside-contagion' in df.columns:
+				del df['prob-outside-contagion']
 
 			if df_mean is None:
 				df_mean 										= df
