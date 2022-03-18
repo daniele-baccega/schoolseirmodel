@@ -1,5 +1,6 @@
 #!/bin/bash
-## Mean and some plots
+### Mean and some plots
+##  One initial infected
 
 # ./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious A1 Monday 0 1000 WithoutScreening Screening25 Screening50 Screening100
 # ./run-ggplot2.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious A1 Tuesday 0 1000 WithoutScreening Screening25 Screening50 Screening100
@@ -64,6 +65,8 @@
 
 
 
+##  Stochastic arrivals
+
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.0001/WithCountermeasures/WithoutVaccinatedStudents A1 Monday 0 1000 WithoutScreening Screening25 Screening50 Screening100
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.0001/WithCountermeasures/WithoutVaccinatedStudents A1 Tuesday 0 1000 WithoutScreening Screening25 Screening50 Screening100
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.0001/WithCountermeasures/WithoutVaccinatedStudents A1 Wednesday 0 1000 WithoutScreening Screening25 Screening50 Screening100
@@ -123,6 +126,8 @@
 
 
 
+##  November/December policy vs old policy
+
 # ./run-ggplot2.sh NovDecPolicyvsOldPolicy/StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithoutVaccinatedStudents/NovDecPolicy D1 Wednesday 0 1000 Screening100
 # ./run-ggplot2.sh NovDecPolicyvsOldPolicy/StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithoutVaccinatedStudents/NovDecPolicy A1 Wednesday 0 1000 Screening100
 # ./run-ggplot2.sh NovDecPolicyvsOldPolicy/StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithoutVaccinatedStudents/NovDecPolicy D1 Wednesday 0 1000 Screening100
@@ -135,6 +140,8 @@
 
 
 
+
+##  Stochastic arrivals with November/December policy
 
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 0 100 Screening100
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 0 200 Screening100
@@ -165,6 +172,10 @@
 # ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 70 1000 Screening100
 
 
+
+
+##  Stochastic arrivals with November/December policy, omicron variant and probability of outside contagion equals to 0.001
+
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 Screening100
@@ -180,7 +191,7 @@
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 WithoutScreening
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 WithoutScreening
 
-#./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 Screening100
@@ -210,6 +221,10 @@
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 WithoutScreening
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
 
+
+
+
+##  Stochastic arrivals with November/December policy, omicron variant and probability of outside contagion equals to 0.02
 
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 Screening100
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 Screening100
@@ -257,52 +272,59 @@
 ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
 
 
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 Screening100
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 WithoutScreening
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 WithoutScreening
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 Screening100
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 WithoutScreening
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 WithoutScreening
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 Screening100
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 Screening100
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
-
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
 
 
+##  Stochastic arrivals with November/December policy, omicron variant and probability of outside contagion equals to 0.046
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 Screening100
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 WithoutScreening
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 D1 Monday 70 500 WithoutScreening
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 Screening100
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 WithoutScreening
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 D1 Monday 70 500 WithoutScreening
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 Screening100
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 Screening100
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
+
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 D1 Monday 70 500 WithoutScreening
+
+
+
+
+##  One initial infected (days)
 
 # ./run-ggplot2-days.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious A1 Monday 0 1000 Screening25 Screening50 Screening100
 # ./run-ggplot2-days.sh OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious D1 Monday 0 1000 Screening25 Screening50 Screening100
@@ -324,6 +346,8 @@
 
 
 
+
+##  Stochastic arrivals (days)
 
 # ./run-ggplot2-days.sh StochasticArrivals/WithExtScreening/Prob-0.0001/WithCountermeasures/WithoutVaccinatedStudents A1 Monday 0 1000 Screening25 Screening50 Screening100
 # ./run-ggplot2-days.sh StochasticArrivals/WithExtScreening/Prob-0.0001/WithCountermeasures/WithoutVaccinatedStudents D1 Monday 0 1000 Screening25 Screening50 Screening100
@@ -347,7 +371,8 @@
 
 
 
-## Plot
+### Plot
+##  Positive comparison
 
 # python3 run-ggplot2-positive-comparison.py OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious 1000
 # python3 run-ggplot2-positive-comparison.py OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious 1000
@@ -359,6 +384,8 @@
 
 
 
+##  Cumulative infected comparison
+
 # python3 run-ggplot2-cumulative-infected-comparison.py OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithoutVaccinatedInfectious 1000
 # python3 run-ggplot2-cumulative-infected-comparison.py OneInitialInfected/WithoutExtScreening/WithCountermeasures/WithVaccinatedInfectious 1000
 # python3 run-ggplot2-cumulative-infected-comparison.py OneInitialInfected/WithExtScreening/WithCountermeasures/WithoutVaccinatedInfectious 1000
@@ -369,6 +396,8 @@
 
 
 
+##  Cumulative infected vaccinated students
+
 # python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 100 Screening100
 # python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 200 Screening100
 # python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 300 Screening100
@@ -376,20 +405,53 @@
 # python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 750 Screening100
 # python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 1000 Screening100
 
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
 
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
 
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
 
 
 
+
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+
+
+
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+
+
+
+
+##  Infected vaccinated students
 
 # python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 100 Screening100
 # python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 200 Screening100
@@ -398,20 +460,52 @@
 # python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 750 Screening100
 # python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 1000 Screening100
 
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
 
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
 
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
-# python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
 
 
 
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+
+
+
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday 500 Screening100
+
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+python3 run-ggplot2-infected-vaccinated-students.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday 500 Screening100
+
+
+
+
+##  Traces comparison
 
 # python3 run-ggplot2-traces-comparison.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 100 Screening100 infected
 # python3 run-ggplot2-traces-comparison.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy D1 Monday 200 Screening100 infected
@@ -423,26 +517,55 @@
 
 
 
-# python3 run-ggplot2-distance-learning.py NovDecPolicyvsOldPolicy/StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithoutVaccinatedStudents A1 Wednesday 1000 Screening100
-# python3 run-ggplot2-distance-learning.py NovDecPolicyvsOldPolicy/StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithoutVaccinatedStudents D1 Wednesday 1000 Screening100
+##  Infected distribution
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
 
 
 
 
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
 
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
 
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
-# python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
 
 
 
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy100 WithoutScreening Monday Screening100
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy90 WithoutScreening Monday Screening100
+
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 D1 Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
+python3 run-ggplot2-infected-distribution.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/VaccineEfficacy70 WithoutScreening Monday Screening100
+
+
+
+
+##  Cumulative infected vaccinated students (single plot)
 
 python3 run-ggplot2-cumulative-infected-vaccinated-students-single-plot.py StochasticArrivals/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents 500 Screening100
 python3 run-ggplot2-cumulative-infected-vaccinated-students-single-plot.py StochasticArrivals/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents 500 Screening100
+python3 run-ggplot2-cumulative-infected-vaccinated-students-single-plot.py StochasticArrivals/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents 500 Screening100

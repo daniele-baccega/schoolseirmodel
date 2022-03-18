@@ -32,12 +32,10 @@ def main():
 	for path in paths:
 		df_mean          						= pandas.read_csv(str(path), index_col=0)
 
-		population								= df_mean.loc[0, 'susceptible']
-
 		infected 								= pandas.DataFrame(columns=['day', 'infected'])
 
 		infected['day']							= df_mean.loc[:, 'day']
-		infected['infected']					= df_mean.loc[:, 'infected'] + df_mean.loc[:, 'infected-in-quarantine'] + df_mean.loc[:, 'infected-in-quarantine-external-1'] + df_mean.loc[:, 'infected-in-quarantine-external-2']
+		infected['infected']					= df_mean.loc[:, 'infected'] + df_mean.loc[:, 'infected-in-quarantine'] + df_mean.loc[:, 'infected-in-quarantine-external-1'] + df_mean.loc[:, 'infected-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-infected'] + df_mean.loc[:, 'num-vaccinated-infected-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-infected-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-infected-in-quarantine-external-2']
 		
 		df_mod 									= infected
 		df_mod['type'] 							= 'Infected'

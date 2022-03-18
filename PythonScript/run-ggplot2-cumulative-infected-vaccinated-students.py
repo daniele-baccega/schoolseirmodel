@@ -32,13 +32,13 @@ def main():
 	for path in paths:
 		df_mean          						= pandas.read_csv(str(path), index_col=0)
 
-		population								= df_mean.loc[0, 'susceptible']
+		population								= df_mean.loc[0, 'susceptible'] + df_mean.loc[0, 'num-vaccinated-susceptible'] + df_mean.loc[0, 'num-vaccinated-removed']
 
 		total_infected 							= pandas.DataFrame(columns=['day', 'cumulative_infected'])
 		
 		total_infected['day']					= df_mean.loc[:, 'day']
-		total_infected['cumulative_infected'] 	= population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + \
-														        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'])
+		total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-susceptible'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
+														        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-exposed'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df_mean.loc[0, 'num-vaccinated-removed'])) / population
 
 		total_infected 							= total_infected.iloc[1:]
 
@@ -64,10 +64,7 @@ def main():
 	my_plot = (ggplot(df_plot) \
  		+ aes(x = 'day', y = 'cumulative_infected', color = 'type_pretty') \
  		+ geom_line() \
- 		+ geom_hline(aes(yintercept=240), color="#FF0000", linetype="dotted", size=0.3) \
- 		+ geom_hline(aes(yintercept=216), color="#00FF00", linetype="dotted", size=0.3) \
- 		+ geom_hline(aes(yintercept=144), color="#0000FF", linetype="dotted", size=0.3) \
- 		+ geom_hline(aes(yintercept=72), color="#FF00FF", linetype="dotted", size=0.3) \
+ 		+ geom_hline(aes(yintercept=1), color="#000000", linetype="dotted", size=0.3) \
     	+ labs(title = "Students vaccination (" + policy_pretty + " policy)", x = 'day', y = 'cumulative infected', color = 'Percentages of vaccination')) \
     	+ scale_x_continuous(breaks=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]) \
     	+ scale_color_manual(values=["#FF0000", "#00FF00", "#0000FF", "#FF00FF"]) \

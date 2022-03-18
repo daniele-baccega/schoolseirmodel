@@ -16,7 +16,7 @@ def main():
 	num_traces									= str(sys.argv[5])
 	paths										= []
 	type_of_screening							= []
-	type_of_screening_pretty					= []
+	type_of_screening_pretty					= []spese
 
 	if not "WithVaccinatedStudents" in long_path:
 		vaccinated_students						= ""

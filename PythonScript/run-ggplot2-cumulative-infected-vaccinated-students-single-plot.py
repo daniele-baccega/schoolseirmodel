@@ -44,17 +44,18 @@ def main():
 					df_left          						= pandas.read_csv(str(path).replace("mean_", "left_"), index_col=0)
 					df_right          						= pandas.read_csv(str(path).replace("mean_", "right_"), index_col=0)
 
-					population								= df_mean.loc[0, 'susceptible']
+					
+					population								= df_mean.loc[0, 'susceptible'] + df_mean.loc[0, 'num-vaccinated-susceptible'] + df_mean.loc[0, 'num-vaccinated-removed']
 
 					total_infected 							= pandas.DataFrame(columns=['day', 'cumulative_infected'])
 					
 					total_infected['day']					= df_mean.loc[:, 'day']
-					total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + \
-																	        df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'])) / population
-					total_infected['left'] 					= (population - (df_left.loc[:, 'susceptible'] + df_left.loc[:, 'susceptible-in-quarantine'] + df_left.loc[:, 'susceptible-in-quarantine-external-1'] + df_left.loc[:, 'susceptible-in-quarantine-external-2'] + \
-																	        df_left.loc[:, 'exposed'] + df_left.loc[:, 'exposed-in-quarantine'] + df_left.loc[:, 'exposed-in-quarantine-external-1'] + df_left.loc[:, 'exposed-in-quarantine-external-2'])) / population
-					total_infected['right'] 				= (population - (df_right.loc[:, 'susceptible'] + df_right.loc[:, 'susceptible-in-quarantine'] + df_right.loc[:, 'susceptible-in-quarantine-external-1'] + df_right.loc[:, 'susceptible-in-quarantine-external-2'] + \
-																	        df_right.loc[:, 'exposed'] + df_right.loc[:, 'exposed-in-quarantine'] + df_right.loc[:, 'exposed-in-quarantine-external-1'] + df_right.loc[:, 'exposed-in-quarantine-external-2'])) / population
+					total_infected['cumulative_infected'] 	= (population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-susceptible'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
+														       df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-exposed'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df_mean.loc[0, 'num-vaccinated-removed'])) / population
+					total_infected['left'] 					= (population - (df_left.loc[:, 'susceptible'] + df_left.loc[:, 'susceptible-in-quarantine'] + df_left.loc[:, 'susceptible-in-quarantine-external-1'] + df_left.loc[:, 'susceptible-in-quarantine-external-2'] + df_left.loc[:, 'num-vaccinated-susceptible'] + df_left.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df_left.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df_left.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
+														       df_left.loc[:, 'exposed'] + df_left.loc[:, 'exposed-in-quarantine'] + df_left.loc[:, 'exposed-in-quarantine-external-1'] + df_left.loc[:, 'exposed-in-quarantine-external-2'] + df_left.loc[:, 'num-vaccinated-exposed'] + df_left.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df_left.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df_left.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df_left.loc[0, 'num-vaccinated-removed'])) / population
+					total_infected['right'] 				= (population - (df_right.loc[:, 'susceptible'] + df_right.loc[:, 'susceptible-in-quarantine'] + df_right.loc[:, 'susceptible-in-quarantine-external-1'] + df_right.loc[:, 'susceptible-in-quarantine-external-2'] + df_right.loc[:, 'num-vaccinated-susceptible'] + df_right.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df_right.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df_right.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
+														       df_right.loc[:, 'exposed'] + df_right.loc[:, 'exposed-in-quarantine'] + df_right.loc[:, 'exposed-in-quarantine-external-1'] + df_right.loc[:, 'exposed-in-quarantine-external-2'] + df_right.loc[:, 'num-vaccinated-exposed'] + df_right.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df_right.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df_right.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df_right.loc[0, 'num-vaccinated-removed'])) / population
 
 
 					total_infected 							= total_infected.iloc[1:]
