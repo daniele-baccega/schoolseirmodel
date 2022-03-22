@@ -36,13 +36,13 @@ def main():
 		for file in files:
 			df 										= pandas.read_csv(str(path) + "/" + file, sep='\t', index_col=False)
 
-			population								= df.loc[0, 'susceptible'] + df_mean.loc[0, 'num-vaccinated-susceptible'] + df_mean.loc[0, 'num-vaccinated-removed']
+			population								= df.loc[0, 'susceptible'] + df.loc[0, 'num-vaccinated-susceptible'] + df.loc[0, 'num-vaccinated-removed']
 
 			total_infected 							= pandas.DataFrame(columns=['day', 'final_infected', 'type_pretty'])
 
 			total_infected['day']					= df.loc[:, 'day']
-			total_infected['final_infected']	 	= population - (df_mean.loc[:, 'susceptible'] + df_mean.loc[:, 'susceptible-in-quarantine'] + df_mean.loc[:, 'susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'susceptible-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-susceptible'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
-														            df_mean.loc[:, 'exposed'] + df_mean.loc[:, 'exposed-in-quarantine'] + df_mean.loc[:, 'exposed-in-quarantine-external-1'] + df_mean.loc[:, 'exposed-in-quarantine-external-2'] + df_mean.loc[:, 'num-vaccinated-exposed'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df_mean.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df_mean.loc[0, 'num-vaccinated-removed'])
+			total_infected['final_infected']	 	= population - (df.loc[:, 'susceptible'] + df.loc[:, 'susceptible-in-quarantine'] + df.loc[:, 'susceptible-in-quarantine-external-1'] + df.loc[:, 'susceptible-in-quarantine-external-2'] + df.loc[:, 'num-vaccinated-susceptible'] + df.loc[:, 'num-vaccinated-susceptible-in-quarantine'] + df.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-1'] + df.loc[:, 'num-vaccinated-susceptible-in-quarantine-external-2'] +\
+														            df.loc[:, 'exposed'] + df.loc[:, 'exposed-in-quarantine'] + df.loc[:, 'exposed-in-quarantine-external-1'] + df.loc[:, 'exposed-in-quarantine-external-2'] + df.loc[:, 'num-vaccinated-exposed'] + df.loc[:, 'num-vaccinated-exposed-in-quarantine'] + df.loc[:, 'num-vaccinated-exposed-in-quarantine-external-1'] + df.loc[:, 'num-vaccinated-exposed-in-quarantine-external-2'] + df.loc[0, 'num-vaccinated-removed'])
 			total_infected['type_pretty']			= type_pretty[k]
 
 			if df_plot is None:
