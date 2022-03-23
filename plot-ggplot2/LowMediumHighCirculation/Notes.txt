@@ -1,0 +1,9 @@
+Normalization: cumulative infected agents / all agents
+
+1 means ALL agents (students, teachers and principal; we have 290 agents: 240 students, 49 teachers and 1 principal) so with a vaccine efficacy equals to 100% we will have horzontal asymptotes as we can see in the plots
+
+Asymptotes (vaccine efficacy 100%):
+0%:  240 / 290 = 0.827586207 asymptote
+10%: 216 / 290 = 0.744827586 asymptote
+40%: 144 / 290 = 0.496551724 asymptote
+70%: 72  / 290 = 0.248275862 asymptote
