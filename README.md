@@ -53,7 +53,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _mean-infection-duration-in-days_: average number of infection days.
 - _num-of-quarantine-days_: number of quarantine days.
 - _dad-%_: percentage of distance learning.
-- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_ and _omicron_) [6].
+- _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_, _omicron BA.1_ and _omicron BA.2_) [6].
 - _prob-go-bathroom_: probability to go to the bathroom.
 - _prob-go-blackboard_: probability to go to the blackboard.
 - _prob-go-somewhere-during-interval_: probability to go somewhere during the interval.

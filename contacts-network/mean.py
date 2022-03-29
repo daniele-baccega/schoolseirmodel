@@ -7,10 +7,15 @@ from plotnine import *
 from pathlib import Path
 
 def main():
+	if len(sys.argv) < 2:
+		print("Error, parameters are missing: python mean.py path")
+		exit()
+
+	long_path													= str(sys.argv[1])
 	types														= ['number-of-contacts', 'contacts-time']
 
 	for type in types:
-		path													= Path(__file__).parent / ("ResultsTick60SecondsWithoutDividedBy5/" + type + "/")
+		path													= Path(__file__).parent / ("Results/Results" + long_path + "/" + type + "/")
 		files													= os.listdir(path)
 		num_files												= len(files)
 		counter													= 0
@@ -39,9 +44,9 @@ def main():
 		left   									        	 	= mean - 1.96 * (std / math.sqrt(counter))
 		right	           										= mean + 1.96 * (std / math.sqrt(counter))
 
-		np.savetxt('mean-results/mean_' + type + '.csv', mean, delimiter=",")
-		np.savetxt('mean-results/variance_' + type + '.csv', variance, delimiter=",")
-		np.savetxt('mean-results/left_' + type + '.csv', left, delimiter=",")
-		np.savetxt('mean-results/right_' + type + '.csv', right, delimiter=",")
+		np.savetxt('mean-results/' + long_path + '/mean_' + type + '.csv', mean, delimiter=",")
+		np.savetxt('mean-results/' + long_path + '/variance_' + type + '.csv', variance, delimiter=",")
+		np.savetxt('mean-results/' + long_path + '/left_' + type + '.csv', left, delimiter=",")
+		np.savetxt('mean-results/' + long_path + '/right_' + type + '.csv', right, delimiter=",")
 
 main();
