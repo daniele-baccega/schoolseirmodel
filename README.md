@@ -70,14 +70,19 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _temperature-measurement_: temperature measurement type (at the entrance).
 - _ventilation-type-h-1_: ventilation type implemented in all rooms but not in the hallways.
 - _mask-type_: mask type used by agents.
+- _mask-policy_: we can use two diffentent _mask_ policies (with November/December 2021 (Piedmont) or January/February 2022 (Piedmont) quarantine policies):
+	- No mask - ffp2: initially no agent wears a mask; if we find (inside a classroom) _num-infected-needed-to-wear-mask_ infected students then all students inside that classroom will wear the ffp2 mask for _number-of-days-with-ffp2_ days (and also all teachers).
+	- Surgical - ffp2: initially all agent wear the surgical mask; if we find (inside a classroom) _num-infected-needed-to-wear-mask_ infected students then all students inside that classroom will wear the ffp2 mask for _number-of-days-with-ffp2_ days (and also all teachers).
+- _num-infected-needed-to-wear-mask_: number of infected students needed to apply _mask_ policy.
+- _number-of-days-with-ffp2_: number of days in which students (and teachers) must wear the ffp2 mask for the _mask_ policy.
 - _fraction-of-population-wearing-mask_: fraction of all agents that use the mask.
-- _vaccinated-students?_: vaccinated students (immunized).
-- _vaccinated-teachers?_: vaccinated teachers (immunized).
-- _vaccinated-principals?_: vaccinated principals (immunized).
-- _vaccinated-janitors?_: vaccinated janitors (immunized).
-- _fraction-of-vaccinated-students_: fraction of vaccinated students.
-- _fraction-of-vaccinated-teachers_: fraction of vaccinated teachers.
-- _fraction-of-vaccinated-janitors_: fraction of vaccinated janitors.
+- _vaccinated-students?_: vaccinated students.
+- _vaccinated-teachers?_: vaccinated teachers.
+- _vaccinated-principals?_: vaccinated principals.
+- _vaccinated-janitors?_: vaccinated janitors.
+- _fraction-of-vaccinated-students_: fraction of vaccinated students actually immunized.
+- _fraction-of-vaccinated-teachers_: fraction of vaccinated teachers actually immunized.
+- _fraction-of-vaccinated-janitors_: fraction of vaccinated janitors actually immunized.
 - _vaccine-efficacy_: vaccine efficacy for vaccinated subjects.
 - _quarantine-policy_: we can use three diffentent _quarantine_ policies:
 	- Old policy (Piedmont): if we find an infected student in a classroom, we put the whole classroom in quarantine.
@@ -128,22 +133,11 @@ Each run produce an output file and for each day we get the following informatio
 - _num-of-positive-agents_
 - _num-of-positive-agents-external-1_
 - _num-of-positive-agents-external-2_
-- _num-vaccinated-susceptible_
-- _num-vaccinated-exposed_
-- _num-vaccinated-infected_
-- _num-vaccinated-removed_
-- _num-vaccinated-susceptible-in-quarantine_
-- _num-vaccinated-exposed-in-quarantine_
-- _num-vaccinated-infected-in-quarantine_
-- _num-vaccinated-removed-in-quarantine_
-- _num-vaccinated-susceptible-in-quarantine-external-1_
-- _num-vaccinated-exposed-in-quarantine-external-1_
-- _num-vaccinated-infected-in-quarantine-external-1_
-- _num-vaccinated-removed-in-quarantine-external-1_
-- _num-vaccinated-susceptible-in-quarantine-external-2_
-- _num-vaccinated-exposed-in-quarantine-external-2_
-- _num-vaccinated-infected-in-quarantine-external-2_
-- _num-vaccinated-removed-in-quarantine-external-2_
+- _num-vaccinated_
+- _num-immunized_
+- _num-immunized-in-quarantine_
+- _num-immunized-in-quarantine-external-1_
+- _num-immunized-in-quarantine-external-2_
 - _num-infected-outside_
 - _classroom-in-quarantine_
 - _num-of-classroom-in-quarantine_
@@ -176,7 +170,7 @@ The model needed some external input files inside a _Utils_ directory:
 
 ## COPYRIGHT AND LICENSE
 
-Copyright _Daniele Baccega, Simone Pernice, Pietro Terna, Paolo Castagno, Giovenale Moirano, Lorenzo Richiardi, Matteo Sereno, Sergio Rabellino, Milena Maria Maule, Marco Beccuti_
+Copyright _Daniele Baccega, Simone Pernice, Pietro Terna, Paolo Castagno, Marco Beccuti, Matteo Sereno_
 
 ![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
 
