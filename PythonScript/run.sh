@@ -411,87 +411,87 @@
 
 
 ##  Stochastic arrivals with November/December quarantine policy, omicron BA.2 variant, without screening, no mask - FFP2 mask policy and probability of outside contagion equals to 0.001, 0.02 and 0.046
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/NovDecPolicy/Omicron/NoMaskFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
 
 
 
 ##  Stochastic arrivals with January/February quarantine policy, omicron BA.2 variant, without screening, surg - FFP2 mask policy and probability of outside contagion equals to 0.001, 0.02 and 0.046
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.001/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.02/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
-# ./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy100/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy70/ D1 Monday 70 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 0 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 10 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 40 500 WithoutScreening
+./run-ggplot2.sh  StochasticArrivalsImmunized/WithExtScreening/Prob-0.046/WithCountermeasures/WithVaccinatedStudents/JanFebPolicy/Omicron/SurgFFP2/VaccineEfficacy50/ D1 Monday 70 500 WithoutScreening
 
 
 

@@ -14,8 +14,8 @@ def main():
 	long_path																= str(sys.argv[1])
 	num_traces																= str(sys.argv[2])
 	type_of_screening														= str(sys.argv[3])
-	quarantine_policies														= ["NovDecPolicy"]#["NovDecPolicy", "JanFebPolicy"]
-	quarantine_policies_pretty												= ["Nov/Dec"]#["Nov/Dec", "Jan/Feb"]
+	quarantine_policies														= ["NovDecPolicy", "JanFebPolicy"]
+	quarantine_policies_pretty												= ["Nov/Dec", "Jan/Feb"]
 	virus_prevalence														= ["Prob-0.001", "Prob-0.02", "Prob-0.046"]
 	virus_prevalence_pretty													= ["Low", "Medium", "High"]
 	vaccine_efficacy														= ["Vaccine Efficacy 100", "Vaccine Efficacy 70", "Vaccine Efficacy 50"]
