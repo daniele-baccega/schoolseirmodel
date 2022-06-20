@@ -164,7 +164,7 @@ The model needed some external input files inside a _Utils_ directory:
 
 [4] Nicolas Hoertel et al. _«A stochastic agent-based model of the SARS-CoV-2 epidemic in France»_. In: _Nature medicine 26.9 (2020)_, pp. 1417–1421.
 
-[5] PAPER JASS
+[5] Baccega Daniele, Pernice Simone, Terna Pietro, Castagno Paolo, Moirano Giovenale, Richiardi Lorenzo, Sereno Matteo, Rabellino Sergio, Maule Milena Maria and Beccuti Marco (2022) 'An Agent-Based Model to Support Infection Control Strategies at School' Journal of Artificial Societies and Social Simulation 25 (3) 2 <http://jasss.soc.surrey.ac.uk/25/3/2.html>. doi: 10.18564/jasss.4830
 
 [6] J.L. Jimenez and Z. Peng, _COVID-19 Aerosol Transmission Estimator_. https://tinyurl.com/covid-estimator
 
