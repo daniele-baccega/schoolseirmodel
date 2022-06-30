@@ -23,6 +23,8 @@ def main():
 	mask_policies															= ["No Mask", "No Mask - FFP2", "Surg - FFP2"]
 	day_name					 											= "Monday"
 	vaccinated_students_perc												= ["0", "10", "40", "70"]
+	cut																		= 3
+	period																	= 7
 	j																		= 0
 
 	for quarantine_policy in quarantine_policies:
@@ -31,7 +33,7 @@ def main():
 				continue
 
 			for mask_policy in mask_policies:
-				if (policy == "D1" and mask_policy in ["No Mask - FFP2", "Surg - FFP2"]) or (policy != "D1" and mask_policy in ["No Mask"]):
+				if (policy == "D1" and mask_policy in ["No Mask - FFP2", "Surg - FFP2"]):# or (policy != "D1" and mask_policy == "No Mask"):
 					continue
 
 				my_plot														= None
@@ -71,11 +73,10 @@ def main():
 
 							total_infected_derivative['day']				= df_mean.loc[:, 'day']
 							total_infected_derivative['slope']				= pandas.Series(numpy.gradient(total_infected.loc[:, 'cumulative_infected']))
-							
 
 							num_days										= len(df_mean.loc[:, 'day'])
 
-							decomposition									= seasonal_decompose(total_infected_derivative.loc[0:(num_days-2), 'slope'], model='multiplicable', period=7)
+							decomposition									= seasonal_decompose(total_infected_derivative.loc[0:(num_days-cut), 'slope'], model='additive', period=period)
 							
 							total_infected_derivative_spline['day']			= df_mean.loc[:, 'day'].append(df_mean.loc[:, 'day'], ignore_index=True).append(df_mean.loc[:, 'day'], ignore_index=True).append(df_mean.loc[:, 'day'], ignore_index=True)
 							total_infected_derivative_spline['values']		= total_infected_derivative['slope'].append(decomposition.trend, ignore_index=True).append(decomposition.seasonal, ignore_index=True).append(decomposition.resid, ignore_index=True)
@@ -102,8 +103,8 @@ def main():
 								df_plot_derivative							= df_mod_derivative
 							else:
 								df_plot_derivative 							= df_plot_derivative.append(df_mod_derivative, ignore_index=True)
-
-							df_mod_derivative_spline						= total_infected_derivative_spline
+							
+							df_mod_derivative_spline						= total_infected_derivative_spline.loc[total_infected_derivative_spline['day'] <= num_days-cut, :]
 							df_mod_derivative_spline['type'] 				= 'Total infected derivative spline'
 							df_mod_derivative_spline['type_pretty']			= type_pretty[k]
 							df_mod_derivative_spline['vaccine_efficacy']	= efficacy + "%"
@@ -160,7 +161,6 @@ def main():
 				my_plot = (ggplot(df_plot) \
 			 		+ aes(x = 'day', y = 'cumulative_infected', color = 'type_pretty') \
 			 		+ geom_line() \
-				 	#+ geom_ribbon(aes(ymin='left', ymax='right'), alpha=0.2)
 			 		+ facet_grid('prevalence ~ vaccine_efficacy') \
 			    	+ labs(title = quarantine_policies_pretty[j] + ", " + policy + " (" + mask_policy + ")", x = 'day', y = 'cumulative infected', color = 'Percentages of students vaccination')) \
 			    	+ scale_x_continuous(breaks=[0, 10, 20, 30, 40, 50, 60]) \
@@ -170,7 +170,6 @@ def main():
 				my_plot_derivative = (ggplot(df_plot_derivative) \
 			 		+ aes(x = 'day', y = 'slope', color = 'type_pretty') \
 			 		+ geom_line() \
-				 	#+ geom_ribbon(aes(ymin='left', ymax='right'), alpha=0.2)
 			 		+ facet_grid('prevalence ~ vaccine_efficacy') \
 			    	+ labs(title = quarantine_policies_pretty[j] + ", " + policy + " (" + mask_policy + ")", x = 'day', y = 'slope', color = 'Percentages of students vaccination')) \
 			    	+ scale_x_continuous(breaks=[0, 10, 20, 30, 40, 50, 60]) \
@@ -180,7 +179,6 @@ def main():
 				my_plot_derivative_spline = (ggplot(df_plot_derivative_spline) \
 			 		+ aes(x = 'day', y = 'values', color = 'type_pretty') \
 			 		+ geom_line() \
-				 	#+ geom_ribbon(aes(ymin='left', ymax='right'), alpha=0.2)
 			 		+ facet_grid('prevalence ~ vaccine_efficacy') \
 			    	+ labs(title = quarantine_policies_pretty[j] + ", " + policy + " (" + mask_policy + ")", x = 'day', y = 'trend', color = 'Percentages of students vaccination')) \
 			    	+ scale_x_continuous(breaks=[0, 10, 20, 30, 40, 50, 60]) \
