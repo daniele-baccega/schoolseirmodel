@@ -1861,7 +1861,10 @@ to act-quarantine-policy [infected-group infected-already-in-quarantine c-name i
                count infected-group + count infected-already-in-quarantine >= num-infected-needed-to-wear-mask
               [ change-mask false c-name ]
           ]
-          [ put-classroom-in-quarantine c-name quarantine-ext-1? quarantine-ext-2? ]
+          [
+            if quarantine-policy = "Old policy"
+              [ put-classroom-in-quarantine c-name quarantine-ext-1? quarantine-ext-2? ]
+          ]
       ]
     ]
 end
@@ -2318,7 +2321,7 @@ to go-bathroom [g]
         ]
 
       if breed = teachers
-        [ set teacher-condition (room-name = "TR" and remove "-" day-scheduling != [] ) ]
+        [ set teacher-condition (room-name = "TR" and remove "-" day-scheduling != [] and (item g remain-time-for-lesson-in-ticks > 1 or item g remain-time-for-interval-in-ticks > 1)) ]
 
       if toilet = []
         [
@@ -3991,7 +3994,7 @@ prob-outside-contagion
 prob-outside-contagion
 0
 0.1
-0.02
+0.046
 0.0001
 1
 NIL
@@ -4005,7 +4008,7 @@ CHOOSER
 mask-type
 mask-type
 "no mask" "surgical" "ffp2"
-1
+0
 
 CHOOSER
 1055
@@ -4066,7 +4069,7 @@ run#
 run#
 1
 1000
-1.0
+492.0
 1
 1
 NIL
@@ -4158,7 +4161,7 @@ CHOOSER
 init-infected-type
 init-infected-type
 "anyone" "students" "teachers" "principals" "janitors"
-1
+0
 
 CHOOSER
 432
@@ -4350,7 +4353,7 @@ vaccine-efficacy
 vaccine-efficacy
 0
 1
-0.7
+1.0
 0.01
 1
 NIL
@@ -4395,7 +4398,7 @@ fraction-of-vaccinated-students
 fraction-of-vaccinated-students
 0
 1
-0.4
+0.0
 0.01
 1
 NIL
@@ -4408,7 +4411,7 @@ SWITCH
 885
 vaccinated-students?
 vaccinated-students?
-0
+1
 1
 -1000
 
@@ -4474,7 +4477,7 @@ CHOOSER
 971
 quarantine-policy
 quarantine-policy
-"Old policy" "November/December 2021 (Piedmont)" "January/February 2022 (Piedmont)"
+"No policy" "Old policy" "November/December 2021 (Piedmont)" "January/February 2022 (Piedmont)"
 2
 
 TEXTBOX
@@ -4585,7 +4588,7 @@ CHOOSER
 mask-policy
 mask-policy
 "No policy" "No mask - ffp2" "Surgical - ffp2"
-2
+0
 
 TEXTBOX
 942
