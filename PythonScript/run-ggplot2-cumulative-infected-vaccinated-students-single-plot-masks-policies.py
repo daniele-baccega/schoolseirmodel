@@ -14,8 +14,8 @@ def main():
 	long_path																= str(sys.argv[1])
 	num_traces																= str(sys.argv[2])
 	type_of_screening														= str(sys.argv[3])
-	quarantine_policies														= ["NovDecPolicy", "JanFebPolicy"]
-	quarantine_policies_pretty												= ["Nov/Dec", "Jan/Feb"]
+	quarantine_policies														= ["NovDecPolicy", "JanFebPolicy", "NoQuarantinePolicy"]
+	quarantine_policies_pretty												= ["Nov/Dec", "Jan/Feb", "Without quarantine policy"]
 	virus_prevalence														= ["Prob-0.001", "Prob-0.02", "Prob-0.046"]
 	virus_prevalence_pretty													= ["Low", "Medium", "High"]
 	vaccine_efficacy														= ["Vaccine Efficacy 100", "Vaccine Efficacy 70", "Vaccine Efficacy 50"]
@@ -29,11 +29,11 @@ def main():
 
 	for quarantine_policy in quarantine_policies:
 		for policy in policies:	
-			if policy == "D1" and quarantine_policy == "JanFebPolicy":
+			if policy == "D1" and quarantine_policy in ["JanFebPolicy", "NoQuarantinePolicy"]:
 				continue
 
 			for mask_policy in mask_policies:
-				if (policy == "D1" and mask_policy in ["No Mask - FFP2", "Surg - FFP2"]):# or (policy != "D1" and mask_policy == "No Mask"):
+				if (policy == "D1" and mask_policy in ["No Mask - FFP2", "Surg - FFP2"]) or quarantine_policy == "NoQuarantinePolicy" and mask_policy in ["No Mask - FFP2", "Surg - FFP2"]:
 					continue
 
 				my_plot														= None
@@ -183,6 +183,7 @@ def main():
 			    	+ labs(title = quarantine_policies_pretty[j] + ", " + policy + " (" + mask_policy + ")", x = 'day', y = 'trend', color = 'Percentages of students vaccination')) \
 			    	+ scale_x_continuous(breaks=[0, 10, 20, 30, 40, 50, 60]) \
 			    	+ scale_color_manual(values=["#FF0000", "#00FF00", "#0000FF", "#FF00FF"]) \
+			    	+ ylim(0, 30) \
 			    	+ theme(plot_title = element_text(face="bold"), axis_title_x  = element_text(face="bold"), axis_title_y = element_text(face="bold"), legend_title = element_text(face="bold"))
 
 				my_plot.save('../plot-ggplot2/' + long_path + '/plot_' + quarantine_policy + '_' + policy.replace(" ", "") + '_' + mask_policy.replace(" ", "").replace("-", "") + '_cumulative', dpi=600)

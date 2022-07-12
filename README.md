@@ -51,6 +51,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _num-groups_: number of groups in which the classrooms are divided (1 not staggered admissions, 2 staggered admissions).
 - _mean-incubation-duration-in-days_: average number of incubation days.
 - _mean-infection-duration-in-days_: average number of infection days.
+- _mean-recovery-duration-in-days_: average number of days necessary to become again a susceptible after a recovery.
 - _num-of-quarantine-days_: number of quarantine days.
 - _dad-%_: percentage of distance learning.
 - _virus-variant_: different variants of the SARS-CoV-2 virus (_alfa_, _beta_, _delta_, _omicron BA.1_ and _omicron BA.2_) [6].
@@ -103,6 +104,7 @@ There are lots of parameters in this model. Here I describe the parameters that 
 - _outside-contagion?_: possibility to get the infection outside the school.
 - _interval-in-front-of-classroom?_: possibility to go at most in front of their classroom during the interval and not elsewhere (the agents can always go to the bathroom).
 - _external-screening?_: external screening (outside tha school).
+- _reinfection?_: possibility of reinfection after a recovery.
 
 
 ----
@@ -150,10 +152,6 @@ The model needed some external input files inside a _Utils_ directory:
 - **ClassroomsScheduling.txt**: this file contains the teachers' scheduling on the five weekly days; each teacher has an associated identifier (it's important to not overlap the teachers between different classroom in the same hour). It's necessary to specify the scheduling for each interested classroom and for each day there must be six lessons.
 - **StaggeredClassroomsScheduling.txt**: this file contains the teachers' scheduling in the case of staggered admissions.
 - **GymTeachers.txt**: this file contains the identifier of the gym teachers.
-
-## EXTENDING THE MODEL
-- Introduce some features such as:
-	- Possibility of reinfection
 
 ## REFERENCES
 [1] Daniele Baccega. _SchoolSEIRModel_. _2021_. URL: https://github.com/daniele-baccega/schoolseirmodel.
