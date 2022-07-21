@@ -4114,7 +4114,7 @@ run#
 run#
 1
 1000
-511.0
+1.0
 1
 1
 NIL
@@ -4206,7 +4206,7 @@ CHOOSER
 init-infected-type
 init-infected-type
 "anyone" "students" "teachers" "principals" "janitors"
-0
+1
 
 CHOOSER
 432
